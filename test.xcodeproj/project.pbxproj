@@ -15,6 +15,8 @@
 		170F31601CA44A44002A9A63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170F315E1CA44A44002A9A63 /* LaunchScreen.storyboard */; };
 		170F316B1CA44A44002A9A63 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 170F316A1CA44A44002A9A63 /* testTests.m */; };
 		170F31761CA44A44002A9A63 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 170F31751CA44A44002A9A63 /* testUITests.m */; };
+		178846911CA7EBC200FED0BA /* JFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178846901CA7EBC200FED0BA /* JFTableViewController.m */; };
+		178846941CA7EC0500FED0BA /* JFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 178846931CA7EC0500FED0BA /* JFTableViewCell.m */; };
 		86A612BC31668EAB58320314 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5C3FDD3BB0290708C073B6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,10 @@
 		170F31711CA44A44002A9A63 /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		170F31751CA44A44002A9A63 /* testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testUITests.m; sourceTree = "<group>"; };
 		170F31771CA44A44002A9A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1788468F1CA7EBC200FED0BA /* JFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewController.h; sourceTree = "<group>"; };
+		178846901CA7EBC200FED0BA /* JFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTableViewController.m; sourceTree = "<group>"; };
+		178846921CA7EC0500FED0BA /* JFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewCell.h; sourceTree = "<group>"; };
+		178846931CA7EC0500FED0BA /* JFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTableViewCell.m; sourceTree = "<group>"; };
 		38BB9F4D561505EF627D510F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		870210094A08B052C3095192 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +118,10 @@
 				170F31541CA44A44002A9A63 /* AppDelegate.m */,
 				170F31561CA44A44002A9A63 /* ViewController.h */,
 				170F31571CA44A44002A9A63 /* ViewController.m */,
+				1788468F1CA7EBC200FED0BA /* JFTableViewController.h */,
+				178846901CA7EBC200FED0BA /* JFTableViewController.m */,
+				178846921CA7EC0500FED0BA /* JFTableViewCell.h */,
+				178846931CA7EC0500FED0BA /* JFTableViewCell.m */,
 				170F31591CA44A44002A9A63 /* Main.storyboard */,
 				170F315C1CA44A44002A9A63 /* Assets.xcassets */,
 				170F315E1CA44A44002A9A63 /* LaunchScreen.storyboard */,
@@ -346,6 +356,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				170F31581CA44A44002A9A63 /* ViewController.m in Sources */,
+				178846911CA7EBC200FED0BA /* JFTableViewController.m in Sources */,
+				178846941CA7EC0500FED0BA /* JFTableViewCell.m in Sources */,
 				170F31551CA44A44002A9A63 /* AppDelegate.m in Sources */,
 				170F31521CA44A44002A9A63 /* main.m in Sources */,
 			);
