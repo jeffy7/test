@@ -14,5 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *desc;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
+@property (nonatomic, strong) NSMutableArray *dataArray;
+
 
 @end

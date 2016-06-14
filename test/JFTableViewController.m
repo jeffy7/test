@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    _dataArray = [[NSMutableArray alloc] init];
     
     
 }
@@ -37,6 +37,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     JFTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"JFTableViewCell"];
+    cell.dataArray = _dataArray;
+//    cell.name.text = @"just do it !";
     
     return cell;
 }

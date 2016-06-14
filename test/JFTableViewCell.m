@@ -10,4 +10,11 @@
 
 @implementation JFTableViewCell
 
+
+
+- (void)setDataArray:(NSMutableArray *)dataArray {
+    _dataArray = dataArray;
+    
+    self.name.text = @"what the fuck!";
+}
 @end
