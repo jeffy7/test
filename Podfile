@@ -1,6 +1,14 @@
 platform :ios, '7.0'
 
-pod "AFNetworking", "2.6.0"
-pod "Masonry", "0.6.4"
-pod "SDWebImage", "3.8.1"
-
+pod 'AFNetworking', '~> 3.1.0'
+pod 'FMDB', '~> 2.6.2'
+pod 'SafeKit', '~> 1.4.1'
+pod 'JSPatch', '~> 1.0'
+pod 'Masonry', '~> 1.0.1'
+pod 'SDWebImage', '~> 3.8.1'
+pod 'MBProgressHUD', '~> 0.9.2'
+pod 'MJRefresh', '~> 3.1.3'
+pod 'TYAttributedLabel', '~> 2.6.1'
+pod 'DLog', '~> 1.0.3'
+pod 'NJKWebViewProgress', '~> 0.2.3'
+pod 'YYModel', '~> 1.0.4'
