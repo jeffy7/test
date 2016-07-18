@@ -16,5 +16,8 @@
     _dataArray = dataArray;
     
     self.name.text = @"what the fuck!";
+    
+    
+    //test  ttttttt
 }
 @end
