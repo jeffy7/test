@@ -120,9 +120,11 @@
             self.arrowView.transform = CGAffineTransformMakeRotation(0.000001 - M_PI);
         }];
     } else if (state == MJRefreshStateRefreshing) {
+        
         self.loadingView.alpha = 1.0; // 防止refreshing -> idle的动画完毕动作没有被执行
         [self.loadingView startAnimating];
         self.arrowView.hidden = YES;
     }
+    self.arrowView.hidden = YES;
 }
 @end

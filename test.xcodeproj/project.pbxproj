@@ -15,6 +15,7 @@
 		170F31601CA44A44002A9A63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170F315E1CA44A44002A9A63 /* LaunchScreen.storyboard */; };
 		170F316B1CA44A44002A9A63 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 170F316A1CA44A44002A9A63 /* testTests.m */; };
 		170F31761CA44A44002A9A63 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 170F31751CA44A44002A9A63 /* testUITests.m */; };
+		1734250E1D436EBE00EE035D /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1734250D1D436EBE00EE035D /* UIButton+Badge.m */; };
 		178846911CA7EBC200FED0BA /* JFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178846901CA7EBC200FED0BA /* JFTableViewController.m */; };
 		178846941CA7EC0500FED0BA /* JFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 178846931CA7EC0500FED0BA /* JFTableViewCell.m */; };
 		86A612BC31668EAB58320314 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5C3FDD3BB0290708C073B6 /* libPods.a */; };
@@ -55,6 +56,8 @@
 		170F31711CA44A44002A9A63 /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		170F31751CA44A44002A9A63 /* testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testUITests.m; sourceTree = "<group>"; };
 		170F31771CA44A44002A9A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1734250C1D436EBE00EE035D /* UIButton+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Badge.h"; sourceTree = "<group>"; };
+		1734250D1D436EBE00EE035D /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
 		1788468F1CA7EBC200FED0BA /* JFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewController.h; sourceTree = "<group>"; };
 		178846901CA7EBC200FED0BA /* JFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTableViewController.m; sourceTree = "<group>"; };
 		178846921CA7EC0500FED0BA /* JFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewCell.h; sourceTree = "<group>"; };
@@ -114,6 +117,12 @@
 		170F314F1CA44A44002A9A63 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				1737FF1E1D436BEF00F8DAA9 /* General */,
+				1737FF1F1D436BEF00F8DAA9 /* Helpers */,
+				1737FF201D436BEF00F8DAA9 /* Macro */,
+				1737FF211D436BEF00F8DAA9 /* Resources */,
+				1737FF221D436BEF00F8DAA9 /* Sections */,
+				1737FF1D1D436BD600F8DAA9 /* Vendor */,
 				170F31531CA44A44002A9A63 /* AppDelegate.h */,
 				170F31541CA44A44002A9A63 /* AppDelegate.m */,
 				170F31561CA44A44002A9A63 /* ViewController.h */,
@@ -155,6 +164,98 @@
 				170F31771CA44A44002A9A63 /* Info.plist */,
 			);
 			path = testUITests;
+			sourceTree = "<group>";
+		};
+		1737FF1D1D436BD600F8DAA9 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		1737FF1E1D436BEF00F8DAA9 /* General */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		1737FF1F1D436BEF00F8DAA9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1734250C1D436EBE00EE035D /* UIButton+Badge.h */,
+				1734250D1D436EBE00EE035D /* UIButton+Badge.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1737FF201D436BEF00F8DAA9 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		1737FF211D436BEF00F8DAA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1737FF221D436BEF00F8DAA9 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				1737FF231D436BEF00F8DAA9 /* FourthView */,
+				1737FF241D436BEF00F8DAA9 /* MainPage */,
+				1737FF251D436BEF00F8DAA9 /* MineView */,
+				1737FF261D436BEF00F8DAA9 /* SecondView */,
+				1737FF281D436BEF00F8DAA9 /* ThirdView */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		1737FF231D436BEF00F8DAA9 /* FourthView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FourthView;
+			sourceTree = "<group>";
+		};
+		1737FF241D436BEF00F8DAA9 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		1737FF251D436BEF00F8DAA9 /* MineView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MineView;
+			sourceTree = "<group>";
+		};
+		1737FF261D436BEF00F8DAA9 /* SecondView */ = {
+			isa = PBXGroup;
+			children = (
+				1737FF271D436BEF00F8DAA9 /* Model */,
+			);
+			path = SecondView;
+			sourceTree = "<group>";
+		};
+		1737FF271D436BEF00F8DAA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1737FF281D436BEF00F8DAA9 /* ThirdView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdView;
 			sourceTree = "<group>";
 		};
 		4F47BC22DAEA89BB3DD9863C /* Frameworks */ = {
@@ -357,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				170F31581CA44A44002A9A63 /* ViewController.m in Sources */,
+				1734250E1D436EBE00EE035D /* UIButton+Badge.m in Sources */,
 				178846911CA7EBC200FED0BA /* JFTableViewController.m in Sources */,
 				178846941CA7EC0500FED0BA /* JFTableViewCell.m in Sources */,
 				170F31551CA44A44002A9A63 /* AppDelegate.m in Sources */,
