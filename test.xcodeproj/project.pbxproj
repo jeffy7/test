@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170C34301D6D972E00987817 /* JFMineviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 170C342F1D6D972E00987817 /* JFMineviewController.m */; };
 		170F31521CA44A44002A9A63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 170F31511CA44A44002A9A63 /* main.m */; };
 		170F31551CA44A44002A9A63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 170F31541CA44A44002A9A63 /* AppDelegate.m */; };
 		170F31581CA44A44002A9A63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 170F31571CA44A44002A9A63 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 		170F316B1CA44A44002A9A63 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 170F316A1CA44A44002A9A63 /* testTests.m */; };
 		170F31761CA44A44002A9A63 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 170F31751CA44A44002A9A63 /* testUITests.m */; };
 		1734250E1D436EBE00EE035D /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1734250D1D436EBE00EE035D /* UIButton+Badge.m */; };
+		173425341D4604BB00EE035D /* JFCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425331D4604BB00EE035D /* JFCycleView.m */; };
+		173425371D4608E100EE035D /* JFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425361D4608E100EE035D /* JFMainViewController.m */; };
 		178846911CA7EBC200FED0BA /* JFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178846901CA7EBC200FED0BA /* JFTableViewController.m */; };
 		178846941CA7EC0500FED0BA /* JFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 178846931CA7EC0500FED0BA /* JFTableViewCell.m */; };
 		86A612BC31668EAB58320314 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5C3FDD3BB0290708C073B6 /* libPods.a */; };
@@ -40,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		0E5C3FDD3BB0290708C073B6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		170C342E1D6D972E00987817 /* JFMineviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMineviewController.h; sourceTree = "<group>"; };
+		170C342F1D6D972E00987817 /* JFMineviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFMineviewController.m; sourceTree = "<group>"; };
 		170F314D1CA44A44002A9A63 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		170F31511CA44A44002A9A63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		170F31531CA44A44002A9A63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,8 +63,12 @@
 		170F31771CA44A44002A9A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1734250C1D436EBE00EE035D /* UIButton+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Badge.h"; sourceTree = "<group>"; };
 		1734250D1D436EBE00EE035D /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
-		1788468F1CA7EBC200FED0BA /* JFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewController.h; sourceTree = "<group>"; };
-		178846901CA7EBC200FED0BA /* JFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTableViewController.m; sourceTree = "<group>"; };
+		173425321D4604BB00EE035D /* JFCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCycleView.h; sourceTree = "<group>"; };
+		173425331D4604BB00EE035D /* JFCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCycleView.m; sourceTree = "<group>"; };
+		173425351D4608E100EE035D /* JFMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMainViewController.h; sourceTree = "<group>"; };
+		173425361D4608E100EE035D /* JFMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFMainViewController.m; sourceTree = "<group>"; };
+		1788468F1CA7EBC200FED0BA /* JFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JFTableViewController.h; path = ../../JFTableViewController.h; sourceTree = "<group>"; };
+		178846901CA7EBC200FED0BA /* JFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JFTableViewController.m; path = ../../JFTableViewController.m; sourceTree = "<group>"; };
 		178846921CA7EC0500FED0BA /* JFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewCell.h; sourceTree = "<group>"; };
 		178846931CA7EC0500FED0BA /* JFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTableViewCell.m; sourceTree = "<group>"; };
 		38BB9F4D561505EF627D510F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,8 +136,6 @@
 				170F31541CA44A44002A9A63 /* AppDelegate.m */,
 				170F31561CA44A44002A9A63 /* ViewController.h */,
 				170F31571CA44A44002A9A63 /* ViewController.m */,
-				1788468F1CA7EBC200FED0BA /* JFTableViewController.h */,
-				178846901CA7EBC200FED0BA /* JFTableViewController.m */,
 				178846921CA7EC0500FED0BA /* JFTableViewCell.h */,
 				178846931CA7EC0500FED0BA /* JFTableViewCell.m */,
 				170F31591CA44A44002A9A63 /* Main.storyboard */,
@@ -176,6 +183,8 @@
 		1737FF1E1D436BEF00F8DAA9 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				173425321D4604BB00EE035D /* JFCycleView.h */,
+				173425331D4604BB00EE035D /* JFCycleView.m */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -225,6 +234,8 @@
 		1737FF241D436BEF00F8DAA9 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
+				1788468F1CA7EBC200FED0BA /* JFTableViewController.h */,
+				178846901CA7EBC200FED0BA /* JFTableViewController.m */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -232,6 +243,8 @@
 		1737FF251D436BEF00F8DAA9 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				170C342E1D6D972E00987817 /* JFMineviewController.h */,
+				170C342F1D6D972E00987817 /* JFMineviewController.m */,
 			);
 			path = MineView;
 			sourceTree = "<group>";
@@ -240,6 +253,8 @@
 			isa = PBXGroup;
 			children = (
 				1737FF271D436BEF00F8DAA9 /* Model */,
+				173425351D4608E100EE035D /* JFMainViewController.h */,
+				173425361D4608E100EE035D /* JFMainViewController.m */,
 			);
 			path = SecondView;
 			sourceTree = "<group>";
@@ -340,6 +355,7 @@
 		170F31451CA44A44002A9A63 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JF;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = je_ffy;
 				TargetAttributes = {
@@ -461,6 +477,9 @@
 				1734250E1D436EBE00EE035D /* UIButton+Badge.m in Sources */,
 				178846911CA7EBC200FED0BA /* JFTableViewController.m in Sources */,
 				178846941CA7EC0500FED0BA /* JFTableViewCell.m in Sources */,
+				173425341D4604BB00EE035D /* JFCycleView.m in Sources */,
+				173425371D4608E100EE035D /* JFMainViewController.m in Sources */,
+				170C34301D6D972E00987817 /* JFMineviewController.m in Sources */,
 				170F31551CA44A44002A9A63 /* AppDelegate.m in Sources */,
 				170F31521CA44A44002A9A63 /* main.m in Sources */,
 			);

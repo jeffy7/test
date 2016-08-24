@@ -9,12 +9,12 @@
 #import "JFTableViewController.h"
 #import "JFTableViewCell.h"
 #import "UIButton+Badge.h"
-#import "MJRefresh.h"
+#import "JFCycleView.h"
 
 @interface JFTableViewController ()
 
 @property (nonatomic, strong) NSMutableArray *dataArray;
-@property (nonatomic, strong) UIButton *button ;
+@property (nonatomic, strong) JFCycleView *cycleView;
 
 @end
 
@@ -25,31 +25,39 @@
     [super viewDidLoad];
     
     _dataArray = [[NSMutableArray alloc] init];
-    
-    _button = [[UIButton alloc] initWithFrame:CGRectMake(50, 50, 50, 50)];
-    _button.badge = @"10";
-    _button.layer.borderWidth = 0.50f;
-    _button.layer.borderColor = [UIColor redColor].CGColor;
-    [_button setTitle:@"button" forState:UIControlStateNormal];
-    [self.view addSubview:_button];
-    
-    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
 
-        [self performSelector:@selector(refreshEnding) withObject:self afterDelay:3.0f];
-    }];
-    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
-        [self performSelector:@selector(nextPageEnding) withObject:self afterDelay:3.0f];
-    }];
+//    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+//
+//        [self performSelector:@selector(refreshEnding) withObject:self afterDelay:3.0f];
+//    }];
+//    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+//        [self performSelector:@selector(nextPageEnding) withObject:self afterDelay:3.0f];
+//    }];
 
+    
+    self.cycleView.frame = CGRectMake(50, 50, 100, 100);
+    self.cycleView.layer.borderWidth = 0.50f;
+    self.cycleView.layer.borderColor = [UIColor redColor].CGColor;
     
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [_cycleView scrollDidScroll:scrollView];
+    
+}
+- (JFCycleView *)cycleView {
+    if (!_cycleView) {
+        JFCycleView *cycleView = [[JFCycleView alloc] init];
+        [self.view addSubview:_cycleView = cycleView];
+    }
+    return _cycleView;
+}
 - (void)refreshEnding {
-    [self.tableView.mj_header endRefreshing];
+//    [self.tableView.mj_header endRefreshing];
 }
 
 - (void)nextPageEnding {
-    [self.tableView.mj_footer endRefreshing];
+//    [self.tableView.mj_footer endRefreshing];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -69,11 +77,6 @@
     
     return cell;
 }
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    _button.badge = [NSString stringWithFormat:@"1111111111%ld",indexPath.row];
-}
-
 
 
 @end

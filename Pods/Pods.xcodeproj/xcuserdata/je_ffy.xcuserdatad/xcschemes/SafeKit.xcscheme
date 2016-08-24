@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '83F0F4146425E9794560F015'
+               BlueprintIdentifier = '2431C55DE3844E51527EF86D'
                BlueprintName = 'SafeKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libSafeKit.a'>
