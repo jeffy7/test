@@ -10,7 +10,8 @@
 
 //2.0.0 fix bug
 //2.0.1 fix bug
-//2.0 fix bug done 
+//2.0 fix bug done
+//hot fix the first bug 
 @interface AppDelegate ()
 
 @end
