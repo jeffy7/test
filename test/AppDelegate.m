@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 
-//2.0.0 fix bug 
+//2.0.0 fix bug
+//2.0.1 fix bug
 @interface AppDelegate ()
 
 @end
