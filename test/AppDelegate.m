@@ -14,6 +14,7 @@
 
 @implementation AppDelegate
 //fix many bug
+//fix bug done
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
