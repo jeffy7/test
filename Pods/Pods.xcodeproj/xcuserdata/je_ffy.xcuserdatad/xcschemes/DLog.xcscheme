@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3AA18020E2BF3059AA9D630F'
+               BlueprintIdentifier = 'B7D65F39A7AF0323ED973D4A'
                BlueprintName = 'DLog'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libDLog.a'>
