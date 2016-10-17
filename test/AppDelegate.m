@@ -13,8 +13,6 @@
 //2.0 fix bug done
 //hot fix the first bug
 //develop 上写了orderlist
-//test merge rebase
-
 
 @interface AppDelegate ()
 
