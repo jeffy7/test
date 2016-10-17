@@ -15,7 +15,6 @@
 //develop 上写了orderlist
 //test merge rebase
 
-//随便写点什么    develop
 
 @interface AppDelegate ()
 
