@@ -8,19 +8,11 @@
 
 #import "AppDelegate.h"
 
-//2.0.0 fix bug
-//2.0.1 fix bug
-//2.0 fix bug done
-//hot fix the first bug
-//develop 上写了orderlist
-
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-//fix many bug
-//fix bug done
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

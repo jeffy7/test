@@ -21,6 +21,14 @@
 		173425371D4608E100EE035D /* JFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425361D4608E100EE035D /* JFMainViewController.m */; };
 		178846911CA7EBC200FED0BA /* JFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178846901CA7EBC200FED0BA /* JFTableViewController.m */; };
 		178846941CA7EC0500FED0BA /* JFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 178846931CA7EC0500FED0BA /* JFTableViewCell.m */; };
+		17C413691DB782F000188556 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4135C1DB782F000188556 /* TAAbstractDotView.m */; };
+		17C4136A1DB782F000188556 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4135E1DB782F000188556 /* TAAnimatedDotView.m */; };
+		17C4136B1DB782F000188556 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C413601DB782F000188556 /* TADotView.m */; };
+		17C4136C1DB782F000188556 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C413621DB782F000188556 /* TAPageControl.m */; };
+		17C4136D1DB782F000188556 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C413641DB782F000188556 /* SDCollectionViewCell.m */; };
+		17C4136E1DB782F000188556 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C413661DB782F000188556 /* SDCycleScrollView.m */; };
+		17C4136F1DB782F000188556 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C413681DB782F000188556 /* UIView+SDExtension.m */; };
+		17C413721DB783D900188556 /* JFSDCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C413711DB783D900188556 /* JFSDCycleViewController.m */; };
 		86A612BC31668EAB58320314 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5C3FDD3BB0290708C073B6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +79,22 @@
 		178846901CA7EBC200FED0BA /* JFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JFTableViewController.m; path = ../../JFTableViewController.m; sourceTree = "<group>"; };
 		178846921CA7EC0500FED0BA /* JFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewCell.h; sourceTree = "<group>"; };
 		178846931CA7EC0500FED0BA /* JFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTableViewCell.m; sourceTree = "<group>"; };
+		17C4135B1DB782F000188556 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		17C4135C1DB782F000188556 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		17C4135D1DB782F000188556 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		17C4135E1DB782F000188556 /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		17C4135F1DB782F000188556 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		17C413601DB782F000188556 /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		17C413611DB782F000188556 /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		17C413621DB782F000188556 /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		17C413631DB782F000188556 /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		17C413641DB782F000188556 /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		17C413651DB782F000188556 /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		17C413661DB782F000188556 /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		17C413671DB782F000188556 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		17C413681DB782F000188556 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		17C413701DB783D900188556 /* JFSDCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFSDCycleViewController.h; sourceTree = "<group>"; };
+		17C413711DB783D900188556 /* JFSDCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFSDCycleViewController.m; sourceTree = "<group>"; };
 		38BB9F4D561505EF627D510F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		870210094A08B052C3095192 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -243,6 +267,7 @@
 		1737FF251D436BEF00F8DAA9 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				17C413571DB782C900188556 /* SDCycleCollectionView */,
 				170C342E1D6D972E00987817 /* JFMineviewController.h */,
 				170C342F1D6D972E00987817 /* JFMineviewController.m */,
 			);
@@ -271,6 +296,53 @@
 			children = (
 			);
 			path = ThirdView;
+			sourceTree = "<group>";
+		};
+		17C413571DB782C900188556 /* SDCycleCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				17C413581DB782D400188556 /* Vendor */,
+				17C413701DB783D900188556 /* JFSDCycleViewController.h */,
+				17C413711DB783D900188556 /* JFSDCycleViewController.m */,
+			);
+			path = SDCycleCollectionView;
+			sourceTree = "<group>";
+		};
+		17C413581DB782D400188556 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				17C413591DB782F000188556 /* SDCycleScrollView */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		17C413591DB782F000188556 /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				17C4135A1DB782F000188556 /* PageControl */,
+				17C413631DB782F000188556 /* SDCollectionViewCell.h */,
+				17C413641DB782F000188556 /* SDCollectionViewCell.m */,
+				17C413651DB782F000188556 /* SDCycleScrollView.h */,
+				17C413661DB782F000188556 /* SDCycleScrollView.m */,
+				17C413671DB782F000188556 /* UIView+SDExtension.h */,
+				17C413681DB782F000188556 /* UIView+SDExtension.m */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		17C4135A1DB782F000188556 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				17C4135B1DB782F000188556 /* TAAbstractDotView.h */,
+				17C4135C1DB782F000188556 /* TAAbstractDotView.m */,
+				17C4135D1DB782F000188556 /* TAAnimatedDotView.h */,
+				17C4135E1DB782F000188556 /* TAAnimatedDotView.m */,
+				17C4135F1DB782F000188556 /* TADotView.h */,
+				17C413601DB782F000188556 /* TADotView.m */,
+				17C413611DB782F000188556 /* TAPageControl.h */,
+				17C413621DB782F000188556 /* TAPageControl.m */,
+			);
+			path = PageControl;
 			sourceTree = "<group>";
 		};
 		4F47BC22DAEA89BB3DD9863C /* Frameworks */ = {
@@ -474,14 +546,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				170F31581CA44A44002A9A63 /* ViewController.m in Sources */,
+				17C4136B1DB782F000188556 /* TADotView.m in Sources */,
+				17C413691DB782F000188556 /* TAAbstractDotView.m in Sources */,
 				1734250E1D436EBE00EE035D /* UIButton+Badge.m in Sources */,
+				17C4136E1DB782F000188556 /* SDCycleScrollView.m in Sources */,
 				178846911CA7EBC200FED0BA /* JFTableViewController.m in Sources */,
 				178846941CA7EC0500FED0BA /* JFTableViewCell.m in Sources */,
+				17C4136F1DB782F000188556 /* UIView+SDExtension.m in Sources */,
+				17C4136C1DB782F000188556 /* TAPageControl.m in Sources */,
 				173425341D4604BB00EE035D /* JFCycleView.m in Sources */,
 				173425371D4608E100EE035D /* JFMainViewController.m in Sources */,
+				17C4136D1DB782F000188556 /* SDCollectionViewCell.m in Sources */,
+				17C413721DB783D900188556 /* JFSDCycleViewController.m in Sources */,
 				170C34301D6D972E00987817 /* JFMineviewController.m in Sources */,
 				170F31551CA44A44002A9A63 /* AppDelegate.m in Sources */,
 				170F31521CA44A44002A9A63 /* main.m in Sources */,
+				17C4136A1DB782F000188556 /* TAAnimatedDotView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
