@@ -12,7 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *desc;
-@property (strong, nonatomic) UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageview;
+
 @property (nonatomic, strong) NSMutableArray *dataArray;
 
 
