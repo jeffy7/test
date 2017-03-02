@@ -7,7 +7,6 @@
 //
 
 #import "UITableView+CellLine.h"
-#import "UIColor+HEX.h"
 
 @implementation UITableView (CellLine)
 

@@ -8,8 +8,7 @@
 
 #import "UIButton+SPBadge.h"
 #import <objc/runtime.h>
-#import "UIColor+SPHex.h"
-#import "UIColor+HEX.h"
+
 
 #define NUMBER_FONT                         (@"Futura-Medium")
 

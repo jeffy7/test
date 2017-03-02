@@ -7,7 +7,6 @@
 //
 
 #import "UILabel+Common.h"
-#import "NSString+Extension.h"
 
 @implementation UILabel (Common)
 
