@@ -8,7 +8,7 @@
 
 #import "JFTableViewController.h"
 #import "JFTableViewCell.h"
-#import "UIButton+Badge.h"
+#import "UIButton+SPBadge.h"
 #import "JFCycleView.h"
 
 @interface JFTableViewController ()
