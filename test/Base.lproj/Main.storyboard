@@ -27,7 +27,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="waG-zx-Kyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4241" y="-1666"/>
+            <point key="canvasLocation" x="-4482" y="-1353"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Nq1-uz-Soz">
+            <objects>
+                <navigationController id="rJn-VP-q44" customClass="JFNavigationViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="3QP-Lj-OxE"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A5k-Z1-HTk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zJx-sV-reB" kind="relationship" relationship="rootViewController" id="J5K-h2-TbD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hud-Vz-YLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6015" y="-2110"/>
         </scene>
         <!--列表-->
         <scene sceneID="NzB-kg-qSb">
@@ -96,7 +113,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGu-cL-aqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5794" y="-1665"/>
+            <point key="canvasLocation" x="-6015" y="-1353"/>
         </scene>
         <!--首页-->
         <scene sceneID="7e6-kk-jsl">
@@ -112,10 +129,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="首页" id="8zT-h3-xRY"/>
+                    <navigationItem key="navigationItem" id="KTb-ra-XAq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YjN-aS-cvD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5052" y="-1665"/>
+            <point key="canvasLocation" x="-5250" y="-1353"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="svk-Qz-Kk7">
@@ -127,14 +145,48 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="zJx-sV-reB" kind="relationship" relationship="viewControllers" id="jhs-6c-2oz"/>
-                        <segue destination="DiO-7R-vp0" kind="relationship" relationship="viewControllers" id="vPK-JS-uxP"/>
-                        <segue destination="jot-97-td9" kind="relationship" relationship="viewControllers" id="PEL-Kj-J4o"/>
+                        <segue destination="rJn-VP-q44" kind="relationship" relationship="viewControllers" id="BAt-JX-7t1"/>
+                        <segue destination="FAr-5L-V8j" kind="relationship" relationship="viewControllers" id="XTP-ff-fQt"/>
+                        <segue destination="dBe-Hg-0oV" kind="relationship" relationship="viewControllers" id="CJd-V7-j9G"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OMm-zM-z5R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5015" y="-2580"/>
+            <point key="canvasLocation" x="-5249" y="-2922"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="z1l-f1-GoO">
+            <objects>
+                <navigationController id="FAr-5L-V8j" customClass="JFNavigationViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="2wD-LE-YPa"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bJl-2T-hNx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DiO-7R-vp0" kind="relationship" relationship="rootViewController" id="3p9-As-CCM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fmu-zI-cnC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5250" y="-2109"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="sjk-3H-ADy">
+            <objects>
+                <navigationController id="dBe-Hg-0oV" customClass="JFNavigationViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="tyv-gZ-yQz"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3PR-A7-OmS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jot-97-td9" kind="relationship" relationship="rootViewController" id="whZ-zb-vEV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FEY-zE-BKT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4481" y="-2110"/>
         </scene>
     </scenes>
 </document>

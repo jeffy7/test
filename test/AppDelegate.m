@@ -47,7 +47,7 @@
     JFTabBarViewController *rootTabBarViewController = [story instantiateViewControllerWithIdentifier:@"JFTabBarViewController"];
     
     //由navigationController推向我们要推向的view
-    self.window.rootViewController = [[JFNavigationViewController alloc] initWithRootViewController:rootTabBarViewController];
+    self.window.rootViewController = rootTabBarViewController;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
