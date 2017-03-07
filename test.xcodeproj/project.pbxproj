@@ -39,6 +39,7 @@
 		17A545141E68074400995CF2 /* UIColor+SPHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A545131E68074300995CF2 /* UIColor+SPHex.m */; };
 		17A545191E68075500995CF2 /* UIImage+SPScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A545161E68075500995CF2 /* UIImage+SPScale.m */; };
 		17A5451A1E68075500995CF2 /* UIImage+Url.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A545181E68075500995CF2 /* UIImage+Url.m */; };
+		17A5454E1E69677D00995CF2 /* JFReactiveCocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5454D1E69677D00995CF2 /* JFReactiveCocoaViewController.m */; };
 		17C413691DB782F000188556 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4135C1DB782F000188556 /* TAAbstractDotView.m */; };
 		17C4136A1DB782F000188556 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4135E1DB782F000188556 /* TAAnimatedDotView.m */; };
 		17C4136B1DB782F000188556 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C413601DB782F000188556 /* TADotView.m */; };
@@ -47,6 +48,9 @@
 		17C4136E1DB782F000188556 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C413661DB782F000188556 /* SDCycleScrollView.m */; };
 		17C4136F1DB782F000188556 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C413681DB782F000188556 /* UIView+SDExtension.m */; };
 		17C413721DB783D900188556 /* JFSDCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C413711DB783D900188556 /* JFSDCycleViewController.m */; };
+		17DFD9CE1E6E5313003FE611 /* JFRounderCornerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9CD1E6E5313003FE611 /* JFRounderCornerViewController.m */; };
+		17DFD9D21E6E53FD003FE611 /* JFNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9D11E6E53FD003FE611 /* JFNavigationViewController.m */; };
+		17DFD9D51E6E5B0B003FE611 /* JFTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9D41E6E5B0B003FE611 /* JFTabBarViewController.m */; };
 		65680077FC38BACE1E97E662 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E732AEDE8E04EF846BCD4795 /* libPods-test.a */; };
 /* End PBXBuildFile section */
 
@@ -134,6 +138,8 @@
 		17A545181E68075500995CF2 /* UIImage+Url.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Url.m"; sourceTree = "<group>"; };
 		17A5451C1E68089B00995CF2 /* JFCategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFCategoryHeader.h; sourceTree = "<group>"; };
 		17A5451D1E680D4500995CF2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		17A5454C1E69677D00995CF2 /* JFReactiveCocoaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFReactiveCocoaViewController.h; sourceTree = "<group>"; };
+		17A5454D1E69677D00995CF2 /* JFReactiveCocoaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFReactiveCocoaViewController.m; sourceTree = "<group>"; };
 		17C4135B1DB782F000188556 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
 		17C4135C1DB782F000188556 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
 		17C4135D1DB782F000188556 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
@@ -150,6 +156,12 @@
 		17C413681DB782F000188556 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
 		17C413701DB783D900188556 /* JFSDCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFSDCycleViewController.h; sourceTree = "<group>"; };
 		17C413711DB783D900188556 /* JFSDCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFSDCycleViewController.m; sourceTree = "<group>"; };
+		17DFD9CC1E6E5313003FE611 /* JFRounderCornerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFRounderCornerViewController.h; sourceTree = "<group>"; };
+		17DFD9CD1E6E5313003FE611 /* JFRounderCornerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFRounderCornerViewController.m; sourceTree = "<group>"; };
+		17DFD9D01E6E53FD003FE611 /* JFNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFNavigationViewController.h; sourceTree = "<group>"; };
+		17DFD9D11E6E53FD003FE611 /* JFNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFNavigationViewController.m; sourceTree = "<group>"; };
+		17DFD9D31E6E5B0B003FE611 /* JFTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTabBarViewController.h; sourceTree = "<group>"; };
+		17DFD9D41E6E5B0B003FE611 /* JFTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTabBarViewController.m; sourceTree = "<group>"; };
 		59D77987FC605555EB81FB43 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		8370AE36D28B23832B881E54 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 		E732AEDE8E04EF846BCD4795 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -296,6 +308,7 @@
 		1737FF221D436BEF00F8DAA9 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				17DFD9CF1E6E53E0003FE611 /* BaseSystemSetting */,
 				1737FF231D436BEF00F8DAA9 /* FourthView */,
 				1737FF241D436BEF00F8DAA9 /* MainPage */,
 				1737FF251D436BEF00F8DAA9 /* MineView */,
@@ -324,6 +337,8 @@
 		1737FF251D436BEF00F8DAA9 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				17DFD9CA1E6E52ED003FE611 /* RounderCorner */,
+				17A5454A1E69674600995CF2 /* ReactiveCocoa */,
 				17C413571DB782C900188556 /* SDCycleCollectionView */,
 				170C342E1D6D972E00987817 /* JFMineviewController.h */,
 				170C342F1D6D972E00987817 /* JFMineviewController.m */,
@@ -488,6 +503,23 @@
 			path = TextField;
 			sourceTree = "<group>";
 		};
+		17A5454A1E69674600995CF2 /* ReactiveCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				17A5454B1E69676100995CF2 /* Controller */,
+			);
+			path = ReactiveCocoa;
+			sourceTree = "<group>";
+		};
+		17A5454B1E69676100995CF2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17A5454C1E69677D00995CF2 /* JFReactiveCocoaViewController.h */,
+				17A5454D1E69677D00995CF2 /* JFReactiveCocoaViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		17C413571DB782C900188556 /* SDCycleCollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -533,6 +565,34 @@
 				17C413621DB782F000188556 /* TAPageControl.m */,
 			);
 			path = PageControl;
+			sourceTree = "<group>";
+		};
+		17DFD9CA1E6E52ED003FE611 /* RounderCorner */ = {
+			isa = PBXGroup;
+			children = (
+				17DFD9CB1E6E530B003FE611 /* Controller */,
+			);
+			path = RounderCorner;
+			sourceTree = "<group>";
+		};
+		17DFD9CB1E6E530B003FE611 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17DFD9CC1E6E5313003FE611 /* JFRounderCornerViewController.h */,
+				17DFD9CD1E6E5313003FE611 /* JFRounderCornerViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		17DFD9CF1E6E53E0003FE611 /* BaseSystemSetting */ = {
+			isa = PBXGroup;
+			children = (
+				17DFD9D01E6E53FD003FE611 /* JFNavigationViewController.h */,
+				17DFD9D11E6E53FD003FE611 /* JFNavigationViewController.m */,
+				17DFD9D31E6E5B0B003FE611 /* JFTabBarViewController.h */,
+				17DFD9D41E6E5B0B003FE611 /* JFTabBarViewController.m */,
+			);
+			path = BaseSystemSetting;
 			sourceTree = "<group>";
 		};
 		2E7ACA662A52257823AF93D6 /* Pods */ = {
@@ -753,6 +813,7 @@
 				178846941CA7EC0500FED0BA /* JFTableViewCell.m in Sources */,
 				17A545111E68073A00995CF2 /* UIButton+SPBadge.m in Sources */,
 				17A544F01E6805DB00995CF2 /* UIImageView+Barcode.m in Sources */,
+				17DFD9D21E6E53FD003FE611 /* JFNavigationViewController.m in Sources */,
 				17A544D81E67FE4C00995CF2 /* NSString+Extension.m in Sources */,
 				17A5451A1E68075500995CF2 /* UIImage+Url.m in Sources */,
 				17A544E31E67FEFE00995CF2 /* UIView+AEBHandyAutoLayout.m in Sources */,
@@ -760,6 +821,7 @@
 				17C4136F1DB782F000188556 /* UIView+SDExtension.m in Sources */,
 				17C4136C1DB782F000188556 /* TAPageControl.m in Sources */,
 				173425341D4604BB00EE035D /* JFCycleView.m in Sources */,
+				17A5454E1E69677D00995CF2 /* JFReactiveCocoaViewController.m in Sources */,
 				173425371D4608E100EE035D /* JFMainViewController.m in Sources */,
 				17C4136D1DB782F000188556 /* SDCollectionViewCell.m in Sources */,
 				17C413721DB783D900188556 /* JFSDCycleViewController.m in Sources */,
@@ -768,8 +830,10 @@
 				170F31551CA44A44002A9A63 /* AppDelegate.m in Sources */,
 				170F31521CA44A44002A9A63 /* main.m in Sources */,
 				17C4136A1DB782F000188556 /* TAAnimatedDotView.m in Sources */,
+				17DFD9CE1E6E5313003FE611 /* JFRounderCornerViewController.m in Sources */,
 				17A544FE1E6806BA00995CF2 /* UIButton+countDown.m in Sources */,
 				17A545041E6806E900995CF2 /* UILabel+SPUtils.m in Sources */,
+				17DFD9D51E6E5B0B003FE611 /* JFTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,15 +8,46 @@
 
 #import "AppDelegate.h"
 ///////////////////
+
+#import "JFNavigationViewController.h"
+#import "JFTabBarViewController.h"
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    return YES;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self prepareRootViewcontroller];
     return YES;
+}
+
+
+- (UIWindow *)window {
+    if (!_window) {
+        _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        _window.backgroundColor = [UIColor whiteColor];
+    }
+    
+    return _window;
+}
+
+- (void)prepareRootViewcontroller {
+    
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    //由storyboard根据myView的storyBoardID来获取我们要切换的视图
+    JFTabBarViewController *rootTabBarViewController = [story instantiateViewControllerWithIdentifier:@"JFTabBarViewController"];
+    
+    //由navigationController推向我们要推向的view
+    self.window.rootViewController = [[JFNavigationViewController alloc] initWithRootViewController:rootTabBarViewController];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
