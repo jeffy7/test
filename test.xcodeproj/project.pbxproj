@@ -51,6 +51,7 @@
 		17DFD9CE1E6E5313003FE611 /* JFRounderCornerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9CD1E6E5313003FE611 /* JFRounderCornerViewController.m */; };
 		17DFD9D21E6E53FD003FE611 /* JFNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9D11E6E53FD003FE611 /* JFNavigationViewController.m */; };
 		17DFD9D51E6E5B0B003FE611 /* JFTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9D41E6E5B0B003FE611 /* JFTabBarViewController.m */; };
+		17DFD9D91E700221003FE611 /* JFCoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9D81E700221003FE611 /* JFCoreAnimationViewController.m */; };
 		65680077FC38BACE1E97E662 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E732AEDE8E04EF846BCD4795 /* libPods-test.a */; };
 /* End PBXBuildFile section */
 
@@ -162,6 +163,8 @@
 		17DFD9D11E6E53FD003FE611 /* JFNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFNavigationViewController.m; sourceTree = "<group>"; };
 		17DFD9D31E6E5B0B003FE611 /* JFTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTabBarViewController.h; sourceTree = "<group>"; };
 		17DFD9D41E6E5B0B003FE611 /* JFTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTabBarViewController.m; sourceTree = "<group>"; };
+		17DFD9D71E700221003FE611 /* JFCoreAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCoreAnimationViewController.h; sourceTree = "<group>"; };
+		17DFD9D81E700221003FE611 /* JFCoreAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCoreAnimationViewController.m; sourceTree = "<group>"; };
 		59D77987FC605555EB81FB43 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		8370AE36D28B23832B881E54 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 		E732AEDE8E04EF846BCD4795 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -337,6 +340,7 @@
 		1737FF251D436BEF00F8DAA9 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				17DFD9D61E70020F003FE611 /* CoreAnimation */,
 				17DFD9CA1E6E52ED003FE611 /* RounderCorner */,
 				17A5454A1E69674600995CF2 /* ReactiveCocoa */,
 				17C413571DB782C900188556 /* SDCycleCollectionView */,
@@ -595,6 +599,15 @@
 			path = BaseSystemSetting;
 			sourceTree = "<group>";
 		};
+		17DFD9D61E70020F003FE611 /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				17DFD9D71E700221003FE611 /* JFCoreAnimationViewController.h */,
+				17DFD9D81E700221003FE611 /* JFCoreAnimationViewController.m */,
+			);
+			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
 		2E7ACA662A52257823AF93D6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -821,6 +834,7 @@
 				17C4136F1DB782F000188556 /* UIView+SDExtension.m in Sources */,
 				17C4136C1DB782F000188556 /* TAPageControl.m in Sources */,
 				173425341D4604BB00EE035D /* JFCycleView.m in Sources */,
+				17DFD9D91E700221003FE611 /* JFCoreAnimationViewController.m in Sources */,
 				17A5454E1E69677D00995CF2 /* JFReactiveCocoaViewController.m in Sources */,
 				173425371D4608E100EE035D /* JFMainViewController.m in Sources */,
 				17C4136D1DB782F000188556 /* SDCollectionViewCell.m in Sources */,

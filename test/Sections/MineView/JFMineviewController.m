@@ -11,6 +11,7 @@
 //
 #import "JFSDCycleViewController.h"
 #import "JFRounderCornerViewController.h"
+#import "JFCoreAnimationViewController.h"
 
 @interface JFMineviewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSArray *dataArray;
@@ -24,7 +25,8 @@
     [super viewDidLoad];
     self.dataArray = @[@"SDCycleCollectionView - 无限循环图片、文字轮播器",
                        @"ReactiveCocoa 实战",
-                       @"iOS 圆角设置 (RounderCorner)"];
+                       @"iOS 圆角设置 (RounderCorner)",
+                       @"动画"];
     self.view.backgroundColor = [UIColor yellowColor];
     [self.tableView reloadData];
 }
@@ -68,6 +70,10 @@
     }else if (indexPath.row == 2){
         JFRounderCornerViewController *VC = [[JFRounderCornerViewController alloc] init];
         VC.title = @"RounderCorner";
+        [self.navigationController pushViewController:VC animated:YES];
+    }else if (indexPath.row == 3){
+        JFCoreAnimationViewController *VC = [[JFCoreAnimationViewController alloc] init];
+        VC.title = @"CoreAnimation";
         [self.navigationController pushViewController:VC animated:YES];
     }
 }
