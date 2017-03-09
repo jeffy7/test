@@ -11,6 +11,7 @@
 @interface JFCoreAnimationViewController ()
 
 @property (nonatomic,strong) UIView *demoView;
+@property (nonatomic, strong) UIButton *stopAnimationButton;
 
 @end
 
@@ -19,6 +20,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self.stopAnimationButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.view).offset(-10);
+        make.bottom.equalTo(self.view).offset(-10);
+        make.width.height.equalTo(@60);
+    }];
     
     NSArray *titles = @[@"淡入淡出",@"缩放",@"旋转",@"平移"];
     for (unsigned int i = 0; i < titles.count; i++) {
@@ -44,45 +51,72 @@
     // Do any additional setup after loading the view.
 }
 
+- (UIButton *)stopAnimationButton {
+    if (!_stopAnimationButton) {
+        _stopAnimationButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _stopAnimationButton.backgroundColor = [UIColor blueColor];
+        [_stopAnimationButton setTitle:@"Stop" forState:UIControlStateNormal];
+        [_stopAnimationButton addTarget:self action:@selector(stopAnimation) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:_stopAnimationButton];
+    }
+    
+    return _stopAnimationButton;
+}
+
+- (void)stopAnimation {
+    [_demoView.layer removeAllAnimations];
+}
+
 - (void)dosomeThing:(UIButton *)sender {
 //    CABasicAnimation *animation = nil;
-//    switch (sender.tag) {
-//        case 0:{
-//            //淡如淡出
-//            animation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-//            [animation setFromValue:@1.0];
-//            [animation setToValue:@0.1];
-//        }break;
-//        case 1:{
-//            //缩放
-//            animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-//            [animation setFromValue:@1.0];//设置起始值
-//            [animation setToValue:@0.1];//设置目标值
-//        }break;
-//        case 2:{
-//            //旋转
-//            animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
-//            //setFromValue不设置,默认以当前状态为准
-//            [animation setToValue:@(M_PI)];
-//        }break;
-//        case 3:{
-//            //平移
+    switch (sender.tag) {
+        case 0:{
+            //淡如淡出
+            CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+            animation.fromValue = [NSNumber numberWithFloat:1.0];
+            animation.toValue = [NSNumber numberWithFloat: 0.0];
+            animation.autoreverses = YES;//
+            animation.repeatCount = MAXFLOAT;//MAXFLOAT
+            animation.duration = 3.0f;
+            
+            [_demoView.layer addAnimation:animation forKey:@"test"];
+        }break;
+        case 1:{
+            //缩放
+            CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+            animation.fromValue = [NSNumber numberWithFloat:1.0f];
+            animation.toValue = [NSNumber numberWithFloat:2.0f];
+            animation.autoreverses = YES;
+            animation.repeatCount = MAXFLOAT;
+            animation.duration = 3.0f;
+            [_demoView.layer addAnimation:animation forKey:@"scale"];
+        }break;
+        case 2:{
+            //旋转
+            CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.x"];
+            animation.fromValue = [NSNumber numberWithFloat:0.0];//setFromValue不设置,默认以当前状态为准
+            animation.toValue = [NSNumber numberWithFloat: M_PI];
+            animation.autoreverses = YES;
+            animation.repeatCount = MAXFLOAT;
+            animation.duration = 3.0f;
+            
+            [_demoView.layer addAnimation:animation forKey:@"test"];
+        }break;
+        case 3:{
+            //平移
 //            animation = [CABasicAnimation animationWithKeyPath:@"position"];
-//            //setFromValue不设置,默认以当前状态为准
-//            [animation setToValue:[NSValue valueWithCGPoint:CGPointMake(self.view.center.x, self.view.center.y + 200)]];
-//        }break;
-//        default:break;
-//    }
+            CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
+            animation.toValue = [NSValue valueWithCGPoint:CGPointMake(_demoView.center.x, _demoView.center.y +200)];
+            animation.repeatCount = MAXFLOAT;
+            animation.autoreverses = YES;
+            animation.duration = 3.0f;
+            [_demoView.layer addAnimation:animation forKey:@"position"];
+            
+        }break;
+        default:break;
+    }
     
-    CABasicAnimation *rotateAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-    rotateAnimation.fromValue = [NSNumber numberWithFloat:0.0];
-    rotateAnimation.toValue = [NSNumber numberWithFloat: M_PI];
-    rotateAnimation.autoreverses = YES;
-    rotateAnimation.repeatCount = 1;
-    rotateAnimation.duration = 2;
-    [rotateAnimation setAutoreverses:NO];
-
-    [_demoView.layer addAnimation:rotateAnimation forKey:@"test"];
+    
 
 }
 
