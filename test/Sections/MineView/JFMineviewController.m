@@ -13,6 +13,7 @@
 #import "JFRounderCornerViewController.h"
 #import "JFCoreAnimationViewController.h"
 #import "JFFontViewController.h"
+#import "JFArchiveViewController.h"
 
 @interface JFMineviewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSArray *dataArray;
@@ -24,11 +25,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataArray = @[@"SDCycleCollectionView - 无限循环图片、文字轮播器",
-                       @"ReactiveCocoa 实战",
-                       @"iOS 圆角设置 (RounderCorner)",
-                       @"动画",
-                       @"FontFamily"];
+    self.dataArray = @[@"SDCycleCollectionView",
+                       @"ReactiveCocoa",
+                       @"RounderCorner",
+                       @"Animation",
+                       @"FontFamily",
+                       @"Archive&&UnArchive"];
     self.view.backgroundColor = [UIColor yellowColor];
     [self.tableView reloadData];
 }
@@ -80,6 +82,10 @@
     }else if (indexPath.row == 4){
         JFFontViewController *VC = [[JFFontViewController alloc] init];
         VC.title = @"FontFamily";
+        [self.navigationController pushViewController:VC animated:YES];
+    }else if (indexPath.row == 5){
+        JFArchiveViewController *VC = [[JFArchiveViewController alloc] init];
+        VC.title = @"Archive";
         [self.navigationController pushViewController:VC animated:YES];
     }
 }

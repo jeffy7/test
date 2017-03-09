@@ -53,6 +53,9 @@
 		17DFD9D51E6E5B0B003FE611 /* JFTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9D41E6E5B0B003FE611 /* JFTabBarViewController.m */; };
 		17DFD9D91E700221003FE611 /* JFCoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9D81E700221003FE611 /* JFCoreAnimationViewController.m */; };
 		17DFD9DD1E70F1A3003FE611 /* JFFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9DC1E70F1A3003FE611 /* JFFontViewController.m */; };
+		17DFD9E11E710432003FE611 /* JFArchiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9E01E710432003FE611 /* JFArchiveViewController.m */; };
+		17DFD9E71E710633003FE611 /* JFArchiveSon.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9E61E710633003FE611 /* JFArchiveSon.m */; };
+		17DFD9EA1E7106EF003FE611 /* JFArchiveFather.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9E91E7106EF003FE611 /* JFArchiveFather.m */; };
 		65680077FC38BACE1E97E662 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E732AEDE8E04EF846BCD4795 /* libPods-test.a */; };
 /* End PBXBuildFile section */
 
@@ -168,6 +171,12 @@
 		17DFD9D81E700221003FE611 /* JFCoreAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCoreAnimationViewController.m; sourceTree = "<group>"; };
 		17DFD9DB1E70F1A3003FE611 /* JFFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFFontViewController.h; sourceTree = "<group>"; };
 		17DFD9DC1E70F1A3003FE611 /* JFFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFontViewController.m; sourceTree = "<group>"; };
+		17DFD9DF1E710432003FE611 /* JFArchiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFArchiveViewController.h; sourceTree = "<group>"; };
+		17DFD9E01E710432003FE611 /* JFArchiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFArchiveViewController.m; sourceTree = "<group>"; };
+		17DFD9E51E710633003FE611 /* JFArchiveSon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFArchiveSon.h; sourceTree = "<group>"; };
+		17DFD9E61E710633003FE611 /* JFArchiveSon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFArchiveSon.m; sourceTree = "<group>"; };
+		17DFD9E81E7106EF003FE611 /* JFArchiveFather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFArchiveFather.h; sourceTree = "<group>"; };
+		17DFD9E91E7106EF003FE611 /* JFArchiveFather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFArchiveFather.m; sourceTree = "<group>"; };
 		59D77987FC605555EB81FB43 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		8370AE36D28B23832B881E54 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 		E732AEDE8E04EF846BCD4795 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -343,6 +352,7 @@
 		1737FF251D436BEF00F8DAA9 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				17DFD9DE1E710427003FE611 /* Archive */,
 				17DFD9DA1E70F198003FE611 /* FontFamily */,
 				17DFD9D61E70020F003FE611 /* CoreAnimation */,
 				17DFD9CA1E6E52ED003FE611 /* RounderCorner */,
@@ -621,6 +631,19 @@
 			path = FontFamily;
 			sourceTree = "<group>";
 		};
+		17DFD9DE1E710427003FE611 /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				17DFD9DF1E710432003FE611 /* JFArchiveViewController.h */,
+				17DFD9E01E710432003FE611 /* JFArchiveViewController.m */,
+				17DFD9E51E710633003FE611 /* JFArchiveSon.h */,
+				17DFD9E61E710633003FE611 /* JFArchiveSon.m */,
+				17DFD9E81E7106EF003FE611 /* JFArchiveFather.h */,
+				17DFD9E91E7106EF003FE611 /* JFArchiveFather.m */,
+			);
+			path = Archive;
+			sourceTree = "<group>";
+		};
 		2E7ACA662A52257823AF93D6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -830,10 +853,12 @@
 				17C413691DB782F000188556 /* TAAbstractDotView.m in Sources */,
 				17A544DB1E67FE6600995CF2 /* UIColor+Extension.m in Sources */,
 				17C4136E1DB782F000188556 /* SDCycleScrollView.m in Sources */,
+				17DFD9E11E710432003FE611 /* JFArchiveViewController.m in Sources */,
 				17A544E51E67FEFE00995CF2 /* UIView+LayoutMethods.m in Sources */,
 				17A544FD1E6806BA00995CF2 /* UIButton+Common.m in Sources */,
 				17A545191E68075500995CF2 /* UIImage+SPScale.m in Sources */,
 				17A545011E6806C300995CF2 /* NSDate+Time.m in Sources */,
+				17DFD9E71E710633003FE611 /* JFArchiveSon.m in Sources */,
 				17A545141E68074400995CF2 /* UIColor+SPHex.m in Sources */,
 				178846911CA7EBC200FED0BA /* JFTableViewController.m in Sources */,
 				178846941CA7EC0500FED0BA /* JFTableViewCell.m in Sources */,
@@ -855,6 +880,7 @@
 				17C413721DB783D900188556 /* JFSDCycleViewController.m in Sources */,
 				170C34301D6D972E00987817 /* JFMineviewController.m in Sources */,
 				17A544F31E6805F900995CF2 /* UIImage+Common.m in Sources */,
+				17DFD9EA1E7106EF003FE611 /* JFArchiveFather.m in Sources */,
 				170F31551CA44A44002A9A63 /* AppDelegate.m in Sources */,
 				170F31521CA44A44002A9A63 /* main.m in Sources */,
 				17C4136A1DB782F000188556 /* TAAnimatedDotView.m in Sources */,
