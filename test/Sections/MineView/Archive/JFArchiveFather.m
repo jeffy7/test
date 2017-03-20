@@ -14,17 +14,17 @@
 
 @implementation JFArchiveFather
 
-//- (id)initWithCoder:(NSCoder *)aDecoder {
-//    if (self = [super init]) {
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super init]) {
 //        self.name = [aDecoder decodeObjectForKey:@"name"];
-//    }
-//    
-//    return self;
-//}
-//
-//- (void)encodeWithCoder:(NSCoder *)aCoder {
+    }
+    
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
 //    [aCoder encodeObject:_name forKey:@"name"];
-//}
+}
 
 
 @end

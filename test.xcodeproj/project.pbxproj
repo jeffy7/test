@@ -19,6 +19,8 @@
 		173425341D4604BB00EE035D /* JFCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425331D4604BB00EE035D /* JFCycleView.m */; };
 		173425371D4608E100EE035D /* JFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425361D4608E100EE035D /* JFMainViewController.m */; };
 		178361651E7F84C000CF5BDF /* JFExchangeBoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 178361641E7F84C000CF5BDF /* JFExchangeBoundButton.m */; };
+		178361691E7FC33200CF5BDF /* JFCABaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178361681E7FC33200CF5BDF /* JFCABaseAnimationViewController.m */; };
+		1783616E1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1783616D1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m */; };
 		178846911CA7EBC200FED0BA /* JFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178846901CA7EBC200FED0BA /* JFTableViewController.m */; };
 		178846941CA7EC0500FED0BA /* JFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 178846931CA7EC0500FED0BA /* JFTableViewCell.m */; };
 		17A544D81E67FE4C00995CF2 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A544D71E67FE4C00995CF2 /* NSString+Extension.m */; };
@@ -106,6 +108,11 @@
 		173425361D4608E100EE035D /* JFMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFMainViewController.m; sourceTree = "<group>"; };
 		178361631E7F84C000CF5BDF /* JFExchangeBoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFExchangeBoundButton.h; sourceTree = "<group>"; };
 		178361641E7F84C000CF5BDF /* JFExchangeBoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFExchangeBoundButton.m; sourceTree = "<group>"; };
+		178361671E7FC33200CF5BDF /* JFCABaseAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCABaseAnimationViewController.h; sourceTree = "<group>"; };
+		178361681E7FC33200CF5BDF /* JFCABaseAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCABaseAnimationViewController.m; sourceTree = "<group>"; };
+		1783616A1E7FC4CB00CF5BDF /* JFMacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JFMacroHeader.h; path = test/Sections/MineView/CoreAnimation/CABasicAnimation/JFMacroHeader.h; sourceTree = SOURCE_ROOT; };
+		1783616C1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCAKeyframeAnimationViewController.h; sourceTree = "<group>"; };
+		1783616D1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCAKeyframeAnimationViewController.m; sourceTree = "<group>"; };
 		1788468F1CA7EBC200FED0BA /* JFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JFTableViewController.h; path = ../../JFTableViewController.h; sourceTree = "<group>"; };
 		178846901CA7EBC200FED0BA /* JFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JFTableViewController.m; path = ../../JFTableViewController.m; sourceTree = "<group>"; };
 		178846921CA7EC0500FED0BA /* JFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewCell.h; sourceTree = "<group>"; };
@@ -323,6 +330,7 @@
 		1737FF201D436BEF00F8DAA9 /* Macro */ = {
 			isa = PBXGroup;
 			children = (
+				1783616A1E7FC4CB00CF5BDF /* JFMacroHeader.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -410,6 +418,24 @@
 				178361641E7F84C000CF5BDF /* JFExchangeBoundButton.m */,
 			);
 			path = UIbutton;
+			sourceTree = "<group>";
+		};
+		178361661E7FC31100CF5BDF /* CABasicAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				178361671E7FC33200CF5BDF /* JFCABaseAnimationViewController.h */,
+				178361681E7FC33200CF5BDF /* JFCABaseAnimationViewController.m */,
+			);
+			path = CABasicAnimation;
+			sourceTree = "<group>";
+		};
+		1783616B1E7FC85B00CF5BDF /* CAKeyframeAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				1783616C1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.h */,
+				1783616D1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m */,
+			);
+			path = CAKeyframeAnimation;
 			sourceTree = "<group>";
 		};
 		17A544D01E67FDAC00995CF2 /* Vendors */ = {
@@ -647,6 +673,8 @@
 		17DFD9D61E70020F003FE611 /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				1783616B1E7FC85B00CF5BDF /* CAKeyframeAnimation */,
+				178361661E7FC31100CF5BDF /* CABasicAnimation */,
 				17DFD9D71E700221003FE611 /* JFCoreAnimationViewController.h */,
 				17DFD9D81E700221003FE611 /* JFCoreAnimationViewController.m */,
 			);
@@ -891,6 +919,7 @@
 				17A5450E1E68072600995CF2 /* SPTextField.m in Sources */,
 				17C4136B1DB782F000188556 /* TADotView.m in Sources */,
 				17A544F61E68065A00995CF2 /* UIColor+HEX.m in Sources */,
+				178361691E7FC33200CF5BDF /* JFCABaseAnimationViewController.m in Sources */,
 				17C413691DB782F000188556 /* TAAbstractDotView.m in Sources */,
 				17A544DB1E67FE6600995CF2 /* UIColor+Extension.m in Sources */,
 				178361651E7F84C000CF5BDF /* JFExchangeBoundButton.m in Sources */,
@@ -932,6 +961,7 @@
 				17A544FE1E6806BA00995CF2 /* UIButton+countDown.m in Sources */,
 				17A545041E6806E900995CF2 /* UILabel+SPUtils.m in Sources */,
 				17DFD9D51E6E5B0B003FE611 /* JFTabBarViewController.m in Sources */,
+				1783616E1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
