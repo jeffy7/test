@@ -56,6 +56,10 @@
 		17DFD9E11E710432003FE611 /* JFArchiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9E01E710432003FE611 /* JFArchiveViewController.m */; };
 		17DFD9E71E710633003FE611 /* JFArchiveSon.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9E61E710633003FE611 /* JFArchiveSon.m */; };
 		17DFD9EA1E7106EF003FE611 /* JFArchiveFather.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9E91E7106EF003FE611 /* JFArchiveFather.m */; };
+		17DFDA0E1E77F16E003FE611 /* UIView+JFCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFDA0D1E77F16E003FE611 /* UIView+JFCorner.m */; };
+		17DFDA111E77F34C003FE611 /* qq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17DFDA101E77F34C003FE611 /* qq.jpg */; };
+		17DFDA141E77F3D1003FE611 /* UIImage+JFCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFDA131E77F3D1003FE611 /* UIImage+JFCorner.m */; };
+		17DFDA171E77FABA003FE611 /* JFCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFDA161E77FABA003FE611 /* JFCornerView.m */; };
 		65680077FC38BACE1E97E662 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E732AEDE8E04EF846BCD4795 /* libPods-test.a */; };
 /* End PBXBuildFile section */
 
@@ -177,6 +181,13 @@
 		17DFD9E61E710633003FE611 /* JFArchiveSon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFArchiveSon.m; sourceTree = "<group>"; };
 		17DFD9E81E7106EF003FE611 /* JFArchiveFather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFArchiveFather.h; sourceTree = "<group>"; };
 		17DFD9E91E7106EF003FE611 /* JFArchiveFather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFArchiveFather.m; sourceTree = "<group>"; };
+		17DFDA0C1E77F16E003FE611 /* UIView+JFCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JFCorner.h"; sourceTree = "<group>"; };
+		17DFDA0D1E77F16E003FE611 /* UIView+JFCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JFCorner.m"; sourceTree = "<group>"; };
+		17DFDA101E77F34C003FE611 /* qq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = qq.jpg; sourceTree = "<group>"; };
+		17DFDA121E77F3D1003FE611 /* UIImage+JFCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JFCorner.h"; sourceTree = "<group>"; };
+		17DFDA131E77F3D1003FE611 /* UIImage+JFCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JFCorner.m"; sourceTree = "<group>"; };
+		17DFDA151E77FABA003FE611 /* JFCornerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCornerView.h; sourceTree = "<group>"; };
+		17DFDA161E77FABA003FE611 /* JFCornerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCornerView.m; sourceTree = "<group>"; };
 		59D77987FC605555EB81FB43 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		8370AE36D28B23832B881E54 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 		E732AEDE8E04EF846BCD4795 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -316,6 +327,7 @@
 		1737FF211D436BEF00F8DAA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				17DFDA0F1E77F343003FE611 /* Pictures */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -598,6 +610,12 @@
 			children = (
 				17DFD9CC1E6E5313003FE611 /* JFRounderCornerViewController.h */,
 				17DFD9CD1E6E5313003FE611 /* JFRounderCornerViewController.m */,
+				17DFDA151E77FABA003FE611 /* JFCornerView.h */,
+				17DFDA161E77FABA003FE611 /* JFCornerView.m */,
+				17DFDA0C1E77F16E003FE611 /* UIView+JFCorner.h */,
+				17DFDA0D1E77F16E003FE611 /* UIView+JFCorner.m */,
+				17DFDA121E77F3D1003FE611 /* UIImage+JFCorner.h */,
+				17DFDA131E77F3D1003FE611 /* UIImage+JFCorner.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -642,6 +660,14 @@
 				17DFD9E91E7106EF003FE611 /* JFArchiveFather.m */,
 			);
 			path = Archive;
+			sourceTree = "<group>";
+		};
+		17DFDA0F1E77F343003FE611 /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				17DFDA101E77F34C003FE611 /* qq.jpg */,
+			);
+			path = Pictures;
 			sourceTree = "<group>";
 		};
 		2E7ACA662A52257823AF93D6 /* Pods */ = {
@@ -772,6 +798,7 @@
 				170F31601CA44A44002A9A63 /* LaunchScreen.storyboard in Resources */,
 				170F315D1CA44A44002A9A63 /* Assets.xcassets in Resources */,
 				170F315B1CA44A44002A9A63 /* Main.storyboard in Resources */,
+				17DFDA111E77F34C003FE611 /* qq.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -845,6 +872,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17A544E81E68059200995CF2 /* UILabel+Common.m in Sources */,
+				17DFDA0E1E77F16E003FE611 /* UIView+JFCorner.m in Sources */,
 				17A544E41E67FEFE00995CF2 /* UIView+BlockGesture.m in Sources */,
 				170F31581CA44A44002A9A63 /* ViewController.m in Sources */,
 				17A5450E1E68072600995CF2 /* SPTextField.m in Sources */,
@@ -852,6 +880,7 @@
 				17A544F61E68065A00995CF2 /* UIColor+HEX.m in Sources */,
 				17C413691DB782F000188556 /* TAAbstractDotView.m in Sources */,
 				17A544DB1E67FE6600995CF2 /* UIColor+Extension.m in Sources */,
+				17DFDA171E77FABA003FE611 /* JFCornerView.m in Sources */,
 				17C4136E1DB782F000188556 /* SDCycleScrollView.m in Sources */,
 				17DFD9E11E710432003FE611 /* JFArchiveViewController.m in Sources */,
 				17A544E51E67FEFE00995CF2 /* UIView+LayoutMethods.m in Sources */,
@@ -869,6 +898,7 @@
 				17A544D81E67FE4C00995CF2 /* NSString+Extension.m in Sources */,
 				17A5451A1E68075500995CF2 /* UIImage+Url.m in Sources */,
 				17A544E31E67FEFE00995CF2 /* UIView+AEBHandyAutoLayout.m in Sources */,
+				17DFDA141E77F3D1003FE611 /* UIImage+JFCorner.m in Sources */,
 				17A544EC1E6805B000995CF2 /* UITableView+CellLine.m in Sources */,
 				17C4136F1DB782F000188556 /* UIView+SDExtension.m in Sources */,
 				17C4136C1DB782F000188556 /* TAPageControl.m in Sources */,

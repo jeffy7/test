@@ -7,6 +7,9 @@
 //
 
 #import "JFRounderCornerViewController.h"
+#import "UIView+JFCorner.h"
+#import "UIImage+JFCorner.h"
+#import "JFCornerView.h"
 
 @interface JFRounderCornerViewController ()
 
@@ -18,7 +21,27 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
+    
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(20, 100, 100, 100)];
+    [self.view addSubview:view];
+    view.backgroundColor = [UIColor clearColor];
+    [view addCorner:50 bgColor:[UIColor clearColor] borderWidth:1 borderColor:[UIColor blueColor]];
+    
+    UIImage *image = [[UIImage imageNamed:@"qq.jpg"] circleImage];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 240, 100, 100)];
+    imageView.image = image;
+    imageView.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:imageView];
+    
+    JFCornerView *cornerView = [[JFCornerView alloc] initWithFrame:CGRectMake(20, 380, 100, 100)];
+    [self.view addSubview:cornerView];
+    cornerView.backgroundColor = [UIColor redColor];
+
 }
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
