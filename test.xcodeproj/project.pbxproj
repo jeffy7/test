@@ -18,6 +18,7 @@
 		170F31761CA44A44002A9A63 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 170F31751CA44A44002A9A63 /* testUITests.m */; };
 		173425341D4604BB00EE035D /* JFCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425331D4604BB00EE035D /* JFCycleView.m */; };
 		173425371D4608E100EE035D /* JFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425361D4608E100EE035D /* JFMainViewController.m */; };
+		178361651E7F84C000CF5BDF /* JFExchangeBoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 178361641E7F84C000CF5BDF /* JFExchangeBoundButton.m */; };
 		178846911CA7EBC200FED0BA /* JFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178846901CA7EBC200FED0BA /* JFTableViewController.m */; };
 		178846941CA7EC0500FED0BA /* JFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 178846931CA7EC0500FED0BA /* JFTableViewCell.m */; };
 		17A544D81E67FE4C00995CF2 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A544D71E67FE4C00995CF2 /* NSString+Extension.m */; };
@@ -103,6 +104,8 @@
 		173425331D4604BB00EE035D /* JFCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCycleView.m; sourceTree = "<group>"; };
 		173425351D4608E100EE035D /* JFMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMainViewController.h; sourceTree = "<group>"; };
 		173425361D4608E100EE035D /* JFMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFMainViewController.m; sourceTree = "<group>"; };
+		178361631E7F84C000CF5BDF /* JFExchangeBoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFExchangeBoundButton.h; sourceTree = "<group>"; };
+		178361641E7F84C000CF5BDF /* JFExchangeBoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFExchangeBoundButton.m; sourceTree = "<group>"; };
 		1788468F1CA7EBC200FED0BA /* JFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JFTableViewController.h; path = ../../JFTableViewController.h; sourceTree = "<group>"; };
 		178846901CA7EBC200FED0BA /* JFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JFTableViewController.m; path = ../../JFTableViewController.m; sourceTree = "<group>"; };
 		178846921CA7EC0500FED0BA /* JFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewCell.h; sourceTree = "<group>"; };
@@ -400,9 +403,19 @@
 			path = ThirdView;
 			sourceTree = "<group>";
 		};
+		178361621E7F849400CF5BDF /* UIbutton */ = {
+			isa = PBXGroup;
+			children = (
+				178361631E7F84C000CF5BDF /* JFExchangeBoundButton.h */,
+				178361641E7F84C000CF5BDF /* JFExchangeBoundButton.m */,
+			);
+			path = UIbutton;
+			sourceTree = "<group>";
+		};
 		17A544D01E67FDAC00995CF2 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				178361621E7F849400CF5BDF /* UIbutton */,
 			);
 			path = Vendors;
 			sourceTree = "<group>";
@@ -880,6 +893,7 @@
 				17A544F61E68065A00995CF2 /* UIColor+HEX.m in Sources */,
 				17C413691DB782F000188556 /* TAAbstractDotView.m in Sources */,
 				17A544DB1E67FE6600995CF2 /* UIColor+Extension.m in Sources */,
+				178361651E7F84C000CF5BDF /* JFExchangeBoundButton.m in Sources */,
 				17DFDA171E77FABA003FE611 /* JFCornerView.m in Sources */,
 				17C4136E1DB782F000188556 /* SDCycleScrollView.m in Sources */,
 				17DFD9E11E710432003FE611 /* JFArchiveViewController.m in Sources */,

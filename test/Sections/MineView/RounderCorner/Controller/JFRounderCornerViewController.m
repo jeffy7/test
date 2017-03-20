@@ -10,6 +10,7 @@
 #import "UIView+JFCorner.h"
 #import "UIImage+JFCorner.h"
 #import "JFCornerView.h"
+#import "JFExchangeBoundButton.h"
 
 @interface JFRounderCornerViewController ()
 
@@ -36,10 +37,22 @@
     JFCornerView *cornerView = [[JFCornerView alloc] initWithFrame:CGRectMake(20, 380, 100, 100)];
     [self.view addSubview:cornerView];
     cornerView.backgroundColor = [UIColor redColor];
+    
+    JFExchangeBoundButton *button = [[JFExchangeBoundButton alloc] initWithFrame:CGRectMake(20, 520, 50, 50)];
+    button.layer.borderWidth = 0.50f;
+    button.layer.borderColor = [UIColor redColor].CGColor;;
+    [button addTarget:self action:@selector(buttonOnTouch) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
+    UIView *buttonView = [[UIView alloc] initWithFrame:CGRectMake(120, 500, 50, 90)];
+    buttonView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:buttonView];
 
 }
 
-
+- (void)buttonOnTouch {
+    NSLog(@"button touch");
+}
 
 
 
