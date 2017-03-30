@@ -63,6 +63,9 @@
 		17DFDA111E77F34C003FE611 /* qq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17DFDA101E77F34C003FE611 /* qq.jpg */; };
 		17DFDA141E77F3D1003FE611 /* UIImage+JFCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFDA131E77F3D1003FE611 /* UIImage+JFCorner.m */; };
 		17DFDA171E77FABA003FE611 /* JFCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFDA161E77FABA003FE611 /* JFCornerView.m */; };
+		17E6FA391E8D136600CEA421 /* JSPatchPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E6FA381E8D136600CEA421 /* JSPatchPlatform.framework */; };
+		17E6FA3B1E8D137100CEA421 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E6FA3A1E8D137100CEA421 /* JavaScriptCore.framework */; };
+		17E6FA3D1E8D137A00CEA421 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E6FA3C1E8D137A00CEA421 /* libz.tbd */; };
 		65680077FC38BACE1E97E662 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E732AEDE8E04EF846BCD4795 /* libPods-test.a */; };
 /* End PBXBuildFile section */
 
@@ -198,6 +201,9 @@
 		17DFDA131E77F3D1003FE611 /* UIImage+JFCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JFCorner.m"; sourceTree = "<group>"; };
 		17DFDA151E77FABA003FE611 /* JFCornerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCornerView.h; sourceTree = "<group>"; };
 		17DFDA161E77FABA003FE611 /* JFCornerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCornerView.m; sourceTree = "<group>"; };
+		17E6FA381E8D136600CEA421 /* JSPatchPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatchPlatform.framework; sourceTree = "<group>"; };
+		17E6FA3A1E8D137100CEA421 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		17E6FA3C1E8D137A00CEA421 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		59D77987FC605555EB81FB43 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		8370AE36D28B23832B881E54 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 		E732AEDE8E04EF846BCD4795 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,7 +214,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E6FA3D1E8D137A00CEA421 /* libz.tbd in Frameworks */,
+				17E6FA3B1E8D137100CEA421 /* JavaScriptCore.framework in Frameworks */,
 				65680077FC38BACE1E97E662 /* libPods-test.a in Frameworks */,
+				17E6FA391E8D136600CEA421 /* JSPatchPlatform.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +450,7 @@
 		17A544D01E67FDAC00995CF2 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				17E6FA371E8D135100CEA421 /* JSPatch */,
 				178361621E7F849400CF5BDF /* UIbutton */,
 			);
 			path = Vendors;
@@ -711,6 +721,14 @@
 			path = Pictures;
 			sourceTree = "<group>";
 		};
+		17E6FA371E8D135100CEA421 /* JSPatch */ = {
+			isa = PBXGroup;
+			children = (
+				17E6FA381E8D136600CEA421 /* JSPatchPlatform.framework */,
+			);
+			path = JSPatch;
+			sourceTree = "<group>";
+		};
 		2E7ACA662A52257823AF93D6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -723,6 +741,8 @@
 		C261A5642A928ADFC971A640 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				17E6FA3C1E8D137A00CEA421 /* libz.tbd */,
+				17E6FA3A1E8D137100CEA421 /* JavaScriptCore.framework */,
 				E732AEDE8E04EF846BCD4795 /* libPods-test.a */,
 			);
 			name = Frameworks;
@@ -1112,6 +1132,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = JKV7V4656F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test/Vendors/JSPatch",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/test/PrefixHeader.pch";
 				INFOPLIST_FILE = test/Info.plist;
@@ -1131,6 +1155,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = JKV7V4656F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test/Vendors/JSPatch",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/test/PrefixHeader.pch";
 				INFOPLIST_FILE = test/Info.plist;

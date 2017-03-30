@@ -7,7 +7,6 @@ target "test" do
     pod 'AFNetworking', '~> 3.1.0'
     pod 'FMDB', '~> 2.6.2'
     pod 'SafeKit', '~> 1.4.1'
-    pod 'JSPatch', '~> 1.0'
     pod 'Masonry', '~> 1.0.1'
     pod 'SDWebImage', '~> 3.8.1'
     pod 'MBProgressHUD', '~> 0.9.2'
