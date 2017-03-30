@@ -32,7 +32,10 @@
                         @"贝塞尔椭圆",
                         @"贝塞尔圆",
                         @"贝塞尔矩形",
-                        @"贝塞尔抛物线"];
+                        @"贝塞尔抛物线",
+                        @"弹力仿真",
+                        @"晃动",
+                        @"多点移动"];
     for (unsigned int i = 0; i < titles.count; i++) {
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -107,10 +110,43 @@
         case 4:{
             //贝塞尔抛物线
             UIBezierPath *path = [UIBezierPath bezierPath];
-            [path moveToPoint:CGPointMake(FULL_SCREEN_WIDTH/2, FULL_SCREEN_HEIGHT/2)];//起点
-            [path addQuadCurveToPoint:CGPointMake(FULL_SCREEN_WIDTH ,64)
+            [path moveToPoint:CGPointMake(0, FULL_SCREEN_HEIGHT)];//起点
+            [path addQuadCurveToPoint:CGPointMake(FULL_SCREEN_WIDTH ,64 +50)
                          controlPoint:CGPointMake(FULL_SCREEN_HEIGHT/2, 0)];
             [animation setPath:path.CGPath];
+        }break;
+        case 5:{
+            //弹力仿真
+            UIBezierPath* path = [UIBezierPath bezierPath];
+            
+            path.lineWidth     = 5.f;
+            path.lineCapStyle  = kCGLineCapRound;
+            path.lineJoinStyle = kCGLineCapRound;
+            
+            // 起点
+            [path moveToPoint:CGPointMake(100, 50)];
+            
+            // 添加直线
+            [path addLineToPoint:CGPointMake(150, 50)];
+            [path addLineToPoint:CGPointMake(200, 100)];
+            [path addLineToPoint:CGPointMake(200, 150)];
+            [path addLineToPoint:CGPointMake(150, 200)];
+            [path addLineToPoint:CGPointMake(100, 200)];
+            [path addLineToPoint:CGPointMake(50, 150)];
+            [path addLineToPoint:CGPointMake(50, 100)];
+            [path closePath];
+        }break;
+        case 6:{
+            //晃动
+
+        }break;
+        case 7:{
+            //多点移动
+            
+        }break;
+        case 8:{
+            //购物车动画
+            
         }break;
         default:break;
     }
