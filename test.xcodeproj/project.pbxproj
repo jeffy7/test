@@ -162,6 +162,7 @@
 		17A5451D1E680D4500995CF2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		17A5454C1E69677D00995CF2 /* JFReactiveCocoaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFReactiveCocoaViewController.h; sourceTree = "<group>"; };
 		17A5454D1E69677D00995CF2 /* JFReactiveCocoaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFReactiveCocoaViewController.m; sourceTree = "<group>"; };
+		17BFD7871E94C73100A417AB /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
 		17C4135B1DB782F000188556 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
 		17C4135C1DB782F000188556 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
 		17C4135D1DB782F000188556 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
@@ -263,6 +264,7 @@
 		170F314F1CA44A44002A9A63 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				17BFD7871E94C73100A417AB /* test.entitlements */,
 				17A544D11E67FDC200995CF2 /* Expand */,
 				17A544D01E67FDAC00995CF2 /* Vendors */,
 				1737FF1E1D436BEF00F8DAA9 /* General */,
@@ -820,6 +822,11 @@
 					170F314C1CA44A44002A9A63 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = JKV7V4656F;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					170F31651CA44A44002A9A63 = {
 						CreatedOnToolsVersion = 7.3;
@@ -1129,6 +1136,7 @@
 			baseConfigurationReference = 59D77987FC605555EB81FB43 /* Pods-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = test/test.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = JKV7V4656F;
@@ -1152,6 +1160,7 @@
 			baseConfigurationReference = 8370AE36D28B23832B881E54 /* Pods-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = test/test.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = JKV7V4656F;

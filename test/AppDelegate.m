@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 ///////////////////
+#import <JSPatchPlatform/JSPatch.h>
+
+NSString *const JSAppKey = @"6741162070b24760";
 
 #import "JFNavigationViewController.h"
 #import "JFTabBarViewController.h"
@@ -25,9 +28,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self configeJSPatch];
+    
     
     [self prepareRootViewcontroller];
     return YES;
+}
+
+//配置JSPatch
+- (void)configeJSPatch {
+    [JSPatch startWithAppKey:JSAppKey];
+    [JSPatch setupRSAPublicKey:@"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCwavPkJDp7WqRcouNyU7qnReDO\nqSZqLi4Yss3qi1UwR1Rn8a4YuUG9AyBlaCw+eBP9y6JPi+O8p9jFfr9EqDonLBNX\nhXb2haJI9VqnC5dkHSYw4Uov6yhHHb3buygcUhreC32rb+2KKy3wYxxhU6sJpB3W\ndvHKDKfIqWgaemYFNwIDAQAB\n-----END PUBLIC KEY-----"];
+    
 }
 
 
@@ -65,6 +77,7 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
+    [JSPatch sync];
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 

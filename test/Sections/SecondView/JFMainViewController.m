@@ -20,18 +20,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.cycleView.frame = CGRectMake(50, 50, 100, 100);
-    self.cycleView.layer.borderWidth = 0.50f;
-    self.cycleView.layer.borderColor = [UIColor redColor].CGColor;
+    [self prepareCycleView];
     
-    
-    
-    // Do any additional setup after loading the view.
+}
+
+- (void)prepareCycleView {
+    self.cycleView.frame = CGRectMake(0, 64, 100, 100);
+
 }
 
 - (JFCycleView *)cycleView {
     if (!_cycleView) {
         JFCycleView *cycleView = [[JFCycleView alloc] init];
+        cycleView.layer.borderWidth = 0.50f;
+        cycleView.layer.borderColor = [UIColor redColor].CGColor;
         [self.view addSubview:_cycleView = cycleView];
     }
     return _cycleView;
