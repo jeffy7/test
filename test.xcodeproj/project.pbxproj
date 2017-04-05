@@ -43,6 +43,7 @@
 		17A545191E68075500995CF2 /* UIImage+SPScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A545161E68075500995CF2 /* UIImage+SPScale.m */; };
 		17A5451A1E68075500995CF2 /* UIImage+Url.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A545181E68075500995CF2 /* UIImage+Url.m */; };
 		17A5454E1E69677D00995CF2 /* JFReactiveCocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5454D1E69677D00995CF2 /* JFReactiveCocoaViewController.m */; };
+		17BFD78D1E94D09300A417AB /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 17BFD78C1E94D09300A417AB /* main.js */; };
 		17C413691DB782F000188556 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4135C1DB782F000188556 /* TAAbstractDotView.m */; };
 		17C4136A1DB782F000188556 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4135E1DB782F000188556 /* TAAnimatedDotView.m */; };
 		17C4136B1DB782F000188556 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C413601DB782F000188556 /* TADotView.m */; };
@@ -163,6 +164,7 @@
 		17A5454C1E69677D00995CF2 /* JFReactiveCocoaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFReactiveCocoaViewController.h; sourceTree = "<group>"; };
 		17A5454D1E69677D00995CF2 /* JFReactiveCocoaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFReactiveCocoaViewController.m; sourceTree = "<group>"; };
 		17BFD7871E94C73100A417AB /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
+		17BFD78C1E94D09300A417AB /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		17C4135B1DB782F000188556 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
 		17C4135C1DB782F000188556 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
 		17C4135D1DB782F000188556 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 				178846921CA7EC0500FED0BA /* JFTableViewCell.h */,
 				178846931CA7EC0500FED0BA /* JFTableViewCell.m */,
 				170F31591CA44A44002A9A63 /* Main.storyboard */,
+				17BFD78C1E94D09300A417AB /* main.js */,
 				170F315C1CA44A44002A9A63 /* Assets.xcassets */,
 				170F315E1CA44A44002A9A63 /* LaunchScreen.storyboard */,
 				170F31611CA44A44002A9A63 /* Info.plist */,
@@ -867,6 +870,7 @@
 				170F315D1CA44A44002A9A63 /* Assets.xcassets in Resources */,
 				170F315B1CA44A44002A9A63 /* Main.storyboard in Resources */,
 				17DFDA111E77F34C003FE611 /* qq.jpg in Resources */,
+				17BFD78D1E94D09300A417AB /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
