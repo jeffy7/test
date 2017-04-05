@@ -44,6 +44,8 @@
 		17A5451A1E68075500995CF2 /* UIImage+Url.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A545181E68075500995CF2 /* UIImage+Url.m */; };
 		17A5454E1E69677D00995CF2 /* JFReactiveCocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5454D1E69677D00995CF2 /* JFReactiveCocoaViewController.m */; };
 		17BFD78D1E94D09300A417AB /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 17BFD78C1E94D09300A417AB /* main.js */; };
+		17BFD7911E94D33C00A417AB /* rsa_private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 17BFD78F1E94D33C00A417AB /* rsa_private_key.pem */; };
+		17BFD7921E94D33C00A417AB /* rsa_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 17BFD7901E94D33C00A417AB /* rsa_public_key.pem */; };
 		17C413691DB782F000188556 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4135C1DB782F000188556 /* TAAbstractDotView.m */; };
 		17C4136A1DB782F000188556 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4135E1DB782F000188556 /* TAAnimatedDotView.m */; };
 		17C4136B1DB782F000188556 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C413601DB782F000188556 /* TADotView.m */; };
@@ -165,6 +167,8 @@
 		17A5454D1E69677D00995CF2 /* JFReactiveCocoaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFReactiveCocoaViewController.m; sourceTree = "<group>"; };
 		17BFD7871E94C73100A417AB /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
 		17BFD78C1E94D09300A417AB /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		17BFD78F1E94D33C00A417AB /* rsa_private_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_private_key.pem; sourceTree = "<group>"; };
+		17BFD7901E94D33C00A417AB /* rsa_public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_public_key.pem; sourceTree = "<group>"; };
 		17C4135B1DB782F000188556 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
 		17C4135C1DB782F000188556 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
 		17C4135D1DB782F000188556 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
@@ -352,6 +356,7 @@
 		1737FF211D436BEF00F8DAA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				17BFD78E1E94D33C00A417AB /* key */,
 				17DFDA0F1E77F343003FE611 /* Pictures */,
 			);
 			path = Resources;
@@ -602,6 +607,15 @@
 				17A5454D1E69677D00995CF2 /* JFReactiveCocoaViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		17BFD78E1E94D33C00A417AB /* key */ = {
+			isa = PBXGroup;
+			children = (
+				17BFD78F1E94D33C00A417AB /* rsa_private_key.pem */,
+				17BFD7901E94D33C00A417AB /* rsa_public_key.pem */,
+			);
+			path = key;
 			sourceTree = "<group>";
 		};
 		17C413571DB782C900188556 /* SDCycleCollectionView */ = {
@@ -867,9 +881,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				170F31601CA44A44002A9A63 /* LaunchScreen.storyboard in Resources */,
+				17BFD7911E94D33C00A417AB /* rsa_private_key.pem in Resources */,
 				170F315D1CA44A44002A9A63 /* Assets.xcassets in Resources */,
 				170F315B1CA44A44002A9A63 /* Main.storyboard in Resources */,
 				17DFDA111E77F34C003FE611 /* qq.jpg in Resources */,
+				17BFD7921E94D33C00A417AB /* rsa_public_key.pem in Resources */,
 				17BFD78D1E94D09300A417AB /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
