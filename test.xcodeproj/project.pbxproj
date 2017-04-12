@@ -18,11 +18,12 @@
 		170F31761CA44A44002A9A63 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 170F31751CA44A44002A9A63 /* testUITests.m */; };
 		173425341D4604BB00EE035D /* JFCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425331D4604BB00EE035D /* JFCycleView.m */; };
 		173425371D4608E100EE035D /* JFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425361D4608E100EE035D /* JFMainViewController.m */; };
+		1767364C1E9CB05700CC0226 /* JFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1767364B1E9CB05700CC0226 /* JFTableViewController.m */; };
+		1767364F1E9CB0C600CC0226 /* JFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1767364E1E9CB0C600CC0226 /* JFTableViewCell.m */; };
+		176736511E9CB0F100CC0226 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 176736501E9CB0F100CC0226 /* main.js */; };
 		178361651E7F84C000CF5BDF /* JFExchangeBoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 178361641E7F84C000CF5BDF /* JFExchangeBoundButton.m */; };
 		178361691E7FC33200CF5BDF /* JFCABaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178361681E7FC33200CF5BDF /* JFCABaseAnimationViewController.m */; };
 		1783616E1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1783616D1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m */; };
-		178846911CA7EBC200FED0BA /* JFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178846901CA7EBC200FED0BA /* JFTableViewController.m */; };
-		178846941CA7EC0500FED0BA /* JFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 178846931CA7EC0500FED0BA /* JFTableViewCell.m */; };
 		17A544D81E67FE4C00995CF2 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A544D71E67FE4C00995CF2 /* NSString+Extension.m */; };
 		17A544DB1E67FE6600995CF2 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A544DA1E67FE6600995CF2 /* UIColor+Extension.m */; };
 		17A544E31E67FEFE00995CF2 /* UIView+AEBHandyAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A544DE1E67FEFE00995CF2 /* UIView+AEBHandyAutoLayout.m */; };
@@ -43,7 +44,6 @@
 		17A545191E68075500995CF2 /* UIImage+SPScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A545161E68075500995CF2 /* UIImage+SPScale.m */; };
 		17A5451A1E68075500995CF2 /* UIImage+Url.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A545181E68075500995CF2 /* UIImage+Url.m */; };
 		17A5454E1E69677D00995CF2 /* JFReactiveCocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5454D1E69677D00995CF2 /* JFReactiveCocoaViewController.m */; };
-		17BFD78D1E94D09300A417AB /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 17BFD78C1E94D09300A417AB /* main.js */; };
 		17BFD7911E94D33C00A417AB /* rsa_private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 17BFD78F1E94D33C00A417AB /* rsa_private_key.pem */; };
 		17BFD7921E94D33C00A417AB /* rsa_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 17BFD7901E94D33C00A417AB /* rsa_public_key.pem */; };
 		17C413691DB782F000188556 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4135C1DB782F000188556 /* TAAbstractDotView.m */; };
@@ -112,6 +112,11 @@
 		173425331D4604BB00EE035D /* JFCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCycleView.m; sourceTree = "<group>"; };
 		173425351D4608E100EE035D /* JFMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMainViewController.h; sourceTree = "<group>"; };
 		173425361D4608E100EE035D /* JFMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFMainViewController.m; sourceTree = "<group>"; };
+		1767364A1E9CB05700CC0226 /* JFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewController.h; sourceTree = "<group>"; };
+		1767364B1E9CB05700CC0226 /* JFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTableViewController.m; sourceTree = "<group>"; };
+		1767364D1E9CB0C600CC0226 /* JFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewCell.h; sourceTree = "<group>"; };
+		1767364E1E9CB0C600CC0226 /* JFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTableViewCell.m; sourceTree = "<group>"; };
+		176736501E9CB0F100CC0226 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		178361631E7F84C000CF5BDF /* JFExchangeBoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFExchangeBoundButton.h; sourceTree = "<group>"; };
 		178361641E7F84C000CF5BDF /* JFExchangeBoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFExchangeBoundButton.m; sourceTree = "<group>"; };
 		178361671E7FC33200CF5BDF /* JFCABaseAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCABaseAnimationViewController.h; sourceTree = "<group>"; };
@@ -119,10 +124,6 @@
 		1783616A1E7FC4CB00CF5BDF /* JFMacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JFMacroHeader.h; path = test/Sections/MineView/CoreAnimation/CABasicAnimation/JFMacroHeader.h; sourceTree = SOURCE_ROOT; };
 		1783616C1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCAKeyframeAnimationViewController.h; sourceTree = "<group>"; };
 		1783616D1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCAKeyframeAnimationViewController.m; sourceTree = "<group>"; };
-		1788468F1CA7EBC200FED0BA /* JFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JFTableViewController.h; path = ../../JFTableViewController.h; sourceTree = "<group>"; };
-		178846901CA7EBC200FED0BA /* JFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JFTableViewController.m; path = ../../JFTableViewController.m; sourceTree = "<group>"; };
-		178846921CA7EC0500FED0BA /* JFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewCell.h; sourceTree = "<group>"; };
-		178846931CA7EC0500FED0BA /* JFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTableViewCell.m; sourceTree = "<group>"; };
 		17A544D61E67FE4C00995CF2 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		17A544D71E67FE4C00995CF2 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		17A544D91E67FE6600995CF2 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
@@ -166,7 +167,6 @@
 		17A5454C1E69677D00995CF2 /* JFReactiveCocoaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFReactiveCocoaViewController.h; sourceTree = "<group>"; };
 		17A5454D1E69677D00995CF2 /* JFReactiveCocoaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFReactiveCocoaViewController.m; sourceTree = "<group>"; };
 		17BFD7871E94C73100A417AB /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
-		17BFD78C1E94D09300A417AB /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		17BFD78F1E94D33C00A417AB /* rsa_private_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_private_key.pem; sourceTree = "<group>"; };
 		17BFD7901E94D33C00A417AB /* rsa_public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_public_key.pem; sourceTree = "<group>"; };
 		17C4135B1DB782F000188556 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
@@ -270,7 +270,6 @@
 		170F314F1CA44A44002A9A63 /* test */ = {
 			isa = PBXGroup;
 			children = (
-				17BFD7871E94C73100A417AB /* test.entitlements */,
 				17A544D11E67FDC200995CF2 /* Expand */,
 				17A544D01E67FDAC00995CF2 /* Vendors */,
 				1737FF1E1D436BEF00F8DAA9 /* General */,
@@ -283,10 +282,7 @@
 				170F31541CA44A44002A9A63 /* AppDelegate.m */,
 				170F31561CA44A44002A9A63 /* ViewController.h */,
 				170F31571CA44A44002A9A63 /* ViewController.m */,
-				178846921CA7EC0500FED0BA /* JFTableViewCell.h */,
-				178846931CA7EC0500FED0BA /* JFTableViewCell.m */,
 				170F31591CA44A44002A9A63 /* Main.storyboard */,
-				17BFD78C1E94D09300A417AB /* main.js */,
 				170F315C1CA44A44002A9A63 /* Assets.xcassets */,
 				170F315E1CA44A44002A9A63 /* LaunchScreen.storyboard */,
 				170F31611CA44A44002A9A63 /* Info.plist */,
@@ -298,6 +294,7 @@
 		170F31501CA44A44002A9A63 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				17BFD7871E94C73100A417AB /* test.entitlements */,
 				170F31511CA44A44002A9A63 /* main.m */,
 				17A5451D1E680D4500995CF2 /* PrefixHeader.pch */,
 			);
@@ -356,6 +353,7 @@
 		1737FF211D436BEF00F8DAA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				176736501E9CB0F100CC0226 /* main.js */,
 				17BFD78E1E94D33C00A417AB /* key */,
 				17DFDA0F1E77F343003FE611 /* Pictures */,
 			);
@@ -385,8 +383,10 @@
 		1737FF241D436BEF00F8DAA9 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
-				1788468F1CA7EBC200FED0BA /* JFTableViewController.h */,
-				178846901CA7EBC200FED0BA /* JFTableViewController.m */,
+				1767364D1E9CB0C600CC0226 /* JFTableViewCell.h */,
+				1767364E1E9CB0C600CC0226 /* JFTableViewCell.m */,
+				1767364A1E9CB05700CC0226 /* JFTableViewController.h */,
+				1767364B1E9CB05700CC0226 /* JFTableViewController.m */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -844,6 +844,9 @@
 							com.apple.ApplePay = {
 								enabled = 0;
 							};
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
 							com.apple.Keychain = {
 								enabled = 1;
 							};
@@ -891,9 +894,9 @@
 				17BFD7911E94D33C00A417AB /* rsa_private_key.pem in Resources */,
 				170F315D1CA44A44002A9A63 /* Assets.xcassets in Resources */,
 				170F315B1CA44A44002A9A63 /* Main.storyboard in Resources */,
+				176736511E9CB0F100CC0226 /* main.js in Resources */,
 				17DFDA111E77F34C003FE611 /* qq.jpg in Resources */,
 				17BFD7921E94D33C00A417AB /* rsa_public_key.pem in Resources */,
-				17BFD78D1E94D09300A417AB /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -986,11 +989,10 @@
 				17A545011E6806C300995CF2 /* NSDate+Time.m in Sources */,
 				17DFD9E71E710633003FE611 /* JFArchiveSon.m in Sources */,
 				17A545141E68074400995CF2 /* UIColor+SPHex.m in Sources */,
-				178846911CA7EBC200FED0BA /* JFTableViewController.m in Sources */,
-				178846941CA7EC0500FED0BA /* JFTableViewCell.m in Sources */,
 				17A545111E68073A00995CF2 /* UIButton+SPBadge.m in Sources */,
 				17A544F01E6805DB00995CF2 /* UIImageView+Barcode.m in Sources */,
 				17DFD9DD1E70F1A3003FE611 /* JFFontViewController.m in Sources */,
+				1767364C1E9CB05700CC0226 /* JFTableViewController.m in Sources */,
 				17DFD9D21E6E53FD003FE611 /* JFNavigationViewController.m in Sources */,
 				17A544D81E67FE4C00995CF2 /* NSString+Extension.m in Sources */,
 				17A5451A1E68075500995CF2 /* UIImage+Url.m in Sources */,
@@ -1004,6 +1006,7 @@
 				17A5454E1E69677D00995CF2 /* JFReactiveCocoaViewController.m in Sources */,
 				173425371D4608E100EE035D /* JFMainViewController.m in Sources */,
 				17C4136D1DB782F000188556 /* SDCollectionViewCell.m in Sources */,
+				1767364F1E9CB0C600CC0226 /* JFTableViewCell.m in Sources */,
 				17C413721DB783D900188556 /* JFSDCycleViewController.m in Sources */,
 				170C34301D6D972E00987817 /* JFMineviewController.m in Sources */,
 				17A544F31E6805F900995CF2 /* UIImage+Common.m in Sources */,
