@@ -14,6 +14,9 @@ NSString *const JSAppKey = @"6741162070b24760";
 
 #import "JFNavigationViewController.h"
 #import "JFTabBarViewController.h"
+#import "JFNativeTabBarViewController.h"
+
+#define Native_Root  1
 
 @interface AppDelegate ()
 
@@ -65,12 +68,21 @@ NSString *const JSAppKey = @"6741162070b24760";
 
 - (void)prepareRootViewcontroller {
     
-    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    //由storyboard根据myView的storyBoardID来获取我们要切换的视图
-    JFTabBarViewController *rootTabBarViewController = [story instantiateViewControllerWithIdentifier:@"JFTabBarViewController"];
+    if (Native_Root) {
+        JFNativeTabBarViewController *rootTabBarViewController = [[JFNativeTabBarViewController alloc] init];
+        
+        self.window.rootViewController = rootTabBarViewController;
+    }else {
+        UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+        //由storyboard根据myView的storyBoardID来获取我们要切换的视图
+        JFTabBarViewController *rootTabBarViewController = [story instantiateViewControllerWithIdentifier:@"JFTabBarViewController"];
+        
+        //由navigationController推向我们要推向的view
+        self.window.rootViewController = rootTabBarViewController;
+        
+
+    }
     
-    //由navigationController推向我们要推向的view
-    self.window.rootViewController = rootTabBarViewController;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -93,6 +105,20 @@ NSString *const JSAppKey = @"6741162070b24760";
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray * __nullable restorableObjects))restorationHandler {
+    if ([userActivity.activityType isEqualToString:NSUserActivityTypeBrowsingWeb]) {
+        NSURL *webUrl = userActivity.webpageURL;
+        if ([webUrl.host isEqualToString:@"sslpre.shangpin.com"]) {
+            NSLog(@"host = %@",webUrl.host);
+            //do something
+        } else {
+            
+        }
+    }
+    
+    return YES;
 }
 
 @end

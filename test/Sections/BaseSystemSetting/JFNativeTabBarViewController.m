@@ -1,0 +1,177 @@
+//
+//  JFNativeTabBarViewController.m
+//  test
+//
+//  Created by je_ffy on 2017/4/17.
+//  Copyright © 2017年 je_ffy. All rights reserved.
+//
+
+#import "JFNativeTabBarViewController.h"
+
+#import "AViewController.h"
+#import "BViewController.h"
+#import "CViewController.h"
+#import "DViewController.h"
+#import "EViewController.h"
+
+#import "SPTabBar.h"
+#import "SPTabBarView.h"
+#import "SPTabBarItemView.h"
+
+#define Use_System  0
+
+@interface JFNativeTabBarViewController ()
+
+@property (nonatomic, strong) SPTabBarView *tabBarView;
+@property (nonatomic,strong) UIWindow *coverWindow;
+
+@end
+
+@implementation JFNativeTabBarViewController
+
+- (id)init {
+    if (self = [super init]) {
+        [self addAllChildVcs];
+    }
+    return self;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self setUpTabBar];
+    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIWindow * window = [UIApplication sharedApplication].keyWindow;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.8 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        _coverWindow =[[UIWindow alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 20)];
+        _coverWindow.layer.borderWidth = 0.50f;
+        _coverWindow.layer.borderColor = [UIColor redColor].CGColor;
+        _coverWindow.hidden = NO;
+        _coverWindow.backgroundColor = [UIColor clearColor];
+        _coverWindow.windowLevel = UIWindowLevelStatusBar + 1;//优先级比statusbar高一点,盖住statusbar
+        //添加手势
+        UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(tapWindowScrollsToTop)];
+        swipe.direction = UISwipeGestureRecognizerDirectionLeft;
+        [_coverWindow addGestureRecognizer:swipe];
+        [_coverWindow makeKeyAndVisible];//让window变成主window,并显示出来
+        [window makeKeyWindow];//把原来的window在变成主window
+    });
+    
+}
+
+- (void)tapWindowScrollsToTop {
+    //[CCLogSystem activeDeveloperUI];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if (!Use_System) {
+        [self prepareTabBar];
+    }
+}
+- (void)setUpTabBar {
+    [self setValue:[[SPTabBar alloc] init] forKey:@"tabBar"];
+}
+
+- (void)addAllChildVcs {
+    UIViewController *aVC = [[AViewController alloc] init];
+    
+    UINavigationController *navAVC = [[UINavigationController alloc] initWithRootViewController:aVC];
+    
+    UIViewController *bVC = [[BViewController alloc] init];
+    
+    UIViewController *cVC = [[CViewController alloc] init];
+    
+    UIViewController *dVC = [[DViewController alloc] init];
+    
+    UIViewController *eVC = [[EViewController alloc] init];
+    
+    self.viewControllers = [NSArray arrayWithObjects:navAVC,bVC,cVC,dVC,eVC, nil];
+    self.delegate = self;
+    if (Use_System) {
+        [self setUpSystemItemBar];
+    }
+    
+}
+
+- (void)setUpSystemItemBar {
+    NSArray *selectImages = @[@"nav_mall_press", @"nav_finding_press", @"nav_classification_press", @"nav_icon_shopping-cart_press", @"nav_mine_press"];
+    NSArray *unSelectImages = @[@"nav_mall", @"nav_finding", @"nav_classification", @"nav_icon_shopping-cart", @"nav_mine"];
+    
+    [self.tabBar.items enumerateObjectsUsingBlock:^(UITabBarItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        UIImage *selectedImage = [UIImage imageNamed:[selectImages objectAtIndex:idx]];
+        selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        UIImage *unselectedImage = [UIImage imageNamed:[unSelectImages objectAtIndex:idx]];
+        
+        obj.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
+        obj.titlePositionAdjustment = UIOffsetMake(0, -6);
+        obj.title = nil;
+        obj.image = unselectedImage;
+        obj.selectedImage = selectedImage;
+    }];
+}
+
+
+- (void)prepareTabBar {
+    if (!_tabBarView) {
+        _tabBarView = [[SPTabBarView alloc] init];
+        _tabBarView.backgroundColor = [UIColor clearColor];
+        _tabBarView.frame = CGRectMake(0, 0, self.tabBar.frame.size.width, self.tabBar.frame.size.height);
+        __weak typeof(self) weakself = self;
+        _tabBarView.tapBarViewCallBack = ^(SPTabBarItemView *itemView,NSInteger index){
+            [weakself tapItemView:itemView index:index];
+        };
+        
+        SPTabBarItemView *item0 = [[SPTabBarItemView alloc] init];
+        item0.normalImageView.image = [UIImage imageNamed:@"nav_mall"];
+        item0.selectImageView.image = [UIImage imageNamed:@"nav_mall_press"];
+        item0.canSelect = YES;
+        
+        SPTabBarItemView *item2 = [SPTabBarItemView new];
+        item2.normalImageView.image = [UIImage imageNamed:@"nav_finding"];
+        item2.selectImageView.image = [UIImage imageNamed:@"nav_finding_press"];
+        item2.canSelect = YES;
+        
+        SPTabBarItemView *item1 = [SPTabBarItemView new];
+        item1.normalImageView.image = [UIImage imageNamed:@"nav_classification"];
+        item1.selectImageView.image = [UIImage imageNamed:@"nav_classification_press"];
+        item1.canSelect = YES;
+        
+        SPTabBarItemView *item3 = [SPTabBarItemView new];
+        item3.normalImageView.image = [UIImage imageNamed:@"nav_icon_shopping-cart"];
+        item3.selectImageView.image = [UIImage imageNamed:@"nav_icon_shopping-cart_press"];
+        item3.canSelect = YES;
+        
+        SPTabBarItemView *item4 = [SPTabBarItemView new];
+        item4.normalImageView.image = [UIImage imageNamed:@"nav_mine"];
+        item4.selectImageView.image = [UIImage imageNamed:@"nav_mine_press"];
+        item4.canSelect = YES;
+        
+        NSArray *items = [NSArray arrayWithObjects:item0,item1,item2,item3,item4,nil];
+        
+        [_tabBarView setItems:items];
+    }
+    
+    self.tabBar.clipsToBounds = NO;
+    [self.tabBar addSubview:_tabBarView];
+    
+}
+
+- (void)tapItemView:(SPTabBarItemView *)itemView index:(NSInteger)index {
+    self.selectedViewController = [self.viewControllers objectAtIndex:index];
+}
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    
+}
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+@end

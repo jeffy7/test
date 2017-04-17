@@ -21,6 +21,15 @@
 		1767364C1E9CB05700CC0226 /* JFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1767364B1E9CB05700CC0226 /* JFTableViewController.m */; };
 		1767364F1E9CB0C600CC0226 /* JFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1767364E1E9CB0C600CC0226 /* JFTableViewCell.m */; };
 		176736511E9CB0F100CC0226 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 176736501E9CB0F100CC0226 /* main.js */; };
+		1767375F1EA476F500CC0226 /* JFNativeTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1767375E1EA476F500CC0226 /* JFNativeTabBarViewController.m */; };
+		176737671EA4778B00CC0226 /* SPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 176737621EA4778B00CC0226 /* SPTabBar.m */; };
+		176737681EA4778B00CC0226 /* SPTabBarItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 176737641EA4778B00CC0226 /* SPTabBarItemView.m */; };
+		176737691EA4778B00CC0226 /* SPTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 176737661EA4778B00CC0226 /* SPTabBarView.m */; };
+		176737751EA4784D00CC0226 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1767376C1EA4784D00CC0226 /* AViewController.m */; };
+		176737761EA4784D00CC0226 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1767376E1EA4784D00CC0226 /* BViewController.m */; };
+		176737771EA4784D00CC0226 /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176737701EA4784D00CC0226 /* CViewController.m */; };
+		176737781EA4784D00CC0226 /* DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176737721EA4784D00CC0226 /* DViewController.m */; };
+		176737791EA4784D00CC0226 /* EViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176737741EA4784D00CC0226 /* EViewController.m */; };
 		178361651E7F84C000CF5BDF /* JFExchangeBoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 178361641E7F84C000CF5BDF /* JFExchangeBoundButton.m */; };
 		178361691E7FC33200CF5BDF /* JFCABaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178361681E7FC33200CF5BDF /* JFCABaseAnimationViewController.m */; };
 		1783616E1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1783616D1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m */; };
@@ -117,6 +126,24 @@
 		1767364D1E9CB0C600CC0226 /* JFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewCell.h; sourceTree = "<group>"; };
 		1767364E1E9CB0C600CC0226 /* JFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTableViewCell.m; sourceTree = "<group>"; };
 		176736501E9CB0F100CC0226 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		1767375D1EA476F500CC0226 /* JFNativeTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFNativeTabBarViewController.h; sourceTree = "<group>"; };
+		1767375E1EA476F500CC0226 /* JFNativeTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFNativeTabBarViewController.m; sourceTree = "<group>"; };
+		176737611EA4778B00CC0226 /* SPTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTabBar.h; sourceTree = "<group>"; };
+		176737621EA4778B00CC0226 /* SPTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTabBar.m; sourceTree = "<group>"; };
+		176737631EA4778B00CC0226 /* SPTabBarItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTabBarItemView.h; sourceTree = "<group>"; };
+		176737641EA4778B00CC0226 /* SPTabBarItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTabBarItemView.m; sourceTree = "<group>"; };
+		176737651EA4778B00CC0226 /* SPTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTabBarView.h; sourceTree = "<group>"; };
+		176737661EA4778B00CC0226 /* SPTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTabBarView.m; sourceTree = "<group>"; };
+		1767376B1EA4784D00CC0226 /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
+		1767376C1EA4784D00CC0226 /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		1767376D1EA4784D00CC0226 /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		1767376E1EA4784D00CC0226 /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		1767376F1EA4784D00CC0226 /* CViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CViewController.h; sourceTree = "<group>"; };
+		176737701EA4784D00CC0226 /* CViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CViewController.m; sourceTree = "<group>"; };
+		176737711EA4784D00CC0226 /* DViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DViewController.h; sourceTree = "<group>"; };
+		176737721EA4784D00CC0226 /* DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DViewController.m; sourceTree = "<group>"; };
+		176737731EA4784D00CC0226 /* EViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EViewController.h; sourceTree = "<group>"; };
+		176737741EA4784D00CC0226 /* EViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EViewController.m; sourceTree = "<group>"; };
 		178361631E7F84C000CF5BDF /* JFExchangeBoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFExchangeBoundButton.h; sourceTree = "<group>"; };
 		178361641E7F84C000CF5BDF /* JFExchangeBoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFExchangeBoundButton.m; sourceTree = "<group>"; };
 		178361671E7FC33200CF5BDF /* JFCABaseAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCABaseAnimationViewController.h; sourceTree = "<group>"; };
@@ -329,6 +356,7 @@
 		1737FF1E1D436BEF00F8DAA9 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				176737601EA4775500CC0226 /* TabBar */,
 				173425321D4604BB00EE035D /* JFCycleView.h */,
 				173425331D4604BB00EE035D /* JFCycleView.m */,
 			);
@@ -363,6 +391,7 @@
 		1737FF221D436BEF00F8DAA9 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				1767376A1EA477F100CC0226 /* ABCDE */,
 				17DFD9CF1E6E53E0003FE611 /* BaseSystemSetting */,
 				1737FF231D436BEF00F8DAA9 /* FourthView */,
 				1737FF241D436BEF00F8DAA9 /* MainPage */,
@@ -428,6 +457,36 @@
 			children = (
 			);
 			path = ThirdView;
+			sourceTree = "<group>";
+		};
+		176737601EA4775500CC0226 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				176737611EA4778B00CC0226 /* SPTabBar.h */,
+				176737621EA4778B00CC0226 /* SPTabBar.m */,
+				176737631EA4778B00CC0226 /* SPTabBarItemView.h */,
+				176737641EA4778B00CC0226 /* SPTabBarItemView.m */,
+				176737651EA4778B00CC0226 /* SPTabBarView.h */,
+				176737661EA4778B00CC0226 /* SPTabBarView.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		1767376A1EA477F100CC0226 /* ABCDE */ = {
+			isa = PBXGroup;
+			children = (
+				1767376B1EA4784D00CC0226 /* AViewController.h */,
+				1767376C1EA4784D00CC0226 /* AViewController.m */,
+				1767376D1EA4784D00CC0226 /* BViewController.h */,
+				1767376E1EA4784D00CC0226 /* BViewController.m */,
+				1767376F1EA4784D00CC0226 /* CViewController.h */,
+				176737701EA4784D00CC0226 /* CViewController.m */,
+				176737711EA4784D00CC0226 /* DViewController.h */,
+				176737721EA4784D00CC0226 /* DViewController.m */,
+				176737731EA4784D00CC0226 /* EViewController.h */,
+				176737741EA4784D00CC0226 /* EViewController.m */,
+			);
+			path = ABCDE;
 			sourceTree = "<group>";
 		};
 		178361621E7F849400CF5BDF /* UIbutton */ = {
@@ -695,6 +754,8 @@
 				17DFD9D11E6E53FD003FE611 /* JFNavigationViewController.m */,
 				17DFD9D31E6E5B0B003FE611 /* JFTabBarViewController.h */,
 				17DFD9D41E6E5B0B003FE611 /* JFTabBarViewController.m */,
+				1767375D1EA476F500CC0226 /* JFNativeTabBarViewController.h */,
+				1767375E1EA476F500CC0226 /* JFNativeTabBarViewController.m */,
 			);
 			path = BaseSystemSetting;
 			sourceTree = "<group>";
@@ -972,12 +1033,16 @@
 				17A544E81E68059200995CF2 /* UILabel+Common.m in Sources */,
 				17DFDA0E1E77F16E003FE611 /* UIView+JFCorner.m in Sources */,
 				17A544E41E67FEFE00995CF2 /* UIView+BlockGesture.m in Sources */,
+				176737691EA4778B00CC0226 /* SPTabBarView.m in Sources */,
 				170F31581CA44A44002A9A63 /* ViewController.m in Sources */,
+				176737781EA4784D00CC0226 /* DViewController.m in Sources */,
 				17A5450E1E68072600995CF2 /* SPTextField.m in Sources */,
 				17C4136B1DB782F000188556 /* TADotView.m in Sources */,
 				17A544F61E68065A00995CF2 /* UIColor+HEX.m in Sources */,
 				178361691E7FC33200CF5BDF /* JFCABaseAnimationViewController.m in Sources */,
+				176737671EA4778B00CC0226 /* SPTabBar.m in Sources */,
 				17C413691DB782F000188556 /* TAAbstractDotView.m in Sources */,
+				176737771EA4784D00CC0226 /* CViewController.m in Sources */,
 				17A544DB1E67FE6600995CF2 /* UIColor+Extension.m in Sources */,
 				178361651E7F84C000CF5BDF /* JFExchangeBoundButton.m in Sources */,
 				17DFDA171E77FABA003FE611 /* JFCornerView.m in Sources */,
@@ -988,6 +1053,7 @@
 				17A545191E68075500995CF2 /* UIImage+SPScale.m in Sources */,
 				17A545011E6806C300995CF2 /* NSDate+Time.m in Sources */,
 				17DFD9E71E710633003FE611 /* JFArchiveSon.m in Sources */,
+				176737761EA4784D00CC0226 /* BViewController.m in Sources */,
 				17A545141E68074400995CF2 /* UIColor+SPHex.m in Sources */,
 				17A545111E68073A00995CF2 /* UIButton+SPBadge.m in Sources */,
 				17A544F01E6805DB00995CF2 /* UIImageView+Barcode.m in Sources */,
@@ -997,12 +1063,14 @@
 				17A544D81E67FE4C00995CF2 /* NSString+Extension.m in Sources */,
 				17A5451A1E68075500995CF2 /* UIImage+Url.m in Sources */,
 				17A544E31E67FEFE00995CF2 /* UIView+AEBHandyAutoLayout.m in Sources */,
+				1767375F1EA476F500CC0226 /* JFNativeTabBarViewController.m in Sources */,
 				17DFDA141E77F3D1003FE611 /* UIImage+JFCorner.m in Sources */,
 				17A544EC1E6805B000995CF2 /* UITableView+CellLine.m in Sources */,
 				17C4136F1DB782F000188556 /* UIView+SDExtension.m in Sources */,
 				17C4136C1DB782F000188556 /* TAPageControl.m in Sources */,
 				173425341D4604BB00EE035D /* JFCycleView.m in Sources */,
 				17DFD9D91E700221003FE611 /* JFCoreAnimationViewController.m in Sources */,
+				176737791EA4784D00CC0226 /* EViewController.m in Sources */,
 				17A5454E1E69677D00995CF2 /* JFReactiveCocoaViewController.m in Sources */,
 				173425371D4608E100EE035D /* JFMainViewController.m in Sources */,
 				17C4136D1DB782F000188556 /* SDCollectionViewCell.m in Sources */,
@@ -1012,9 +1080,11 @@
 				17A544F31E6805F900995CF2 /* UIImage+Common.m in Sources */,
 				17DFD9EA1E7106EF003FE611 /* JFArchiveFather.m in Sources */,
 				170F31551CA44A44002A9A63 /* AppDelegate.m in Sources */,
+				176737751EA4784D00CC0226 /* AViewController.m in Sources */,
 				170F31521CA44A44002A9A63 /* main.m in Sources */,
 				17C4136A1DB782F000188556 /* TAAnimatedDotView.m in Sources */,
 				17DFD9CE1E6E5313003FE611 /* JFRounderCornerViewController.m in Sources */,
+				176737681EA4778B00CC0226 /* SPTabBarItemView.m in Sources */,
 				17A544FE1E6806BA00995CF2 /* UIButton+countDown.m in Sources */,
 				17A545041E6806E900995CF2 /* UILabel+SPUtils.m in Sources */,
 				17DFD9D51E6E5B0B003FE611 /* JFTabBarViewController.m in Sources */,
