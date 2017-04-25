@@ -75,6 +75,18 @@
 		17DFDA111E77F34C003FE611 /* qq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17DFDA101E77F34C003FE611 /* qq.jpg */; };
 		17DFDA141E77F3D1003FE611 /* UIImage+JFCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFDA131E77F3D1003FE611 /* UIImage+JFCorner.m */; };
 		17DFDA171E77FABA003FE611 /* JFCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFDA161E77FABA003FE611 /* JFCornerView.m */; };
+		17E42A4D1EAE00260079ED99 /* CCLocationMake.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E42A331EAE00260079ED99 /* CCLocationMake.m */; };
+		17E42A4E1EAE00260079ED99 /* CCLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E42A351EAE00260079ED99 /* CCLog.m */; };
+		17E42A4F1EAE00260079ED99 /* CCLogController+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E42A371EAE00260079ED99 /* CCLogController+Utility.m */; };
+		17E42A501EAE00260079ED99 /* CCLogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E42A391EAE00260079ED99 /* CCLogController.m */; };
+		17E42A511EAE00260079ED99 /* CCLogReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E42A3B1EAE00260079ED99 /* CCLogReviewViewController.m */; };
+		17E42A521EAE00260079ED99 /* CCLogStringImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E42A3D1EAE00260079ED99 /* CCLogStringImp.m */; };
+		17E42A531EAE00260079ED99 /* CCLogSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E42A3F1EAE00260079ED99 /* CCLogSystem.m */; };
+		17E42A541EAE00260079ED99 /* CCLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E42A411EAE00260079ED99 /* CCLogViewController.m */; };
+		17E42A551EAE00260079ED99 /* CCSimpleFileOutputRedirectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E42A431EAE00260079ED99 /* CCSimpleFileOutputRedirectionController.m */; };
+		17E42A561EAE00260079ED99 /* CCTeeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E42A451EAE00260079ED99 /* CCTeeController.m */; };
+		17E42A571EAE00260079ED99 /* NSObject+CCReverseComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E42A471EAE00260079ED99 /* NSObject+CCReverseComparison.m */; };
+		17E42A581EAE00260079ED99 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17E42A4C1EAE00260079ED99 /* Info.plist */; };
 		17E6FA391E8D136600CEA421 /* JSPatchPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E6FA381E8D136600CEA421 /* JSPatchPlatform.framework */; };
 		17E6FA3B1E8D137100CEA421 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E6FA3A1E8D137100CEA421 /* JavaScriptCore.framework */; };
 		17E6FA3D1E8D137A00CEA421 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E6FA3C1E8D137A00CEA421 /* libz.tbd */; };
@@ -95,6 +107,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 170F314C1CA44A44002A9A63;
 			remoteInfo = test;
+		};
+		17E42A5A1EAE00260079ED99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17E42A481EAE00260079ED99 /* CCLogSystem.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 348FAFCF1A02325000AA05C2;
+			remoteInfo = CCLogSystem;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -235,6 +254,31 @@
 		17DFDA131E77F3D1003FE611 /* UIImage+JFCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JFCorner.m"; sourceTree = "<group>"; };
 		17DFDA151E77FABA003FE611 /* JFCornerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCornerView.h; sourceTree = "<group>"; };
 		17DFDA161E77FABA003FE611 /* JFCornerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCornerView.m; sourceTree = "<group>"; };
+		17E42A311EAE00260079ED99 /* CCFileOutputRedirectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFileOutputRedirectionController.h; sourceTree = "<group>"; };
+		17E42A321EAE00260079ED99 /* CCLocationMake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLocationMake.h; sourceTree = "<group>"; };
+		17E42A331EAE00260079ED99 /* CCLocationMake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLocationMake.m; sourceTree = "<group>"; };
+		17E42A341EAE00260079ED99 /* CCLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLog.h; sourceTree = "<group>"; };
+		17E42A351EAE00260079ED99 /* CCLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLog.m; sourceTree = "<group>"; };
+		17E42A361EAE00260079ED99 /* CCLogController+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCLogController+Utility.h"; sourceTree = "<group>"; };
+		17E42A371EAE00260079ED99 /* CCLogController+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCLogController+Utility.m"; sourceTree = "<group>"; };
+		17E42A381EAE00260079ED99 /* CCLogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLogController.h; sourceTree = "<group>"; };
+		17E42A391EAE00260079ED99 /* CCLogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLogController.m; sourceTree = "<group>"; };
+		17E42A3A1EAE00260079ED99 /* CCLogReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLogReviewViewController.h; sourceTree = "<group>"; };
+		17E42A3B1EAE00260079ED99 /* CCLogReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLogReviewViewController.m; sourceTree = "<group>"; };
+		17E42A3C1EAE00260079ED99 /* CCLogStringImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLogStringImp.h; sourceTree = "<group>"; };
+		17E42A3D1EAE00260079ED99 /* CCLogStringImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLogStringImp.m; sourceTree = "<group>"; };
+		17E42A3E1EAE00260079ED99 /* CCLogSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLogSystem.h; sourceTree = "<group>"; };
+		17E42A3F1EAE00260079ED99 /* CCLogSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLogSystem.m; sourceTree = "<group>"; };
+		17E42A401EAE00260079ED99 /* CCLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLogViewController.h; sourceTree = "<group>"; };
+		17E42A411EAE00260079ED99 /* CCLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLogViewController.m; sourceTree = "<group>"; };
+		17E42A421EAE00260079ED99 /* CCSimpleFileOutputRedirectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSimpleFileOutputRedirectionController.h; sourceTree = "<group>"; };
+		17E42A431EAE00260079ED99 /* CCSimpleFileOutputRedirectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSimpleFileOutputRedirectionController.m; sourceTree = "<group>"; };
+		17E42A441EAE00260079ED99 /* CCTeeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTeeController.h; sourceTree = "<group>"; };
+		17E42A451EAE00260079ED99 /* CCTeeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTeeController.m; sourceTree = "<group>"; };
+		17E42A461EAE00260079ED99 /* NSObject+CCReverseComparison.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CCReverseComparison.h"; sourceTree = "<group>"; };
+		17E42A471EAE00260079ED99 /* NSObject+CCReverseComparison.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CCReverseComparison.m"; sourceTree = "<group>"; };
+		17E42A481EAE00260079ED99 /* CCLogSystem.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CCLogSystem.xcodeproj; sourceTree = "<group>"; };
+		17E42A4C1EAE00260079ED99 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17E6FA381E8D136600CEA421 /* JSPatchPlatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatchPlatform.framework; sourceTree = "<group>"; };
 		17E6FA3A1E8D137100CEA421 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		17E6FA3C1E8D137A00CEA421 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -275,6 +319,7 @@
 		170F31441CA44A44002A9A63 = {
 			isa = PBXGroup;
 			children = (
+				17E42A2F1EAE00260079ED99 /* CCLogSystem */,
 				170F314F1CA44A44002A9A63 /* test */,
 				170F31691CA44A44002A9A63 /* testTests */,
 				170F31741CA44A44002A9A63 /* testUITests */,
@@ -801,6 +846,62 @@
 			path = Pictures;
 			sourceTree = "<group>";
 		};
+		17E42A2F1EAE00260079ED99 /* CCLogSystem */ = {
+			isa = PBXGroup;
+			children = (
+				17E42A301EAE00260079ED99 /* CCLogSystem */,
+				17E42A481EAE00260079ED99 /* CCLogSystem.xcodeproj */,
+				17E42A4B1EAE00260079ED99 /* CCLogSystemTests */,
+			);
+			path = CCLogSystem;
+			sourceTree = "<group>";
+		};
+		17E42A301EAE00260079ED99 /* CCLogSystem */ = {
+			isa = PBXGroup;
+			children = (
+				17E42A311EAE00260079ED99 /* CCFileOutputRedirectionController.h */,
+				17E42A321EAE00260079ED99 /* CCLocationMake.h */,
+				17E42A331EAE00260079ED99 /* CCLocationMake.m */,
+				17E42A341EAE00260079ED99 /* CCLog.h */,
+				17E42A351EAE00260079ED99 /* CCLog.m */,
+				17E42A361EAE00260079ED99 /* CCLogController+Utility.h */,
+				17E42A371EAE00260079ED99 /* CCLogController+Utility.m */,
+				17E42A381EAE00260079ED99 /* CCLogController.h */,
+				17E42A391EAE00260079ED99 /* CCLogController.m */,
+				17E42A3A1EAE00260079ED99 /* CCLogReviewViewController.h */,
+				17E42A3B1EAE00260079ED99 /* CCLogReviewViewController.m */,
+				17E42A3C1EAE00260079ED99 /* CCLogStringImp.h */,
+				17E42A3D1EAE00260079ED99 /* CCLogStringImp.m */,
+				17E42A3E1EAE00260079ED99 /* CCLogSystem.h */,
+				17E42A3F1EAE00260079ED99 /* CCLogSystem.m */,
+				17E42A401EAE00260079ED99 /* CCLogViewController.h */,
+				17E42A411EAE00260079ED99 /* CCLogViewController.m */,
+				17E42A421EAE00260079ED99 /* CCSimpleFileOutputRedirectionController.h */,
+				17E42A431EAE00260079ED99 /* CCSimpleFileOutputRedirectionController.m */,
+				17E42A441EAE00260079ED99 /* CCTeeController.h */,
+				17E42A451EAE00260079ED99 /* CCTeeController.m */,
+				17E42A461EAE00260079ED99 /* NSObject+CCReverseComparison.h */,
+				17E42A471EAE00260079ED99 /* NSObject+CCReverseComparison.m */,
+			);
+			path = CCLogSystem;
+			sourceTree = "<group>";
+		};
+		17E42A491EAE00260079ED99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17E42A5B1EAE00260079ED99 /* libCCLogSystem.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17E42A4B1EAE00260079ED99 /* CCLogSystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				17E42A4C1EAE00260079ED99 /* Info.plist */,
+			);
+			path = CCLogSystemTests;
+			sourceTree = "<group>";
+		};
 		17E6FA371E8D135100CEA421 /* JSPatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -937,6 +1038,12 @@
 			mainGroup = 170F31441CA44A44002A9A63;
 			productRefGroup = 170F314E1CA44A44002A9A63 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 17E42A491EAE00260079ED99 /* Products */;
+					ProjectRef = 17E42A481EAE00260079ED99 /* CCLogSystem.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				170F314C1CA44A44002A9A63 /* test */,
@@ -946,11 +1053,22 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		17E42A5B1EAE00260079ED99 /* libCCLogSystem.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCCLogSystem.a;
+			remoteRef = 17E42A5A1EAE00260079ED99 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		170F314B1CA44A44002A9A63 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E42A581EAE00260079ED99 /* Info.plist in Resources */,
 				170F31601CA44A44002A9A63 /* LaunchScreen.storyboard in Resources */,
 				17BFD7911E94D33C00A417AB /* rsa_private_key.pem in Resources */,
 				170F315D1CA44A44002A9A63 /* Assets.xcassets in Resources */,
@@ -1035,6 +1153,7 @@
 				17A544E41E67FEFE00995CF2 /* UIView+BlockGesture.m in Sources */,
 				176737691EA4778B00CC0226 /* SPTabBarView.m in Sources */,
 				170F31581CA44A44002A9A63 /* ViewController.m in Sources */,
+				17E42A561EAE00260079ED99 /* CCTeeController.m in Sources */,
 				176737781EA4784D00CC0226 /* DViewController.m in Sources */,
 				17A5450E1E68072600995CF2 /* SPTextField.m in Sources */,
 				17C4136B1DB782F000188556 /* TADotView.m in Sources */,
@@ -1043,27 +1162,35 @@
 				176737671EA4778B00CC0226 /* SPTabBar.m in Sources */,
 				17C413691DB782F000188556 /* TAAbstractDotView.m in Sources */,
 				176737771EA4784D00CC0226 /* CViewController.m in Sources */,
+				17E42A551EAE00260079ED99 /* CCSimpleFileOutputRedirectionController.m in Sources */,
 				17A544DB1E67FE6600995CF2 /* UIColor+Extension.m in Sources */,
 				178361651E7F84C000CF5BDF /* JFExchangeBoundButton.m in Sources */,
+				17E42A511EAE00260079ED99 /* CCLogReviewViewController.m in Sources */,
 				17DFDA171E77FABA003FE611 /* JFCornerView.m in Sources */,
+				17E42A4D1EAE00260079ED99 /* CCLocationMake.m in Sources */,
 				17C4136E1DB782F000188556 /* SDCycleScrollView.m in Sources */,
 				17DFD9E11E710432003FE611 /* JFArchiveViewController.m in Sources */,
 				17A544E51E67FEFE00995CF2 /* UIView+LayoutMethods.m in Sources */,
 				17A544FD1E6806BA00995CF2 /* UIButton+Common.m in Sources */,
+				17E42A4F1EAE00260079ED99 /* CCLogController+Utility.m in Sources */,
 				17A545191E68075500995CF2 /* UIImage+SPScale.m in Sources */,
 				17A545011E6806C300995CF2 /* NSDate+Time.m in Sources */,
 				17DFD9E71E710633003FE611 /* JFArchiveSon.m in Sources */,
 				176737761EA4784D00CC0226 /* BViewController.m in Sources */,
+				17E42A531EAE00260079ED99 /* CCLogSystem.m in Sources */,
 				17A545141E68074400995CF2 /* UIColor+SPHex.m in Sources */,
+				17E42A571EAE00260079ED99 /* NSObject+CCReverseComparison.m in Sources */,
 				17A545111E68073A00995CF2 /* UIButton+SPBadge.m in Sources */,
 				17A544F01E6805DB00995CF2 /* UIImageView+Barcode.m in Sources */,
 				17DFD9DD1E70F1A3003FE611 /* JFFontViewController.m in Sources */,
+				17E42A4E1EAE00260079ED99 /* CCLog.m in Sources */,
 				1767364C1E9CB05700CC0226 /* JFTableViewController.m in Sources */,
 				17DFD9D21E6E53FD003FE611 /* JFNavigationViewController.m in Sources */,
 				17A544D81E67FE4C00995CF2 /* NSString+Extension.m in Sources */,
 				17A5451A1E68075500995CF2 /* UIImage+Url.m in Sources */,
 				17A544E31E67FEFE00995CF2 /* UIView+AEBHandyAutoLayout.m in Sources */,
 				1767375F1EA476F500CC0226 /* JFNativeTabBarViewController.m in Sources */,
+				17E42A521EAE00260079ED99 /* CCLogStringImp.m in Sources */,
 				17DFDA141E77F3D1003FE611 /* UIImage+JFCorner.m in Sources */,
 				17A544EC1E6805B000995CF2 /* UITableView+CellLine.m in Sources */,
 				17C4136F1DB782F000188556 /* UIView+SDExtension.m in Sources */,
@@ -1079,6 +1206,7 @@
 				170C34301D6D972E00987817 /* JFMineviewController.m in Sources */,
 				17A544F31E6805F900995CF2 /* UIImage+Common.m in Sources */,
 				17DFD9EA1E7106EF003FE611 /* JFArchiveFather.m in Sources */,
+				17E42A501EAE00260079ED99 /* CCLogController.m in Sources */,
 				170F31551CA44A44002A9A63 /* AppDelegate.m in Sources */,
 				176737751EA4784D00CC0226 /* AViewController.m in Sources */,
 				170F31521CA44A44002A9A63 /* main.m in Sources */,
@@ -1086,6 +1214,7 @@
 				17DFD9CE1E6E5313003FE611 /* JFRounderCornerViewController.m in Sources */,
 				176737681EA4778B00CC0226 /* SPTabBarItemView.m in Sources */,
 				17A544FE1E6806BA00995CF2 /* UIButton+countDown.m in Sources */,
+				17E42A541EAE00260079ED99 /* CCLogViewController.m in Sources */,
 				17A545041E6806E900995CF2 /* UILabel+SPUtils.m in Sources */,
 				17DFD9D51E6E5B0B003FE611 /* JFTabBarViewController.m in Sources */,
 				1783616E1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m in Sources */,

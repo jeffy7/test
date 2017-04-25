@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 ///////////////////
 #import <JSPatchPlatform/JSPatch.h>
+#import "CCLogSystem.h"
 
 NSString *const JSAppKey = @"6741162070b24760";
 
@@ -26,10 +27,14 @@ NSString *const JSAppKey = @"6741162070b24760";
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [CCLogSystem setupDefaultLogConfigure];
+    
     return YES;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [CCLogSystem setupDefaultLogConfigure];
+
     // Override point for customization after application launch.
     [self configeJSPatch];
     

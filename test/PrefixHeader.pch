@@ -9,6 +9,8 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#import "AppDelegate.h"
+
 #import "JFMacroHeader.h"
 #import "JFCategoryHeader.h"
 #import "Masonry.h"
