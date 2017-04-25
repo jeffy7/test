@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 一个扩大Button 热区的继承类
+ */
 @interface JFExchangeBoundButton : UIButton
 
 @end

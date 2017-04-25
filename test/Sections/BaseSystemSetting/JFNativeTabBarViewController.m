@@ -60,7 +60,7 @@
 }
 
 - (void)tapWindowScrollsToTop {
-    //[CCLogSystem activeDeveloperUI];
+    [CCLogSystem activeDeveloperUI];
     
 }
 
