@@ -17,7 +17,7 @@ NSString *const JSAppKey = @"6741162070b24760";
 #import "JFTabBarViewController.h"
 #import "JFNativeTabBarViewController.h"
 
-#define Native_Root  1
+#define Native_Root  0
 
 @interface AppDelegate ()
 

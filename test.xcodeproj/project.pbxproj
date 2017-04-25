@@ -18,6 +18,7 @@
 		170F31761CA44A44002A9A63 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 170F31751CA44A44002A9A63 /* testUITests.m */; };
 		173425341D4604BB00EE035D /* JFCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425331D4604BB00EE035D /* JFCycleView.m */; };
 		173425371D4608E100EE035D /* JFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425361D4608E100EE035D /* JFMainViewController.m */; };
+		174E72371EAF40F3003B4BD0 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 174E72361EAF40F3003B4BD0 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		1767364C1E9CB05700CC0226 /* JFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1767364B1E9CB05700CC0226 /* JFTableViewController.m */; };
 		1767364F1E9CB0C600CC0226 /* JFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1767364E1E9CB0C600CC0226 /* JFTableViewCell.m */; };
 		176736511E9CB0F100CC0226 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 176736501E9CB0F100CC0226 /* main.js */; };
@@ -140,6 +141,9 @@
 		173425331D4604BB00EE035D /* JFCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCycleView.m; sourceTree = "<group>"; };
 		173425351D4608E100EE035D /* JFMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMainViewController.h; sourceTree = "<group>"; };
 		173425361D4608E100EE035D /* JFMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFMainViewController.m; sourceTree = "<group>"; };
+		174E72351EAF40F3003B4BD0 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		174E72361EAF40F3003B4BD0 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		174E72451EAF4548003B4BD0 /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 		1767364A1E9CB05700CC0226 /* JFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewController.h; sourceTree = "<group>"; };
 		1767364B1E9CB05700CC0226 /* JFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTableViewController.m; sourceTree = "<group>"; };
 		1767364D1E9CB0C600CC0226 /* JFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewCell.h; sourceTree = "<group>"; };
@@ -366,6 +370,7 @@
 		170F31501CA44A44002A9A63 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				174E72441EAF4527003B4BD0 /* Config */,
 				17BFD7871E94C73100A417AB /* test.entitlements */,
 				170F31511CA44A44002A9A63 /* main.m */,
 				17A5451D1E680D4500995CF2 /* PrefixHeader.pch */,
@@ -504,6 +509,23 @@
 			path = ThirdView;
 			sourceTree = "<group>";
 		};
+		174E72341EAF40F3003B4BD0 /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				174E72351EAF40F3003B4BD0 /* UINavigationController+FDFullscreenPopGesture.h */,
+				174E72361EAF40F3003B4BD0 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
+		174E72441EAF4527003B4BD0 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				174E72451EAF4548003B4BD0 /* Defines.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		176737601EA4775500CC0226 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -564,6 +586,7 @@
 		17A544D01E67FDAC00995CF2 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				174E72341EAF40F3003B4BD0 /* FDFullscreenPopGesture */,
 				17E6FA371E8D135100CEA421 /* JSPatch */,
 				178361621E7F849400CF5BDF /* UIbutton */,
 			);
@@ -1151,6 +1174,7 @@
 				17A544E81E68059200995CF2 /* UILabel+Common.m in Sources */,
 				17DFDA0E1E77F16E003FE611 /* UIView+JFCorner.m in Sources */,
 				17A544E41E67FEFE00995CF2 /* UIView+BlockGesture.m in Sources */,
+				174E72371EAF40F3003B4BD0 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				176737691EA4778B00CC0226 /* SPTabBarView.m in Sources */,
 				170F31581CA44A44002A9A63 /* ViewController.m in Sources */,
 				17E42A561EAE00260079ED99 /* CCTeeController.m in Sources */,
