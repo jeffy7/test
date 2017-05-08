@@ -19,6 +19,7 @@
 #import "JFMacroHeader.h"
 #import "JFCategoryHeader.h"
 #import "Masonry.h"
+#import "AFNetworking.h"
 #import <objc/runtime.h>
 
 // Include any system framework and library headers here that should be included in all compilation units.

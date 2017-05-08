@@ -19,6 +19,8 @@
 		173425341D4604BB00EE035D /* JFCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425331D4604BB00EE035D /* JFCycleView.m */; };
 		173425371D4608E100EE035D /* JFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425361D4608E100EE035D /* JFMainViewController.m */; };
 		174E72371EAF40F3003B4BD0 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 174E72361EAF40F3003B4BD0 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		174E72561EB1CF89003B4BD0 /* server_test.cer in Resources */ = {isa = PBXBuildFile; fileRef = 174E72541EB1CF89003B4BD0 /* server_test.cer */; };
+		174E72571EB1CF89003B4BD0 /* server.cer in Resources */ = {isa = PBXBuildFile; fileRef = 174E72551EB1CF89003B4BD0 /* server.cer */; };
 		1767364C1E9CB05700CC0226 /* JFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1767364B1E9CB05700CC0226 /* JFTableViewController.m */; };
 		1767364F1E9CB0C600CC0226 /* JFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1767364E1E9CB0C600CC0226 /* JFTableViewCell.m */; };
 		176736511E9CB0F100CC0226 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 176736501E9CB0F100CC0226 /* main.js */; };
@@ -144,6 +146,8 @@
 		174E72351EAF40F3003B4BD0 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		174E72361EAF40F3003B4BD0 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		174E72451EAF4548003B4BD0 /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		174E72541EB1CF89003B4BD0 /* server_test.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = server_test.cer; sourceTree = "<group>"; };
+		174E72551EB1CF89003B4BD0 /* server.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = server.cer; sourceTree = "<group>"; };
 		1767364A1E9CB05700CC0226 /* JFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewController.h; sourceTree = "<group>"; };
 		1767364B1E9CB05700CC0226 /* JFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTableViewController.m; sourceTree = "<group>"; };
 		1767364D1E9CB0C600CC0226 /* JFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTableViewCell.h; sourceTree = "<group>"; };
@@ -431,6 +435,7 @@
 		1737FF211D436BEF00F8DAA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				174E72521EB1CF7A003B4BD0 /* cer */,
 				176736501E9CB0F100CC0226 /* main.js */,
 				17BFD78E1E94D33C00A417AB /* key */,
 				17DFDA0F1E77F343003FE611 /* Pictures */,
@@ -524,6 +529,15 @@
 				174E72451EAF4548003B4BD0 /* Defines.h */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		174E72521EB1CF7A003B4BD0 /* cer */ = {
+			isa = PBXGroup;
+			children = (
+				174E72541EB1CF89003B4BD0 /* server_test.cer */,
+				174E72551EB1CF89003B4BD0 /* server.cer */,
+			);
+			path = cer;
 			sourceTree = "<group>";
 		};
 		176737601EA4775500CC0226 /* TabBar */ = {
@@ -1091,8 +1105,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				174E72561EB1CF89003B4BD0 /* server_test.cer in Resources */,
 				17E42A581EAE00260079ED99 /* Info.plist in Resources */,
 				170F31601CA44A44002A9A63 /* LaunchScreen.storyboard in Resources */,
+				174E72571EB1CF89003B4BD0 /* server.cer in Resources */,
 				17BFD7911E94D33C00A417AB /* rsa_private_key.pem in Resources */,
 				170F315D1CA44A44002A9A63 /* Assets.xcassets in Resources */,
 				170F315B1CA44A44002A9A63 /* Main.storyboard in Resources */,

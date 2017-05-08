@@ -66,6 +66,38 @@
           \n son2.age = %ld \
           \n son2.playGame = %@",
           son1.name,son1.age,son1.playGame,son2.name,son2.age,son2.playGame);
+    
+    
+    
+    NSString *urlString = @"https://app.shangpin.com/apiv2/firstIndexV3";
+    NSString *cerPath = [[NSBundle mainBundle] pathForResource:@"server" ofType:@"cer"];
+    NSData * certData =[NSData dataWithContentsOfFile:cerPath];
+    NSSet * certSet = [[NSSet alloc] initWithObjects:certData, nil];
+    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
+    // 是否允许,NO-- 不允许无效的证书
+    [securityPolicy setAllowInvalidCertificates:YES];
+    // 设置证书
+    [securityPolicy setPinnedCertificates:certSet];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.securityPolicy = securityPolicy;
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    [manager.requestSerializer setValue:@"0c9e47fb92e2bd7ede3e6eadc6310477" forHTTPHeaderField:@"imei"];
+    [manager.requestSerializer setValue:@"Ti+5OcIow2JOEPk2Llp+0A==" forHTTPHeaderField:@"token"];
+    [manager.requestSerializer setValue:@"ios" forHTTPHeaderField:@"os"];
+    [manager.requestSerializer setValue:@"A01" forHTTPHeaderField:@"baseType"];
+    [manager.requestSerializer setValue:@"3.0.8" forHTTPHeaderField:@"ver"];
+    [manager.requestSerializer setValue:@"2" forHTTPHeaderField:@"p"];
+
+    // request
+    [manager GET:urlString parameters:nil progress:^(NSProgress * progress){
+        
+    } success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSArray * array = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:nil];
+        NSLog(@"OK === %@",array);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"error ==%@",error.description);
+    }];
 
 }
 

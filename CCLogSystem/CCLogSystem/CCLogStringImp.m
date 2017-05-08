@@ -30,7 +30,7 @@ static NSObject *CCNullForZeroLengthString (NSString *string)
 
 static NSString *stringWithLogInfo (CCLocation location, NSString *logInfo)
 {
-    NSString *body = [[NSArray arrayWithObjects:@".", CCNullForZeroLengthString(CCLogPrefixFromLocation(location)), logInfo, nil] componentsJoinedByString:@" "];
+    NSString *body = [[NSArray arrayWithObjects:@".", CCNullForZeroLengthString(CCLogPrefixFromLocation(location)), logInfo, nil] componentsJoinedByString:@" 33333 "];
     
     NSString *timestamp = [regeneratedLogDateFormatter() stringFromDate:[NSDate date]];
     

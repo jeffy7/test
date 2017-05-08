@@ -37,7 +37,9 @@ static NSString *CCStringWithSourceLocationFromLocation(CCLocation location)
 NSString *CCLogPrefixFromLocation (CCLocation location)
 {
     NSString *sourceLocationDescription = CCStringWithSourceLocationFromLocation(location);
-    NSArray *stringArray = [NSArray arrayWithObjects:[NSString stringWithFormat:@"%@", [NSThread currentThread].description], (sourceLocationDescription.length > 0 ? [NSString stringWithFormat:@"%@:", sourceLocationDescription] : [NSNull null]), nil];
+    NSArray *stringArray = [NSArray arrayWithObjects:
+                            //[NSString stringWithFormat:@"%@", [NSThread currentThread].description],//不需要 NSThread
+                            (sourceLocationDescription.length > 0 ? [NSString stringWithFormat:@"\n%@:", sourceLocationDescription] : [NSNull null]), nil];
     NSString *string = [stringArray componentsJoinedByString:@" "];
     return string;
 }

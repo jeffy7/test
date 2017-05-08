@@ -38,7 +38,7 @@ NSString *const JSAppKey = @"6741162070b24760";
     // Override point for customization after application launch.
     [self configeJSPatch];
     
-    
+    CC_LOG_VALUE(self.window);
     [self prepareRootViewcontroller];
     return YES;
 }
