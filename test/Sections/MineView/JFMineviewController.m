@@ -14,6 +14,8 @@
 #import "JFCoreAnimationViewController.h"
 #import "JFFontViewController.h"
 #import "JFArchiveViewController.h"
+#import "JFFollowWeiboViewController.h"
+#import "JFFollowStockViewController.h"
 
 @interface JFMineviewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSArray *dataArray;
@@ -30,7 +32,9 @@
                        @"RounderCorner",
                        @"Animation",
                        @"FontFamily",
-                       @"Archive&&UnArchive"];
+                       @"Archive&&UnArchive",
+                       @"FollowWeibo",
+                       @"FollowStock"];
     self.view.backgroundColor = [UIColor yellowColor];
     [self.tableView reloadData];
 }
@@ -86,6 +90,14 @@
     }else if (indexPath.row == 5){
         JFArchiveViewController *VC = [[JFArchiveViewController alloc] init];
         VC.title = @"Archive";
+        [self.navigationController pushViewController:VC animated:YES];
+    }else if (indexPath.row == 6){
+        JFFollowWeiboViewController *VC = [[JFFollowWeiboViewController alloc] init];
+        VC.title = @"仿微博";
+        [self.navigationController pushViewController:VC animated:YES];
+    }else if (indexPath.row == 7){
+        JFFollowStockViewController *VC = [[JFFollowStockViewController alloc] init];
+        VC.title = @"仿股票";
         [self.navigationController pushViewController:VC animated:YES];
     }
 }

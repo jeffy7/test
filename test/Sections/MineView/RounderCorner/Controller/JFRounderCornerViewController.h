@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JFBaseViewController.h"
 
-@interface JFRounderCornerViewController : UIViewController
+@interface JFRounderCornerViewController : JFBaseViewController
 
 @end

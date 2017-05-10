@@ -66,6 +66,9 @@
 		17C4136E1DB782F000188556 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C413661DB782F000188556 /* SDCycleScrollView.m */; };
 		17C4136F1DB782F000188556 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C413681DB782F000188556 /* UIView+SDExtension.m */; };
 		17C413721DB783D900188556 /* JFSDCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C413711DB783D900188556 /* JFSDCycleViewController.m */; };
+		17D019A51EC2C290009897D4 /* JFFollowWeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D019A41EC2C290009897D4 /* JFFollowWeiboViewController.m */; };
+		17D019A81EC2C29E009897D4 /* JFFollowStockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D019A71EC2C29E009897D4 /* JFFollowStockViewController.m */; };
+		17D019AB1EC2C30A009897D4 /* JFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D019AA1EC2C30A009897D4 /* JFBaseViewController.m */; };
 		17DFD9CE1E6E5313003FE611 /* JFRounderCornerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9CD1E6E5313003FE611 /* JFRounderCornerViewController.m */; };
 		17DFD9D21E6E53FD003FE611 /* JFNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9D11E6E53FD003FE611 /* JFNavigationViewController.m */; };
 		17DFD9D51E6E5B0B003FE611 /* JFTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9D41E6E5B0B003FE611 /* JFTabBarViewController.m */; };
@@ -239,6 +242,12 @@
 		17C413681DB782F000188556 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
 		17C413701DB783D900188556 /* JFSDCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFSDCycleViewController.h; sourceTree = "<group>"; };
 		17C413711DB783D900188556 /* JFSDCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFSDCycleViewController.m; sourceTree = "<group>"; };
+		17D019A31EC2C290009897D4 /* JFFollowWeiboViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFFollowWeiboViewController.h; sourceTree = "<group>"; };
+		17D019A41EC2C290009897D4 /* JFFollowWeiboViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFollowWeiboViewController.m; sourceTree = "<group>"; };
+		17D019A61EC2C29E009897D4 /* JFFollowStockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFFollowStockViewController.h; sourceTree = "<group>"; };
+		17D019A71EC2C29E009897D4 /* JFFollowStockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFollowStockViewController.m; sourceTree = "<group>"; };
+		17D019A91EC2C30A009897D4 /* JFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFBaseViewController.h; sourceTree = "<group>"; };
+		17D019AA1EC2C30A009897D4 /* JFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFBaseViewController.m; sourceTree = "<group>"; };
 		17DFD9CC1E6E5313003FE611 /* JFRounderCornerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFRounderCornerViewController.h; sourceTree = "<group>"; };
 		17DFD9CD1E6E5313003FE611 /* JFRounderCornerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFRounderCornerViewController.m; sourceTree = "<group>"; };
 		17DFD9D01E6E53FD003FE611 /* JFNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFNavigationViewController.h; sourceTree = "<group>"; };
@@ -478,6 +487,8 @@
 		1737FF251D436BEF00F8DAA9 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				17D019A21EC2C26F009897D4 /* FollowStock */,
+				17D019A01EC2C258009897D4 /* FollowWeibo */,
 				17DFD9DE1E710427003FE611 /* Archive */,
 				17DFD9DA1E70F198003FE611 /* FontFamily */,
 				17DFD9D61E70020F003FE611 /* CoreAnimation */,
@@ -806,6 +817,24 @@
 			path = PageControl;
 			sourceTree = "<group>";
 		};
+		17D019A01EC2C258009897D4 /* FollowWeibo */ = {
+			isa = PBXGroup;
+			children = (
+				17D019A31EC2C290009897D4 /* JFFollowWeiboViewController.h */,
+				17D019A41EC2C290009897D4 /* JFFollowWeiboViewController.m */,
+			);
+			path = FollowWeibo;
+			sourceTree = "<group>";
+		};
+		17D019A21EC2C26F009897D4 /* FollowStock */ = {
+			isa = PBXGroup;
+			children = (
+				17D019A61EC2C29E009897D4 /* JFFollowStockViewController.h */,
+				17D019A71EC2C29E009897D4 /* JFFollowStockViewController.m */,
+			);
+			path = FollowStock;
+			sourceTree = "<group>";
+		};
 		17DFD9CA1E6E52ED003FE611 /* RounderCorner */ = {
 			isa = PBXGroup;
 			children = (
@@ -838,6 +867,8 @@
 				17DFD9D41E6E5B0B003FE611 /* JFTabBarViewController.m */,
 				1767375D1EA476F500CC0226 /* JFNativeTabBarViewController.h */,
 				1767375E1EA476F500CC0226 /* JFNativeTabBarViewController.m */,
+				17D019A91EC2C30A009897D4 /* JFBaseViewController.h */,
+				17D019AA1EC2C30A009897D4 /* JFBaseViewController.m */,
 			);
 			path = BaseSystemSetting;
 			sourceTree = "<group>";
@@ -1202,6 +1233,7 @@
 				176737671EA4778B00CC0226 /* SPTabBar.m in Sources */,
 				17C413691DB782F000188556 /* TAAbstractDotView.m in Sources */,
 				176737771EA4784D00CC0226 /* CViewController.m in Sources */,
+				17D019AB1EC2C30A009897D4 /* JFBaseViewController.m in Sources */,
 				17E42A551EAE00260079ED99 /* CCSimpleFileOutputRedirectionController.m in Sources */,
 				17A544DB1E67FE6600995CF2 /* UIColor+Extension.m in Sources */,
 				178361651E7F84C000CF5BDF /* JFExchangeBoundButton.m in Sources */,
@@ -1242,6 +1274,7 @@
 				173425371D4608E100EE035D /* JFMainViewController.m in Sources */,
 				17C4136D1DB782F000188556 /* SDCollectionViewCell.m in Sources */,
 				1767364F1E9CB0C600CC0226 /* JFTableViewCell.m in Sources */,
+				17D019A81EC2C29E009897D4 /* JFFollowStockViewController.m in Sources */,
 				17C413721DB783D900188556 /* JFSDCycleViewController.m in Sources */,
 				170C34301D6D972E00987817 /* JFMineviewController.m in Sources */,
 				17A544F31E6805F900995CF2 /* UIImage+Common.m in Sources */,
@@ -1251,6 +1284,7 @@
 				176737751EA4784D00CC0226 /* AViewController.m in Sources */,
 				170F31521CA44A44002A9A63 /* main.m in Sources */,
 				17C4136A1DB782F000188556 /* TAAnimatedDotView.m in Sources */,
+				17D019A51EC2C290009897D4 /* JFFollowWeiboViewController.m in Sources */,
 				17DFD9CE1E6E5313003FE611 /* JFRounderCornerViewController.m in Sources */,
 				176737681EA4778B00CC0226 /* SPTabBarItemView.m in Sources */,
 				17A544FE1E6806BA00995CF2 /* UIButton+countDown.m in Sources */,

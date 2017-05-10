@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JFBaseViewController.h"
 
-@interface JFReactiveCocoaViewController : UIViewController
+@interface JFReactiveCocoaViewController : JFBaseViewController
 
 @end

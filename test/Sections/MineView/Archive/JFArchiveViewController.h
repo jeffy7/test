@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JFBaseViewController.h"
 
 
 /**
@@ -65,6 +66,6 @@
  使用runtime获取变量以及属性
  Ivar *class_copyIvarList(Class cls, unsigned int *outCount)
  */
-@interface JFArchiveViewController : UIViewController
+@interface JFArchiveViewController : JFBaseViewController
 
 @end

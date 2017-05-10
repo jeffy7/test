@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface JFSDCycleViewController : UIViewController
+#import "JFBaseViewController.h"
+@interface JFSDCycleViewController : JFBaseViewController
 
 @end

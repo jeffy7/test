@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JFBaseViewController.h"
 
-@interface JFFontViewController : UIViewController
+@interface JFFontViewController : JFBaseViewController
 
 @end
