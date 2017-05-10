@@ -69,6 +69,7 @@
 		17D019A51EC2C290009897D4 /* JFFollowWeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D019A41EC2C290009897D4 /* JFFollowWeiboViewController.m */; };
 		17D019A81EC2C29E009897D4 /* JFFollowStockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D019A71EC2C29E009897D4 /* JFFollowStockViewController.m */; };
 		17D019AB1EC2C30A009897D4 /* JFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D019AA1EC2C30A009897D4 /* JFBaseViewController.m */; };
+		17D019AE1EC2C775009897D4 /* JFStockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D019AD1EC2C775009897D4 /* JFStockTableViewCell.m */; };
 		17DFD9CE1E6E5313003FE611 /* JFRounderCornerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9CD1E6E5313003FE611 /* JFRounderCornerViewController.m */; };
 		17DFD9D21E6E53FD003FE611 /* JFNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9D11E6E53FD003FE611 /* JFNavigationViewController.m */; };
 		17DFD9D51E6E5B0B003FE611 /* JFTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9D41E6E5B0B003FE611 /* JFTabBarViewController.m */; };
@@ -248,6 +249,8 @@
 		17D019A71EC2C29E009897D4 /* JFFollowStockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFollowStockViewController.m; sourceTree = "<group>"; };
 		17D019A91EC2C30A009897D4 /* JFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFBaseViewController.h; sourceTree = "<group>"; };
 		17D019AA1EC2C30A009897D4 /* JFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFBaseViewController.m; sourceTree = "<group>"; };
+		17D019AC1EC2C775009897D4 /* JFStockTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFStockTableViewCell.h; sourceTree = "<group>"; };
+		17D019AD1EC2C775009897D4 /* JFStockTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFStockTableViewCell.m; sourceTree = "<group>"; };
 		17DFD9CC1E6E5313003FE611 /* JFRounderCornerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFRounderCornerViewController.h; sourceTree = "<group>"; };
 		17DFD9CD1E6E5313003FE611 /* JFRounderCornerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFRounderCornerViewController.m; sourceTree = "<group>"; };
 		17DFD9D01E6E53FD003FE611 /* JFNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFNavigationViewController.h; sourceTree = "<group>"; };
@@ -831,6 +834,8 @@
 			children = (
 				17D019A61EC2C29E009897D4 /* JFFollowStockViewController.h */,
 				17D019A71EC2C29E009897D4 /* JFFollowStockViewController.m */,
+				17D019AC1EC2C775009897D4 /* JFStockTableViewCell.h */,
+				17D019AD1EC2C775009897D4 /* JFStockTableViewCell.m */,
 			);
 			path = FollowStock;
 			sourceTree = "<group>";
@@ -1249,6 +1254,7 @@
 				17A545011E6806C300995CF2 /* NSDate+Time.m in Sources */,
 				17DFD9E71E710633003FE611 /* JFArchiveSon.m in Sources */,
 				176737761EA4784D00CC0226 /* BViewController.m in Sources */,
+				17D019AE1EC2C775009897D4 /* JFStockTableViewCell.m in Sources */,
 				17E42A531EAE00260079ED99 /* CCLogSystem.m in Sources */,
 				17A545141E68074400995CF2 /* UIColor+SPHex.m in Sources */,
 				17E42A571EAE00260079ED99 /* NSObject+CCReverseComparison.m in Sources */,
