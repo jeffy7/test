@@ -17,6 +17,9 @@ NSString * const identifire = @"stockCell";
 @property (nonatomic, strong) UIView *tableViewHeader;
 
 @property (nonatomic, strong) UIScrollView *headerScrollview;
+@property (nonatomic, assign) float cellLastX; //最后的cell的移动距离
+
+@property (nonatomic, strong) JFStockTableViewCell *tableViewCell;
 
 @end
 
@@ -28,6 +31,10 @@ NSString * const identifire = @"stockCell";
     [self.view addSubview:self.tableView];
     self.tableView.tableHeaderView = self.tableViewHeader;
     // Do any additional setup after loading the view.
+    
+    // 注册一个
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(scrollMove:) name:tapCellScrollNotification object:nil];
+
 }
 
 - (UITableView *)tableView {
@@ -59,14 +66,19 @@ NSString * const identifire = @"stockCell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    JFStockTableViewCell *cell = (JFStockTableViewCell *)[tableView dequeueReusableCellWithIdentifier:identifire];
+    self.tableViewCell = (JFStockTableViewCell *)[tableView dequeueReusableCellWithIdentifier:identifire];
+    _tableViewCell.tableView = self.tableView;
+    __weak typeof(self) weakSelf = self;
+    _tableViewCell.tapCellClick = ^(NSIndexPath *indexPath) {
+        [weakSelf tableView:tableView didSelectRowAtIndexPath:indexPath];
+    };
     if (indexPath.row % 2 != 0) {
-        cell.backgroundColor = [UIColor colorWithWhite:0.2 alpha:0.2];
+        _tableViewCell.backgroundColor = [UIColor colorWithWhite:0.2 alpha:0.2];
     } else {
-        cell.backgroundColor = [UIColor whiteColor];
+        _tableViewCell.backgroundColor = [UIColor whiteColor];
     }
     
-    return cell;
+    return _tableViewCell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -110,36 +122,37 @@ NSString * const identifire = @"stockCell";
     [headerView addSubview:self.headerScrollview];
     
     return headerView;
+}
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"indexPath = %ld",(long)indexPath.row);
 }
 
 #pragma mark -
 #pragma mark - UIScrollViewDelegate
 #pragma mark-- UIScrollViewDelegate
-//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-//    
-//    if ([scrollView isEqual:self.headerScrollview]) {
-//        CGPoint offSet = _aroundCell.rightScrollView.contentOffset;
-//        offSet.x = scrollView.contentOffset.x;
-//        _aroundCell.rightScrollView.contentOffset = offSet;
-//    }
-//    if ([scrollView isEqual:self.tableView]) {
-//        // 发送通知
-//        [[NSNotificationCenter defaultCenter] postNotificationName:tapCellScrollNotification object:self userInfo:@{@"cellOffX":@(self.cellLastX)}];
-//    }
-//    
-//}
-//
-//-(void)scrollMove:(NSNotification*)notification{
-//    NSDictionary *noticeInfo = notification.userInfo;
-//    NSObject *obj = notification.object;
-//    float x = [noticeInfo[@"cellOffX"] floatValue];
-//    self.cellLastX = x;
-//    CGPoint offSet = self.topScrollView.contentOffset;
-//    offSet.x = x;
-//    self.topScrollView.contentOffset = offSet;
-//    obj = nil;
-//}
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if ([scrollView isEqual:self.headerScrollview]) {
+        CGPoint offSet = _tableViewCell.scrollView.contentOffset;
+        offSet.x = scrollView.contentOffset.x;
+        _tableViewCell.scrollView.contentOffset = offSet;
+    }
+    if ([scrollView isEqual:self.tableView]) {
+        // 发送通知,这个时候section的headerView与其他的cell 都需要接收通知并且移动，但是这个通知回造成所有的cell 都响应，逻辑在cell 里面处理
+        [[NSNotificationCenter defaultCenter] postNotificationName:tapCellScrollNotification object:self userInfo:@{@"cellOffX":@(self.cellLastX)}];
+    }
+}
+
+-(void)scrollMove:(NSNotification*)notification{
+    NSDictionary *noticeInfo = notification.userInfo;
+    NSObject *obj = notification.object;
+    float x = [noticeInfo[@"cellOffX"] floatValue];
+    self.cellLastX = x;
+    CGPoint offSet = self.headerScrollview.contentOffset;
+    offSet.x = x;
+    self.headerScrollview.contentOffset = offSet;
+    obj = nil;
+}
 
 
 - (void)didReceiveMemoryWarning {

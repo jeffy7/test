@@ -11,9 +11,12 @@
 @interface JFStockTableViewCell ()<UIScrollViewDelegate>
 
 @property (nonatomic, strong) UILabel * titleLabel;
-@property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, assign) CGFloat labelW;
 @property (nonatomic, strong) NSArray *arr;
+@property (nonatomic, assign) BOOL isNotification;
+
+@property (nonatomic, assign) float cellLastX; //最后的cell的移动距离
+
 
 @end
 
@@ -24,6 +27,10 @@
         _arr = @[@"1.1662", @"0.01%", @"1.5880",@"3.72%",@"购买"];
 
         _labelW = [UIScreen mainScreen].bounds.size.width / 5;
+        UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
+        [self.scrollView addGestureRecognizer:tapGes];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(scrollMove:) name:tapCellScrollNotification object:nil];
+        
         [self prepareSubview];
     }
     
@@ -65,23 +72,61 @@
         _scrollView.showsHorizontalScrollIndicator = NO;
         _scrollView.contentSize = CGSizeMake(_labelW*_arr.count, 44);
         
-        
-        
     }
     
     return _scrollView;
 }
 
-
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+-(void)scrollMove:(NSNotification*)notification{
+    NSDictionary *noticeInfo = notification.userInfo;
+    NSObject *obj = notification.object;
+    float x = [noticeInfo[@"cellOffX"] floatValue];
+    self.cellLastX = x;
+    CGPoint offSet = self.scrollView.contentOffset;
+    offSet.x = x;
+    self.scrollView.contentOffset = offSet;
+    obj = nil;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
+#pragma mark -
+#pragma mark - UIScrollViewDelegate
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    //人为滑动的cell 将通知 设置为No
+    _isNotification = NO;
+}
 
-    // Configure the view for the selected state
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    if (!_isNotification) {
+        // 发送通知
+        [[NSNotificationCenter defaultCenter] postNotificationName:tapCellScrollNotification object:self userInfo:@{@"cellOffX":@(scrollView.contentOffset.x)}];
+    }
+    _isNotification = NO;
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    // 避开自己发的通知，只有手指拨动才会是自己的滚动
+    if (!_isNotification) {
+        // 发送通知
+        [[NSNotificationCenter defaultCenter] postNotificationName:tapCellScrollNotification object:self userInfo:@{@"cellOffX":@(scrollView.contentOffset.x)}];
+    }
+    _isNotification = NO;
+}
+
+- (void)tapAction:(UITapGestureRecognizer *)gesture {
+    __weak typeof (self) weakSelf = self;
+    if (self.tapCellClick) {
+        NSIndexPath *indexPath = [weakSelf.tableView indexPathForCell:weakSelf];
+        weakSelf.tapCellClick(indexPath);
+    }
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    if ([NSStringFromClass([touch.view class]) isEqualToString:@"UITableViewCellContentView"]) {
+        
+        return NO;
+    }
+    
+    return YES;
 }
 
 @end

@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+static NSString *tapCellScrollNotification = @"tapCellScrollNotification";
+
+typedef void(^TapCellClick)(NSIndexPath *);
 
 @interface JFStockTableViewCell : UITableViewCell
+
+@property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, copy) TapCellClick tapCellClick;
 
 @end
