@@ -70,6 +70,7 @@
 		17D019A81EC2C29E009897D4 /* JFFollowStockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D019A71EC2C29E009897D4 /* JFFollowStockViewController.m */; };
 		17D019AB1EC2C30A009897D4 /* JFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D019AA1EC2C30A009897D4 /* JFBaseViewController.m */; };
 		17D019AE1EC2C775009897D4 /* JFStockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D019AD1EC2C775009897D4 /* JFStockTableViewCell.m */; };
+		17D01A491EC7121D009897D4 /* JFFollowWeiboCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D01A481EC7121D009897D4 /* JFFollowWeiboCollectionReusableView.m */; };
 		17DFD9CE1E6E5313003FE611 /* JFRounderCornerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9CD1E6E5313003FE611 /* JFRounderCornerViewController.m */; };
 		17DFD9D21E6E53FD003FE611 /* JFNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9D11E6E53FD003FE611 /* JFNavigationViewController.m */; };
 		17DFD9D51E6E5B0B003FE611 /* JFTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD9D41E6E5B0B003FE611 /* JFTabBarViewController.m */; };
@@ -251,6 +252,8 @@
 		17D019AA1EC2C30A009897D4 /* JFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFBaseViewController.m; sourceTree = "<group>"; };
 		17D019AC1EC2C775009897D4 /* JFStockTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFStockTableViewCell.h; sourceTree = "<group>"; };
 		17D019AD1EC2C775009897D4 /* JFStockTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFStockTableViewCell.m; sourceTree = "<group>"; };
+		17D01A471EC7121D009897D4 /* JFFollowWeiboCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFFollowWeiboCollectionReusableView.h; sourceTree = "<group>"; };
+		17D01A481EC7121D009897D4 /* JFFollowWeiboCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFollowWeiboCollectionReusableView.m; sourceTree = "<group>"; };
 		17DFD9CC1E6E5313003FE611 /* JFRounderCornerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFRounderCornerViewController.h; sourceTree = "<group>"; };
 		17DFD9CD1E6E5313003FE611 /* JFRounderCornerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFRounderCornerViewController.m; sourceTree = "<group>"; };
 		17DFD9D01E6E53FD003FE611 /* JFNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFNavigationViewController.h; sourceTree = "<group>"; };
@@ -825,6 +828,8 @@
 			children = (
 				17D019A31EC2C290009897D4 /* JFFollowWeiboViewController.h */,
 				17D019A41EC2C290009897D4 /* JFFollowWeiboViewController.m */,
+				17D01A471EC7121D009897D4 /* JFFollowWeiboCollectionReusableView.h */,
+				17D01A481EC7121D009897D4 /* JFFollowWeiboCollectionReusableView.m */,
 			);
 			path = FollowWeibo;
 			sourceTree = "<group>";
@@ -1238,6 +1243,7 @@
 				176737671EA4778B00CC0226 /* SPTabBar.m in Sources */,
 				17C413691DB782F000188556 /* TAAbstractDotView.m in Sources */,
 				176737771EA4784D00CC0226 /* CViewController.m in Sources */,
+				17D01A491EC7121D009897D4 /* JFFollowWeiboCollectionReusableView.m in Sources */,
 				17D019AB1EC2C30A009897D4 /* JFBaseViewController.m in Sources */,
 				17E42A551EAE00260079ED99 /* CCSimpleFileOutputRedirectionController.m in Sources */,
 				17A544DB1E67FE6600995CF2 /* UIColor+Extension.m in Sources */,

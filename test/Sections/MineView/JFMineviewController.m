@@ -27,7 +27,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataArray = @[@"SDCycleCollectionView",
+    self.dataArray = @[@"Test",
+                       @"SDCycleCollectionView",
                        @"ReactiveCocoa",
                        @"RounderCorner",
                        @"Animation",
@@ -68,34 +69,36 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
+
+    }else if (indexPath.row == 1) {
         JFSDCycleViewController *VC = [[JFSDCycleViewController alloc] init];
         VC.title = @"DCycleView";
         [self.navigationController pushViewController:VC animated:YES];
-    }else if (indexPath.row == 1) {
+    }else if (indexPath.row == 2) {
         JFReactiveCocoaViewController *VC = [[JFReactiveCocoaViewController alloc] init];
         VC.title = @"ReactiveCocoa";
         [self.navigationController pushViewController:VC animated:YES];
-    }else if (indexPath.row == 2){
+    }else if (indexPath.row == 3){
         JFRounderCornerViewController *VC = [[JFRounderCornerViewController alloc] init];
         VC.title = @"RounderCorner";
         [self.navigationController pushViewController:VC animated:YES];
-    }else if (indexPath.row == 3){
+    }else if (indexPath.row == 4){
         JFCoreAnimationViewController *VC = [[JFCoreAnimationViewController alloc] init];
         VC.title = @"CoreAnimation";
         [self.navigationController pushViewController:VC animated:YES];
-    }else if (indexPath.row == 4){
+    }else if (indexPath.row == 5){
         JFFontViewController *VC = [[JFFontViewController alloc] init];
         VC.title = @"FontFamily";
         [self.navigationController pushViewController:VC animated:YES];
-    }else if (indexPath.row == 5){
+    }else if (indexPath.row == 6){
         JFArchiveViewController *VC = [[JFArchiveViewController alloc] init];
         VC.title = @"Archive";
         [self.navigationController pushViewController:VC animated:YES];
-    }else if (indexPath.row == 6){
+    }else if (indexPath.row == 7){
         JFFollowWeiboViewController *VC = [[JFFollowWeiboViewController alloc] init];
         VC.title = @"仿微博";
         [self.navigationController pushViewController:VC animated:YES];
-    }else if (indexPath.row == 7){
+    }else if (indexPath.row == 8){
         JFFollowStockViewController *VC = [[JFFollowStockViewController alloc] init];
         VC.title = @"仿股票";
         [self.navigationController pushViewController:VC animated:YES];
