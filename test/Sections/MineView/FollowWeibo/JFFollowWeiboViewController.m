@@ -45,7 +45,7 @@
 
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, FULL_SCREEN_WIDTH, 50) collectionViewLayout:self.layout];
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, FULL_SCREEN_WIDTH, FULL_SCREEN_HEIGHT) collectionViewLayout:self.layout];
         _collectionView.backgroundColor = [UIColor whiteColor];
         [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"test"];
         [_collectionView registerClass:[JFFollowWeiboCollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"headerView"];
@@ -89,11 +89,13 @@
 //        headerView.titleLabel.text = @"title";
         return headerView;
     }else{
-//        UICollectionReusableView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:footerIdentifier forIndexPath:indexPath];
-//        //        footerView.backgroundColor = [UIColor brownColor];
-//        //        return footerView;
+
         return nil;
-    }}
+    }
+}
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -18,7 +18,8 @@
 #import "JFFollowStockViewController.h"
 
 @interface JFMineviewController ()<UITableViewDelegate,UITableViewDataSource>
-@property (nonatomic, strong) NSArray *dataArray;
+@property (nonatomic, strong) NSMutableArray *titles;
+@property (nonatomic, strong) NSMutableArray *classNames;
 @property (weak, nonatomic) UITableView *tableView;
 
 @end
@@ -27,17 +28,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataArray = @[@"Test",
-                       @"SDCycleCollectionView",
-                       @"ReactiveCocoa",
-                       @"RounderCorner",
-                       @"Animation",
-                       @"FontFamily",
-                       @"Archive&&UnArchive",
-                       @"FollowWeibo",
-                       @"FollowStock"];
+    self.titles = @[].mutableCopy;
+    self.classNames = @[].mutableCopy;
+    
+    [self addTitle:@"Test" class:@""];
+    [self addTitle:@"SDCycleCollectionView" class:@"JFSDCycleViewController"];
+    [self addTitle:@"ReactiveCocoa" class:@"JFReactiveCocoaViewController"];
+    [self addTitle:@"RounderCorner" class:@"JFRounderCornerViewController"];
+    [self addTitle:@"Animation" class:@"JFCoreAnimationViewController"];
+    [self addTitle:@"FontFamily" class:@"JFFontViewController"];
+    [self addTitle:@"Archive&&UnArchive" class:@"JFArchiveViewController"];
+    [self addTitle:@"仿微博" class:@"JFFollowWeiboViewController"];
+    [self addTitle:@"仿股票" class:@"JFFollowStockViewController"];
+
+    
+    
     self.view.backgroundColor = [UIColor yellowColor];
     [self.tableView reloadData];
+}
+
+- (void)addTitle:(NSString *)title class:(NSString *)className {
+    [self.titles addObject:title];
+    [self.classNames addObject:className];
 }
 
 - (UITableView *)tableView {
@@ -57,51 +69,23 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
-    cell.textLabel.text = _dataArray[indexPath.row];
+    cell.textLabel.text = _titles[indexPath.row];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return _dataArray.count;
+    return _titles.count;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-
-    }else if (indexPath.row == 1) {
-        JFSDCycleViewController *VC = [[JFSDCycleViewController alloc] init];
-        VC.title = @"DCycleView";
-        [self.navigationController pushViewController:VC animated:YES];
-    }else if (indexPath.row == 2) {
-        JFReactiveCocoaViewController *VC = [[JFReactiveCocoaViewController alloc] init];
-        VC.title = @"ReactiveCocoa";
-        [self.navigationController pushViewController:VC animated:YES];
-    }else if (indexPath.row == 3){
-        JFRounderCornerViewController *VC = [[JFRounderCornerViewController alloc] init];
-        VC.title = @"RounderCorner";
-        [self.navigationController pushViewController:VC animated:YES];
-    }else if (indexPath.row == 4){
-        JFCoreAnimationViewController *VC = [[JFCoreAnimationViewController alloc] init];
-        VC.title = @"CoreAnimation";
-        [self.navigationController pushViewController:VC animated:YES];
-    }else if (indexPath.row == 5){
-        JFFontViewController *VC = [[JFFontViewController alloc] init];
-        VC.title = @"FontFamily";
-        [self.navigationController pushViewController:VC animated:YES];
-    }else if (indexPath.row == 6){
-        JFArchiveViewController *VC = [[JFArchiveViewController alloc] init];
-        VC.title = @"Archive";
-        [self.navigationController pushViewController:VC animated:YES];
-    }else if (indexPath.row == 7){
-        JFFollowWeiboViewController *VC = [[JFFollowWeiboViewController alloc] init];
-        VC.title = @"仿微博";
-        [self.navigationController pushViewController:VC animated:YES];
-    }else if (indexPath.row == 8){
-        JFFollowStockViewController *VC = [[JFFollowStockViewController alloc] init];
-        VC.title = @"仿股票";
-        [self.navigationController pushViewController:VC animated:YES];
+    NSString *className = self.classNames[indexPath.row];
+    Class class = NSClassFromString(className);
+    if (class) {
+        UIViewController *ctrl = class.new;
+        ctrl.title = _titles[indexPath.row];
+        [self.navigationController pushViewController:ctrl animated:YES];
     }
 }
 

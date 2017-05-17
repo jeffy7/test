@@ -10,4 +10,6 @@
 
 @interface JFFollowWeiboCollectionReusableView : UICollectionReusableView
 
+@property (nonatomic, strong) UILabel *titleLabel;
+
 @end

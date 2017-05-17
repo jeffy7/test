@@ -20,7 +20,7 @@
 
 #define Use_System  0
 
-@interface JFNativeTabBarViewController ()
+@interface JFNativeTabBarViewController ()<UITabBarControllerDelegate>
 
 @property (nonatomic, strong) SPTabBarView *tabBarView;
 @property (nonatomic,strong) UIWindow *coverWindow;
