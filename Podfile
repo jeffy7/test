@@ -15,5 +15,7 @@ target "test" do
     pod 'NJKWebViewProgress', '~> 0.2.3'
     pod 'YYModel', '~> 1.0.4'
     pod 'ReactiveCocoa', '2.3.1'
+    pod 'MJRefresh', '~> 3.1.12'
+    pod 'MJExtension', '~> 3.0.13'
 
 end 

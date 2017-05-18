@@ -40,7 +40,7 @@
     [self addTitle:@"Archive&&UnArchive" class:@"JFArchiveViewController"];
     [self addTitle:@"仿微博" class:@"JFFollowWeiboViewController"];
     [self addTitle:@"仿股票" class:@"JFFollowStockViewController"];
-
+    [self addTitle:@"瀑布流" class:@"JFCascadeViewController"];
     
     
     self.view.backgroundColor = [UIColor yellowColor];

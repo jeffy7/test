@@ -14,14 +14,17 @@
 
 #import "AppDelegate.h"
 #import "CCLogSystem.h"
-
+#import "MJExtension.h"
 //header
 #import "JFMacroHeader.h"
 #import "JFCategoryHeader.h"
 #import "Masonry.h"
 #import "AFNetworking.h"
 #import <objc/runtime.h>
-
+#import <SDImageCache.h>
+#import <SDWebImage/SDWebImageCompat.h>
+#import "UIImageView+WebCache.h"
+#import "SDImageCache.h"
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

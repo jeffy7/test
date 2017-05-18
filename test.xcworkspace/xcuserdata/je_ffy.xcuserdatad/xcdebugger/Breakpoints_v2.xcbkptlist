@@ -71,13 +71,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CCLogSystem/CCLogSystem/CCLogController+Utility.m"
-            timestampString = "514806639.345183"
+            filePath = "test/Sections/MineView/TestController/JFTestViewController.m"
+            timestampString = "516361925.336493"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
-            landmarkName = "+basenameForBasename:date2:date2Type:"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -87,13 +87,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "test/Sections/MineView/TestController/JFTestViewController.m"
-            timestampString = "516361925.336493"
+            filePath = "Pods/MJExtension/MJExtension/NSObject+MJKeyValue.m"
+            timestampString = "516793267.207601"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "304"
+            endingLineNumber = "304"
+            landmarkName = "-mj_keyValuesWithKeys:ignoredKeys:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

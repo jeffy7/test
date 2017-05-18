@@ -56,6 +56,12 @@
 		17A545191E68075500995CF2 /* UIImage+SPScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A545161E68075500995CF2 /* UIImage+SPScale.m */; };
 		17A5451A1E68075500995CF2 /* UIImage+Url.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A545181E68075500995CF2 /* UIImage+Url.m */; };
 		17A5454E1E69677D00995CF2 /* JFReactiveCocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5454D1E69677D00995CF2 /* JFReactiveCocoaViewController.m */; };
+		17B6CDC01ECD7F16004844EA /* JFCascadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B6CDBF1ECD7F16004844EA /* JFCascadeViewController.m */; };
+		17B6CDC31ECD80DB004844EA /* JFCustomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B6CDC21ECD80DB004844EA /* JFCustomCollectionViewLayout.m */; };
+		17B6CDC61ECD8457004844EA /* JFCustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B6CDC51ECD8457004844EA /* JFCustomCollectionViewCell.m */; };
+		17B6CDC81ECD941D004844EA /* cascade.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17B6CDC71ECD941D004844EA /* cascade.plist */; };
+		17B6CDCF1ECD9AA2004844EA /* JFCascadeProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B6CDCE1ECD9AA2004844EA /* JFCascadeProduct.m */; };
+		17B6CDD51ECDA0B6004844EA /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17B6CDD41ECDA0B6004844EA /* 1.plist */; };
 		17BFD7911E94D33C00A417AB /* rsa_private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 17BFD78F1E94D33C00A417AB /* rsa_private_key.pem */; };
 		17BFD7921E94D33C00A417AB /* rsa_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 17BFD7901E94D33C00A417AB /* rsa_public_key.pem */; };
 		17C413691DB782F000188556 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4135C1DB782F000188556 /* TAAbstractDotView.m */; };
@@ -225,6 +231,16 @@
 		17A5451D1E680D4500995CF2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		17A5454C1E69677D00995CF2 /* JFReactiveCocoaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFReactiveCocoaViewController.h; sourceTree = "<group>"; };
 		17A5454D1E69677D00995CF2 /* JFReactiveCocoaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFReactiveCocoaViewController.m; sourceTree = "<group>"; };
+		17B6CDBE1ECD7F16004844EA /* JFCascadeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCascadeViewController.h; sourceTree = "<group>"; };
+		17B6CDBF1ECD7F16004844EA /* JFCascadeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCascadeViewController.m; sourceTree = "<group>"; };
+		17B6CDC11ECD80DB004844EA /* JFCustomCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCustomCollectionViewLayout.h; sourceTree = "<group>"; };
+		17B6CDC21ECD80DB004844EA /* JFCustomCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCustomCollectionViewLayout.m; sourceTree = "<group>"; };
+		17B6CDC41ECD8457004844EA /* JFCustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCustomCollectionViewCell.h; sourceTree = "<group>"; };
+		17B6CDC51ECD8457004844EA /* JFCustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCustomCollectionViewCell.m; sourceTree = "<group>"; };
+		17B6CDC71ECD941D004844EA /* cascade.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cascade.plist; sourceTree = "<group>"; };
+		17B6CDCD1ECD9AA2004844EA /* JFCascadeProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCascadeProduct.h; sourceTree = "<group>"; };
+		17B6CDCE1ECD9AA2004844EA /* JFCascadeProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCascadeProduct.m; sourceTree = "<group>"; };
+		17B6CDD41ECDA0B6004844EA /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
 		17BFD7871E94C73100A417AB /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
 		17BFD78F1E94D33C00A417AB /* rsa_private_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_private_key.pem; sourceTree = "<group>"; };
 		17BFD7901E94D33C00A417AB /* rsa_public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_public_key.pem; sourceTree = "<group>"; };
@@ -493,6 +509,7 @@
 		1737FF251D436BEF00F8DAA9 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				17B6CDBC1ECD7EF9004844EA /* Cascade */,
 				17D019A21EC2C26F009897D4 /* FollowStock */,
 				17D019A01EC2C258009897D4 /* FollowWeibo */,
 				17DFD9DE1E710427003FE611 /* Archive */,
@@ -627,6 +644,7 @@
 		17A544D11E67FDC200995CF2 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				17B6CDC91ECD9A2A004844EA /* NSObject */,
 				17A5450B1E68071E00995CF2 /* TextField */,
 				17A544F81E6806B100995CF2 /* UIButton */,
 				17A544F71E68069D00995CF2 /* NSDate */,
@@ -765,6 +783,30 @@
 				17A5454D1E69677D00995CF2 /* JFReactiveCocoaViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		17B6CDBC1ECD7EF9004844EA /* Cascade */ = {
+			isa = PBXGroup;
+			children = (
+				17B6CDD41ECDA0B6004844EA /* 1.plist */,
+				17B6CDC71ECD941D004844EA /* cascade.plist */,
+				17B6CDBE1ECD7F16004844EA /* JFCascadeViewController.h */,
+				17B6CDBF1ECD7F16004844EA /* JFCascadeViewController.m */,
+				17B6CDC11ECD80DB004844EA /* JFCustomCollectionViewLayout.h */,
+				17B6CDC21ECD80DB004844EA /* JFCustomCollectionViewLayout.m */,
+				17B6CDC41ECD8457004844EA /* JFCustomCollectionViewCell.h */,
+				17B6CDC51ECD8457004844EA /* JFCustomCollectionViewCell.m */,
+				17B6CDCD1ECD9AA2004844EA /* JFCascadeProduct.h */,
+				17B6CDCE1ECD9AA2004844EA /* JFCascadeProduct.m */,
+			);
+			path = Cascade;
+			sourceTree = "<group>";
+		};
+		17B6CDC91ECD9A2A004844EA /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSObject;
 			sourceTree = "<group>";
 		};
 		17BFD78E1E94D33C00A417AB /* key */ = {
@@ -1147,10 +1189,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				174E72561EB1CF89003B4BD0 /* server_test.cer in Resources */,
+				17B6CDC81ECD941D004844EA /* cascade.plist in Resources */,
 				17E42A581EAE00260079ED99 /* Info.plist in Resources */,
 				170F31601CA44A44002A9A63 /* LaunchScreen.storyboard in Resources */,
 				174E72571EB1CF89003B4BD0 /* server.cer in Resources */,
 				17BFD7911E94D33C00A417AB /* rsa_private_key.pem in Resources */,
+				17B6CDD51ECDA0B6004844EA /* 1.plist in Resources */,
 				170F315D1CA44A44002A9A63 /* Assets.xcassets in Resources */,
 				170F315B1CA44A44002A9A63 /* Main.storyboard in Resources */,
 				176736511E9CB0F100CC0226 /* main.js in Resources */,
@@ -1232,12 +1276,14 @@
 				17DFDA0E1E77F16E003FE611 /* UIView+JFCorner.m in Sources */,
 				17A544E41E67FEFE00995CF2 /* UIView+BlockGesture.m in Sources */,
 				174E72371EAF40F3003B4BD0 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				17B6CDC01ECD7F16004844EA /* JFCascadeViewController.m in Sources */,
 				176737691EA4778B00CC0226 /* SPTabBarView.m in Sources */,
 				170F31581CA44A44002A9A63 /* ViewController.m in Sources */,
 				17E42A561EAE00260079ED99 /* CCTeeController.m in Sources */,
 				176737781EA4784D00CC0226 /* DViewController.m in Sources */,
 				17A5450E1E68072600995CF2 /* SPTextField.m in Sources */,
 				17C4136B1DB782F000188556 /* TADotView.m in Sources */,
+				17B6CDC31ECD80DB004844EA /* JFCustomCollectionViewLayout.m in Sources */,
 				17A544F61E68065A00995CF2 /* UIColor+HEX.m in Sources */,
 				178361691E7FC33200CF5BDF /* JFCABaseAnimationViewController.m in Sources */,
 				176737671EA4778B00CC0226 /* SPTabBar.m in Sources */,
@@ -1261,6 +1307,7 @@
 				17DFD9E71E710633003FE611 /* JFArchiveSon.m in Sources */,
 				176737761EA4784D00CC0226 /* BViewController.m in Sources */,
 				17D019AE1EC2C775009897D4 /* JFStockTableViewCell.m in Sources */,
+				17B6CDCF1ECD9AA2004844EA /* JFCascadeProduct.m in Sources */,
 				17E42A531EAE00260079ED99 /* CCLogSystem.m in Sources */,
 				17A545141E68074400995CF2 /* UIColor+SPHex.m in Sources */,
 				17E42A571EAE00260079ED99 /* NSObject+CCReverseComparison.m in Sources */,
@@ -1302,6 +1349,7 @@
 				17A544FE1E6806BA00995CF2 /* UIButton+countDown.m in Sources */,
 				17E42A541EAE00260079ED99 /* CCLogViewController.m in Sources */,
 				17A545041E6806E900995CF2 /* UILabel+SPUtils.m in Sources */,
+				17B6CDC61ECD8457004844EA /* JFCustomCollectionViewCell.m in Sources */,
 				17DFD9D51E6E5B0B003FE611 /* JFTabBarViewController.m in Sources */,
 				1783616E1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m in Sources */,
 			);
