@@ -62,6 +62,7 @@
 		17B6CDC81ECD941D004844EA /* cascade.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17B6CDC71ECD941D004844EA /* cascade.plist */; };
 		17B6CDCF1ECD9AA2004844EA /* JFCascadeProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B6CDCE1ECD9AA2004844EA /* JFCascadeProduct.m */; };
 		17B6CDD51ECDA0B6004844EA /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17B6CDD41ECDA0B6004844EA /* 1.plist */; };
+		17B6CE191ED29371004844EA /* JFFollowAppleStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B6CE181ED29371004844EA /* JFFollowAppleStoreViewController.m */; };
 		17BFD7911E94D33C00A417AB /* rsa_private_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 17BFD78F1E94D33C00A417AB /* rsa_private_key.pem */; };
 		17BFD7921E94D33C00A417AB /* rsa_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 17BFD7901E94D33C00A417AB /* rsa_public_key.pem */; };
 		17C413691DB782F000188556 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C4135C1DB782F000188556 /* TAAbstractDotView.m */; };
@@ -241,6 +242,8 @@
 		17B6CDCD1ECD9AA2004844EA /* JFCascadeProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCascadeProduct.h; sourceTree = "<group>"; };
 		17B6CDCE1ECD9AA2004844EA /* JFCascadeProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCascadeProduct.m; sourceTree = "<group>"; };
 		17B6CDD41ECDA0B6004844EA /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		17B6CE171ED29371004844EA /* JFFollowAppleStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFFollowAppleStoreViewController.h; sourceTree = "<group>"; };
+		17B6CE181ED29371004844EA /* JFFollowAppleStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFollowAppleStoreViewController.m; sourceTree = "<group>"; };
 		17BFD7871E94C73100A417AB /* test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = test.entitlements; sourceTree = "<group>"; };
 		17BFD78F1E94D33C00A417AB /* rsa_private_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_private_key.pem; sourceTree = "<group>"; };
 		17BFD7901E94D33C00A417AB /* rsa_public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_public_key.pem; sourceTree = "<group>"; };
@@ -509,6 +512,7 @@
 		1737FF251D436BEF00F8DAA9 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				17B6CE151ED2934A004844EA /* FollowAppleStore */,
 				17B6CDBC1ECD7EF9004844EA /* Cascade */,
 				17D019A21EC2C26F009897D4 /* FollowStock */,
 				17D019A01EC2C258009897D4 /* FollowWeibo */,
@@ -807,6 +811,15 @@
 			children = (
 			);
 			path = NSObject;
+			sourceTree = "<group>";
+		};
+		17B6CE151ED2934A004844EA /* FollowAppleStore */ = {
+			isa = PBXGroup;
+			children = (
+				17B6CE171ED29371004844EA /* JFFollowAppleStoreViewController.h */,
+				17B6CE181ED29371004844EA /* JFFollowAppleStoreViewController.m */,
+			);
+			path = FollowAppleStore;
 			sourceTree = "<group>";
 		};
 		17BFD78E1E94D33C00A417AB /* key */ = {
@@ -1318,6 +1331,7 @@
 				1767364C1E9CB05700CC0226 /* JFTableViewController.m in Sources */,
 				17DFD9D21E6E53FD003FE611 /* JFNavigationViewController.m in Sources */,
 				17A544D81E67FE4C00995CF2 /* NSString+Extension.m in Sources */,
+				17B6CE191ED29371004844EA /* JFFollowAppleStoreViewController.m in Sources */,
 				17A5451A1E68075500995CF2 /* UIImage+Url.m in Sources */,
 				17A544E31E67FEFE00995CF2 /* UIView+AEBHandyAutoLayout.m in Sources */,
 				1767375F1EA476F500CC0226 /* JFNativeTabBarViewController.m in Sources */,

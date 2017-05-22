@@ -41,6 +41,7 @@
     [self addTitle:@"仿微博" class:@"JFFollowWeiboViewController"];
     [self addTitle:@"仿股票" class:@"JFFollowStockViewController"];
     [self addTitle:@"瀑布流" class:@"JFCascadeViewController"];
+    [self addTitle:@"Apple Store 首页" class:@"JFFollowAppleStoreViewController"];
     
     
     self.view.backgroundColor = [UIColor yellowColor];
