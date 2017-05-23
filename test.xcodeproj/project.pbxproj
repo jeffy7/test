@@ -33,6 +33,8 @@
 		176737771EA4784D00CC0226 /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176737701EA4784D00CC0226 /* CViewController.m */; };
 		176737781EA4784D00CC0226 /* DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176737721EA4784D00CC0226 /* DViewController.m */; };
 		176737791EA4784D00CC0226 /* EViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176737741EA4784D00CC0226 /* EViewController.m */; };
+		1781713C1ED43F24009D4098 /* JFFollowTuhaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1781713B1ED43F24009D4098 /* JFFollowTuhaoViewController.m */; };
+		1781713F1ED44371009D4098 /* JFTuhaoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1781713E1ED44371009D4098 /* JFTuhaoTableViewCell.m */; };
 		178361651E7F84C000CF5BDF /* JFExchangeBoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 178361641E7F84C000CF5BDF /* JFExchangeBoundButton.m */; };
 		178361691E7FC33200CF5BDF /* JFCABaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178361681E7FC33200CF5BDF /* JFCABaseAnimationViewController.m */; };
 		1783616E1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1783616D1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m */; };
@@ -183,6 +185,10 @@
 		176737721EA4784D00CC0226 /* DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DViewController.m; sourceTree = "<group>"; };
 		176737731EA4784D00CC0226 /* EViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EViewController.h; sourceTree = "<group>"; };
 		176737741EA4784D00CC0226 /* EViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EViewController.m; sourceTree = "<group>"; };
+		1781713A1ED43F24009D4098 /* JFFollowTuhaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFFollowTuhaoViewController.h; sourceTree = "<group>"; };
+		1781713B1ED43F24009D4098 /* JFFollowTuhaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFollowTuhaoViewController.m; sourceTree = "<group>"; };
+		1781713D1ED44371009D4098 /* JFTuhaoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTuhaoTableViewCell.h; sourceTree = "<group>"; };
+		1781713E1ED44371009D4098 /* JFTuhaoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFTuhaoTableViewCell.m; sourceTree = "<group>"; };
 		178361631E7F84C000CF5BDF /* JFExchangeBoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFExchangeBoundButton.h; sourceTree = "<group>"; };
 		178361641E7F84C000CF5BDF /* JFExchangeBoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFExchangeBoundButton.m; sourceTree = "<group>"; };
 		178361671E7FC33200CF5BDF /* JFCABaseAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCABaseAnimationViewController.h; sourceTree = "<group>"; };
@@ -512,6 +518,7 @@
 		1737FF251D436BEF00F8DAA9 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				178171381ED43F0F009D4098 /* FollowTuhao */,
 				17B6CE151ED2934A004844EA /* FollowAppleStore */,
 				17B6CDBC1ECD7EF9004844EA /* Cascade */,
 				17D019A21EC2C26F009897D4 /* FollowStock */,
@@ -606,6 +613,17 @@
 				176737741EA4784D00CC0226 /* EViewController.m */,
 			);
 			path = ABCDE;
+			sourceTree = "<group>";
+		};
+		178171381ED43F0F009D4098 /* FollowTuhao */ = {
+			isa = PBXGroup;
+			children = (
+				1781713A1ED43F24009D4098 /* JFFollowTuhaoViewController.h */,
+				1781713B1ED43F24009D4098 /* JFFollowTuhaoViewController.m */,
+				1781713D1ED44371009D4098 /* JFTuhaoTableViewCell.h */,
+				1781713E1ED44371009D4098 /* JFTuhaoTableViewCell.m */,
+			);
+			path = FollowTuhao;
 			sourceTree = "<group>";
 		};
 		178361621E7F849400CF5BDF /* UIbutton */ = {
@@ -1333,6 +1351,7 @@
 				17A544D81E67FE4C00995CF2 /* NSString+Extension.m in Sources */,
 				17B6CE191ED29371004844EA /* JFFollowAppleStoreViewController.m in Sources */,
 				17A5451A1E68075500995CF2 /* UIImage+Url.m in Sources */,
+				1781713F1ED44371009D4098 /* JFTuhaoTableViewCell.m in Sources */,
 				17A544E31E67FEFE00995CF2 /* UIView+AEBHandyAutoLayout.m in Sources */,
 				1767375F1EA476F500CC0226 /* JFNativeTabBarViewController.m in Sources */,
 				17E42A521EAE00260079ED99 /* CCLogStringImp.m in Sources */,
@@ -1362,6 +1381,7 @@
 				176737681EA4778B00CC0226 /* SPTabBarItemView.m in Sources */,
 				17A544FE1E6806BA00995CF2 /* UIButton+countDown.m in Sources */,
 				17E42A541EAE00260079ED99 /* CCLogViewController.m in Sources */,
+				1781713C1ED43F24009D4098 /* JFFollowTuhaoViewController.m in Sources */,
 				17A545041E6806E900995CF2 /* UILabel+SPUtils.m in Sources */,
 				17B6CDC61ECD8457004844EA /* JFCustomCollectionViewCell.m in Sources */,
 				17DFD9D51E6E5B0B003FE611 /* JFTabBarViewController.m in Sources */,

@@ -16,6 +16,7 @@
 #import "JFArchiveViewController.h"
 #import "JFFollowWeiboViewController.h"
 #import "JFFollowStockViewController.h"
+#import "JFFollowTuhaoViewController.h"
 
 @interface JFMineviewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray *titles;
@@ -42,7 +43,7 @@
     [self addTitle:@"仿股票" class:@"JFFollowStockViewController"];
     [self addTitle:@"瀑布流" class:@"JFCascadeViewController"];
     [self addTitle:@"Apple Store 首页" class:@"JFFollowAppleStoreViewController"];
-    
+    [self addTitle:@"Demo" class:@"JFFollowTuhaoViewController"];
     
     self.view.backgroundColor = [UIColor yellowColor];
     [self.tableView reloadData];

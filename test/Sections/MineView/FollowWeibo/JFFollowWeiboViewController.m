@@ -83,8 +83,9 @@
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     if (kind == UICollectionElementKindSectionHeader) {
-        // 从重用池里面取
+
         JFFollowWeiboCollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"headerView" forIndexPath:indexPath];
+        headerView.frame = CGRectMake(0, 0, FULL_SCREEN_WIDTH, 44);
         headerView.backgroundColor =[UIColor orangeColor];
 //        headerView.titleLabel.text = @"title";
         return headerView;
