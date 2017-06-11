@@ -18,6 +18,10 @@
 		170F31761CA44A44002A9A63 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 170F31751CA44A44002A9A63 /* testUITests.m */; };
 		173425341D4604BB00EE035D /* JFCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425331D4604BB00EE035D /* JFCycleView.m */; };
 		173425371D4608E100EE035D /* JFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425361D4608E100EE035D /* JFMainViewController.m */; };
+		1746D6AD1EED48D900865B4F /* JFMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1746D6AC1EED48D900865B4F /* JFMasonryViewController.m */; };
+		1746D6B01EED49E900865B4F /* JFMasonryLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1746D6AF1EED49E900865B4F /* JFMasonryLayout.m */; };
+		1746D6B31EED4AEC00865B4F /* JFMasonryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1746D6B21EED4AEC00865B4F /* JFMasonryCollectionViewCell.m */; };
+		1746D6C11EED5BB300865B4F /* JFMasonryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1746D6C01EED5BB300865B4F /* JFMasonryModel.m */; };
 		174E72371EAF40F3003B4BD0 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 174E72361EAF40F3003B4BD0 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		174E72561EB1CF89003B4BD0 /* server_test.cer in Resources */ = {isa = PBXBuildFile; fileRef = 174E72541EB1CF89003B4BD0 /* server_test.cer */; };
 		174E72571EB1CF89003B4BD0 /* server.cer in Resources */ = {isa = PBXBuildFile; fileRef = 174E72551EB1CF89003B4BD0 /* server.cer */; };
@@ -157,6 +161,14 @@
 		173425331D4604BB00EE035D /* JFCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCycleView.m; sourceTree = "<group>"; };
 		173425351D4608E100EE035D /* JFMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMainViewController.h; sourceTree = "<group>"; };
 		173425361D4608E100EE035D /* JFMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFMainViewController.m; sourceTree = "<group>"; };
+		1746D6AB1EED48D900865B4F /* JFMasonryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMasonryViewController.h; sourceTree = "<group>"; };
+		1746D6AC1EED48D900865B4F /* JFMasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFMasonryViewController.m; sourceTree = "<group>"; };
+		1746D6AE1EED49E900865B4F /* JFMasonryLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMasonryLayout.h; sourceTree = "<group>"; };
+		1746D6AF1EED49E900865B4F /* JFMasonryLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFMasonryLayout.m; sourceTree = "<group>"; };
+		1746D6B11EED4AEC00865B4F /* JFMasonryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMasonryCollectionViewCell.h; sourceTree = "<group>"; };
+		1746D6B21EED4AEC00865B4F /* JFMasonryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFMasonryCollectionViewCell.m; sourceTree = "<group>"; };
+		1746D6BF1EED5BB300865B4F /* JFMasonryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMasonryModel.h; sourceTree = "<group>"; };
+		1746D6C01EED5BB300865B4F /* JFMasonryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFMasonryModel.m; sourceTree = "<group>"; };
 		174E72351EAF40F3003B4BD0 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		174E72361EAF40F3003B4BD0 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		174E72451EAF4548003B4BD0 /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
@@ -518,6 +530,7 @@
 		1737FF251D436BEF00F8DAA9 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				1746D6A91EED48C400865B4F /* Masonry */,
 				178171381ED43F0F009D4098 /* FollowTuhao */,
 				17B6CE151ED2934A004844EA /* FollowAppleStore */,
 				17B6CDBC1ECD7EF9004844EA /* Cascade */,
@@ -557,6 +570,21 @@
 			children = (
 			);
 			path = ThirdView;
+			sourceTree = "<group>";
+		};
+		1746D6A91EED48C400865B4F /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				1746D6AB1EED48D900865B4F /* JFMasonryViewController.h */,
+				1746D6AC1EED48D900865B4F /* JFMasonryViewController.m */,
+				1746D6AE1EED49E900865B4F /* JFMasonryLayout.h */,
+				1746D6AF1EED49E900865B4F /* JFMasonryLayout.m */,
+				1746D6B11EED4AEC00865B4F /* JFMasonryCollectionViewCell.h */,
+				1746D6B21EED4AEC00865B4F /* JFMasonryCollectionViewCell.m */,
+				1746D6BF1EED5BB300865B4F /* JFMasonryModel.h */,
+				1746D6C01EED5BB300865B4F /* JFMasonryModel.m */,
+			);
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 		174E72341EAF40F3003B4BD0 /* FDFullscreenPopGesture */ = {
@@ -1319,6 +1347,7 @@
 				178361691E7FC33200CF5BDF /* JFCABaseAnimationViewController.m in Sources */,
 				176737671EA4778B00CC0226 /* SPTabBar.m in Sources */,
 				17C413691DB782F000188556 /* TAAbstractDotView.m in Sources */,
+				1746D6AD1EED48D900865B4F /* JFMasonryViewController.m in Sources */,
 				176737771EA4784D00CC0226 /* CViewController.m in Sources */,
 				17D01A491EC7121D009897D4 /* JFFollowWeiboCollectionReusableView.m in Sources */,
 				17D019AB1EC2C30A009897D4 /* JFBaseViewController.m in Sources */,
@@ -1354,6 +1383,7 @@
 				1781713F1ED44371009D4098 /* JFTuhaoTableViewCell.m in Sources */,
 				17A544E31E67FEFE00995CF2 /* UIView+AEBHandyAutoLayout.m in Sources */,
 				1767375F1EA476F500CC0226 /* JFNativeTabBarViewController.m in Sources */,
+				1746D6B01EED49E900865B4F /* JFMasonryLayout.m in Sources */,
 				17E42A521EAE00260079ED99 /* CCLogStringImp.m in Sources */,
 				17DFDA141E77F3D1003FE611 /* UIImage+JFCorner.m in Sources */,
 				17A544EC1E6805B000995CF2 /* UITableView+CellLine.m in Sources */,
@@ -1363,6 +1393,7 @@
 				17DFD9D91E700221003FE611 /* JFCoreAnimationViewController.m in Sources */,
 				176737791EA4784D00CC0226 /* EViewController.m in Sources */,
 				17A5454E1E69677D00995CF2 /* JFReactiveCocoaViewController.m in Sources */,
+				1746D6C11EED5BB300865B4F /* JFMasonryModel.m in Sources */,
 				173425371D4608E100EE035D /* JFMainViewController.m in Sources */,
 				17C4136D1DB782F000188556 /* SDCollectionViewCell.m in Sources */,
 				1767364F1E9CB0C600CC0226 /* JFTableViewCell.m in Sources */,
@@ -1377,6 +1408,7 @@
 				170F31521CA44A44002A9A63 /* main.m in Sources */,
 				17C4136A1DB782F000188556 /* TAAnimatedDotView.m in Sources */,
 				17D019A51EC2C290009897D4 /* JFFollowWeiboViewController.m in Sources */,
+				1746D6B31EED4AEC00865B4F /* JFMasonryCollectionViewCell.m in Sources */,
 				17DFD9CE1E6E5313003FE611 /* JFRounderCornerViewController.m in Sources */,
 				176737681EA4778B00CC0226 /* SPTabBarItemView.m in Sources */,
 				17A544FE1E6806BA00995CF2 /* UIButton+countDown.m in Sources */,
