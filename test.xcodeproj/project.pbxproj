@@ -16,6 +16,8 @@
 		170F31601CA44A44002A9A63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170F315E1CA44A44002A9A63 /* LaunchScreen.storyboard */; };
 		170F316B1CA44A44002A9A63 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 170F316A1CA44A44002A9A63 /* testTests.m */; };
 		170F31761CA44A44002A9A63 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 170F31751CA44A44002A9A63 /* testUITests.m */; };
+		172677491F03DAB800CECF01 /* JFPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172677481F03DAB800CECF01 /* JFPresentViewController.m */; };
+		1726774C1F03DC7400CECF01 /* JFEmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1726774B1F03DC7400CECF01 /* JFEmptyViewController.m */; };
 		173425341D4604BB00EE035D /* JFCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425331D4604BB00EE035D /* JFCycleView.m */; };
 		173425371D4608E100EE035D /* JFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425361D4608E100EE035D /* JFMainViewController.m */; };
 		1746D6AD1EED48D900865B4F /* JFMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1746D6AC1EED48D900865B4F /* JFMasonryViewController.m */; };
@@ -157,6 +159,10 @@
 		170F31711CA44A44002A9A63 /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		170F31751CA44A44002A9A63 /* testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testUITests.m; sourceTree = "<group>"; };
 		170F31771CA44A44002A9A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		172677471F03DAB800CECF01 /* JFPresentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFPresentViewController.h; sourceTree = "<group>"; };
+		172677481F03DAB800CECF01 /* JFPresentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFPresentViewController.m; sourceTree = "<group>"; };
+		1726774A1F03DC7400CECF01 /* JFEmptyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFEmptyViewController.h; sourceTree = "<group>"; };
+		1726774B1F03DC7400CECF01 /* JFEmptyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFEmptyViewController.m; sourceTree = "<group>"; };
 		173425321D4604BB00EE035D /* JFCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCycleView.h; sourceTree = "<group>"; };
 		173425331D4604BB00EE035D /* JFCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCycleView.m; sourceTree = "<group>"; };
 		173425351D4608E100EE035D /* JFMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMainViewController.h; sourceTree = "<group>"; };
@@ -452,6 +458,17 @@
 			path = testUITests;
 			sourceTree = "<group>";
 		};
+		172677451F03DA9F00CECF01 /* PresentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				172677471F03DAB800CECF01 /* JFPresentViewController.h */,
+				172677481F03DAB800CECF01 /* JFPresentViewController.m */,
+				1726774A1F03DC7400CECF01 /* JFEmptyViewController.h */,
+				1726774B1F03DC7400CECF01 /* JFEmptyViewController.m */,
+			);
+			path = PresentViewController;
+			sourceTree = "<group>";
+		};
 		1737FF1D1D436BD600F8DAA9 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
@@ -530,6 +547,7 @@
 		1737FF251D436BEF00F8DAA9 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				172677451F03DA9F00CECF01 /* PresentViewController */,
 				1746D6A91EED48C400865B4F /* Masonry */,
 				178171381ED43F0F009D4098 /* FollowTuhao */,
 				17B6CE151ED2934A004844EA /* FollowAppleStore */,
@@ -1375,6 +1393,7 @@
 				17A544F01E6805DB00995CF2 /* UIImageView+Barcode.m in Sources */,
 				17DFD9DD1E70F1A3003FE611 /* JFFontViewController.m in Sources */,
 				17E42A4E1EAE00260079ED99 /* CCLog.m in Sources */,
+				172677491F03DAB800CECF01 /* JFPresentViewController.m in Sources */,
 				1767364C1E9CB05700CC0226 /* JFTableViewController.m in Sources */,
 				17DFD9D21E6E53FD003FE611 /* JFNavigationViewController.m in Sources */,
 				17A544D81E67FE4C00995CF2 /* NSString+Extension.m in Sources */,
@@ -1401,6 +1420,7 @@
 				17C413721DB783D900188556 /* JFSDCycleViewController.m in Sources */,
 				170C34301D6D972E00987817 /* JFMineviewController.m in Sources */,
 				17A544F31E6805F900995CF2 /* UIImage+Common.m in Sources */,
+				1726774C1F03DC7400CECF01 /* JFEmptyViewController.m in Sources */,
 				17DFD9EA1E7106EF003FE611 /* JFArchiveFather.m in Sources */,
 				17E42A501EAE00260079ED99 /* CCLogController.m in Sources */,
 				170F31551CA44A44002A9A63 /* AppDelegate.m in Sources */,

@@ -18,7 +18,7 @@
 #import "JFFollowStockViewController.h"
 #import "JFFollowTuhaoViewController.h"
 #import "JFMasonryViewController.h"
-
+#import "JFPresentViewController.h"
 
 @interface JFMineviewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray *titles;
@@ -47,6 +47,7 @@
     [self addTitle:@"Apple Store 首页" class:@"JFFollowAppleStoreViewController"];
     [self addTitle:@"Demo" class:@"JFFollowTuhaoViewController"];
     [self addTitle:@"Masonry" class:@"JFMasonryViewController"];
+    [self addTitle:@"Present" class:@"JFPresentViewController"];
 
     self.view.backgroundColor = [UIColor yellowColor];
     [self.tableView reloadData];

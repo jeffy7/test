@@ -126,4 +126,31 @@ NSString *const JSAppKey = @"6741162070b24760";
     return YES;
 }
 
+- (UITabBarController *)rootController {
+    return (UITabBarController *)self.window.rootViewController;
+}
+- (UIViewController *)topViewController {
+    UIViewController *resultVC;
+    UINavigationController *nav =  globalApp.rootController.selectedViewController;
+    resultVC = nav.viewControllers.lastObject;
+//    resultVC = [self _topViewController:[[UIApplication sharedApplication].keyWindow rootViewController]];
+    while (resultVC.presentedViewController) {
+        resultVC = [self _topViewController:resultVC.presentedViewController];
+    }
+    return resultVC;
+}
+
+- (UIViewController *)_topViewController:(UIViewController *)vc {
+    if ([vc isKindOfClass:[UINavigationController class]]) {
+        UINavigationController *nav =  (UINavigationController *)vc;
+        
+        return nav.viewControllers.lastObject;
+    } else if ([vc isKindOfClass:[UITabBarController class]]) {
+        return [self _topViewController:[(UITabBarController *)vc selectedViewController]];
+    } else {
+        return vc;
+    }
+    return nil;
+}
+
 @end

@@ -10,7 +10,9 @@
 #define Defines_h
 
 
-#define JF_DEBUG            1
+#define JF_DEBUG      1
+
+#define globalApp           ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
 
 
