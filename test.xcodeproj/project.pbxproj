@@ -38,6 +38,7 @@
 		178361651E7F84C000CF5BDF /* JFExchangeBoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 178361641E7F84C000CF5BDF /* JFExchangeBoundButton.m */; };
 		178361691E7FC33200CF5BDF /* JFCABaseAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 178361681E7FC33200CF5BDF /* JFCABaseAnimationViewController.m */; };
 		1783616E1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1783616D1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m */; };
+		17903D971EE6572E00CFC729 /* JFConvertPointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17903D961EE6572E00CFC729 /* JFConvertPointViewController.m */; };
 		17A544D81E67FE4C00995CF2 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A544D71E67FE4C00995CF2 /* NSString+Extension.m */; };
 		17A544DB1E67FE6600995CF2 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A544DA1E67FE6600995CF2 /* UIColor+Extension.m */; };
 		17A544E31E67FEFE00995CF2 /* UIView+AEBHandyAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A544DE1E67FEFE00995CF2 /* UIView+AEBHandyAutoLayout.m */; };
@@ -196,6 +197,8 @@
 		1783616A1E7FC4CB00CF5BDF /* JFMacroHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JFMacroHeader.h; path = test/Sections/MineView/CoreAnimation/CABasicAnimation/JFMacroHeader.h; sourceTree = SOURCE_ROOT; };
 		1783616C1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCAKeyframeAnimationViewController.h; sourceTree = "<group>"; };
 		1783616D1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCAKeyframeAnimationViewController.m; sourceTree = "<group>"; };
+		17903D951EE6572E00CFC729 /* JFConvertPointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFConvertPointViewController.h; sourceTree = "<group>"; };
+		17903D961EE6572E00CFC729 /* JFConvertPointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFConvertPointViewController.m; sourceTree = "<group>"; };
 		17A544D61E67FE4C00995CF2 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		17A544D71E67FE4C00995CF2 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		17A544D91E67FE6600995CF2 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
@@ -518,6 +521,7 @@
 		1737FF251D436BEF00F8DAA9 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				17903D931EE6570300CFC729 /* ConvertPoint */,
 				178171381ED43F0F009D4098 /* FollowTuhao */,
 				17B6CE151ED2934A004844EA /* FollowAppleStore */,
 				17B6CDBC1ECD7EF9004844EA /* Cascade */,
@@ -651,6 +655,15 @@
 				1783616D1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m */,
 			);
 			path = CAKeyframeAnimation;
+			sourceTree = "<group>";
+		};
+		17903D931EE6570300CFC729 /* ConvertPoint */ = {
+			isa = PBXGroup;
+			children = (
+				17903D951EE6572E00CFC729 /* JFConvertPointViewController.h */,
+				17903D961EE6572E00CFC729 /* JFConvertPointViewController.m */,
+			);
+			path = ConvertPoint;
 			sourceTree = "<group>";
 		};
 		17A544D01E67FDAC00995CF2 /* Vendors */ = {
@@ -1322,6 +1335,7 @@
 				176737771EA4784D00CC0226 /* CViewController.m in Sources */,
 				17D01A491EC7121D009897D4 /* JFFollowWeiboCollectionReusableView.m in Sources */,
 				17D019AB1EC2C30A009897D4 /* JFBaseViewController.m in Sources */,
+				17903D971EE6572E00CFC729 /* JFConvertPointViewController.m in Sources */,
 				17E42A551EAE00260079ED99 /* CCSimpleFileOutputRedirectionController.m in Sources */,
 				17A544DB1E67FE6600995CF2 /* UIColor+Extension.m in Sources */,
 				178361651E7F84C000CF5BDF /* JFExchangeBoundButton.m in Sources */,

@@ -44,6 +44,7 @@
     [self addTitle:@"瀑布流" class:@"JFCascadeViewController"];
     [self addTitle:@"Apple Store 首页" class:@"JFFollowAppleStoreViewController"];
     [self addTitle:@"Demo" class:@"JFFollowTuhaoViewController"];
+    [self addTitle:@"ConvertPoint" class:@"JFConvertPointViewController"];
     
     self.view.backgroundColor = [UIColor yellowColor];
     [self.tableView reloadData];
