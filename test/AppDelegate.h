@@ -12,6 +12,10 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, weak, readonly) UITabBarController *rootController;
+
+- (UIViewController *)topViewController ;
+
 
 
 @end

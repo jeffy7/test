@@ -1,26 +1,25 @@
 //
-//  JFBaseViewController.m
+//  JFEmptyViewController.m
 //  test
 //
-//  Created by je_ffy on 2017/5/10.
+//  Created by je_ffy on 2017/6/28.
 //  Copyright © 2017年 je_ffy. All rights reserved.
 //
 
-#import "JFBaseViewController.h"
+#import "JFEmptyViewController.h"
 
-@interface JFBaseViewController ()
+@interface JFEmptyViewController ()
 
 @end
 
-@implementation JFBaseViewController
+@implementation JFEmptyViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-    }
+//    UINavigationController *nav =  globalApp.rootController.selectedViewController;
+//    CC_LOG_VALUE(nav.viewControllers);
     
+    CC_LOG_VALUE(globalApp.topViewController);
     // Do any additional setup after loading the view.
 }
 
