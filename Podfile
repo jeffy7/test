@@ -17,5 +17,6 @@ target "test" do
     pod 'ReactiveCocoa', '2.3.1'
     pod 'MJRefresh', '~> 3.1.12'
     pod 'MJExtension', '~> 3.0.13'
+    pod 'BQMM', '1.2.1'
 
 end 

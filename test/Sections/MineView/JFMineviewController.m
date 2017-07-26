@@ -19,6 +19,7 @@
 #import "JFFollowTuhaoViewController.h"
 #import "JFMasonryViewController.h"
 #import "JFPresentViewController.h"
+#import "JFMMBrowViewController.h"
 
 @interface JFMineviewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray *titles;
@@ -49,6 +50,7 @@
     [self addTitle:@"ConvertPoint" class:@"JFConvertPointViewController"];
     [self addTitle:@"Masonry" class:@"JFMasonryViewController"];
     [self addTitle:@"Present" class:@"JFPresentViewController"];
+    [self addTitle:@"MM表情" class:@"JFMMBrowViewController"];
 
     self.view.backgroundColor = [UIColor yellowColor];
     [self.tableView reloadData];

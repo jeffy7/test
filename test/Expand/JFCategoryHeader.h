@@ -12,6 +12,7 @@
 #import "NSString+Extension.h"
 #import "UIColor+HEX.h"
 #import "UIColor+SPHex.h"
+#import "UINavigationController+JZExtension.h"
 
 
 #endif /* JFCategoryHeader_h */

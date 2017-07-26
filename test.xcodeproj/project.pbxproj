@@ -18,6 +18,32 @@
 		170F31761CA44A44002A9A63 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 170F31751CA44A44002A9A63 /* testUITests.m */; };
 		172677491F03DAB800CECF01 /* JFPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172677481F03DAB800CECF01 /* JFPresentViewController.m */; };
 		1726774C1F03DC7400CECF01 /* JFEmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1726774B1F03DC7400CECF01 /* JFEmptyViewController.m */; };
+		172FCC5C1F2886C5008C0AAF /* JFNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC5B1F2886C5008C0AAF /* JFNewsViewController.m */; };
+		172FCC611F288F3C008C0AAF /* DDChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC601F288F3C008C0AAF /* DDChannelModel.m */; };
+		172FCC661F288F50008C0AAF /* DDChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC631F288F50008C0AAF /* DDChannelCell.m */; };
+		172FCC671F288F50008C0AAF /* DDChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC651F288F50008C0AAF /* DDChannelLabel.m */; };
+		172FCC6F1F288FAE008C0AAF /* DDSortCell_first.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC6A1F288FAE008C0AAF /* DDSortCell_first.m */; };
+		172FCC701F288FAE008C0AAF /* DDSortCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC6C1F288FAE008C0AAF /* DDSortCell.m */; };
+		172FCC711F288FAE008C0AAF /* DDSortView.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC6E1F288FAE008C0AAF /* DDSortView.m */; };
+		172FCC741F288FDD008C0AAF /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC731F288FDD008C0AAF /* UIView+Extension.m */; };
+		172FCC771F288FFD008C0AAF /* LXReorderableCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC761F288FFD008C0AAF /* LXReorderableCollectionViewFlowLayout.m */; };
+		172FCC7C1F28908F008C0AAF /* DDNewsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC7A1F28908F008C0AAF /* DDNewsTVC.m */; };
+		172FCC7D1F28908F008C0AAF /* DDNewsTVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 172FCC7B1F28908F008C0AAF /* DDNewsTVC.storyboard */; };
+		172FCC841F2890AF008C0AAF /* DDNewsCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC7F1F2890AF008C0AAF /* DDNewsCache.m */; };
+		172FCC851F2890AF008C0AAF /* DDNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC811F2890AF008C0AAF /* DDNewsCell.m */; };
+		172FCC861F2890AF008C0AAF /* DDNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC831F2890AF008C0AAF /* DDNewsModel.m */; };
+		172FCC8A1F289107008C0AAF /* DDPhotoDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC891F289107008C0AAF /* DDPhotoDetailController.m */; };
+		172FCC941F289155008C0AAF /* DDBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC8E1F289155008C0AAF /* DDBottomView.m */; };
+		172FCC951F289155008C0AAF /* DDBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172FCC8F1F289155008C0AAF /* DDBottomView.xib */; };
+		172FCC961F289155008C0AAF /* DDPhotoDescView.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC911F289155008C0AAF /* DDPhotoDescView.m */; };
+		172FCC971F289155008C0AAF /* DDPhotoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC931F289155008C0AAF /* DDPhotoScrollView.m */; };
+		172FCC9A1F289162008C0AAF /* JT3DScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC991F289162008C0AAF /* JT3DScrollView.m */; };
+		172FCC9F1F289171008C0AAF /* DDPhotoDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC9C1F289171008C0AAF /* DDPhotoDetailModel.m */; };
+		172FCCA01F289171008C0AAF /* DDPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC9E1F289171008C0AAF /* DDPhotoModel.m */; };
+		172FCCA31F289198008C0AAF /* DDNewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCCA21F289198008C0AAF /* DDNewsDetailController.m */; };
+		172FCCA71F28923E008C0AAF /* UINavigationController+JZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCCA61F28923E008C0AAF /* UINavigationController+JZExtension.m */; };
+		172FCCAB1F2892D9008C0AAF /* DDNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCCAA1F2892D9008C0AAF /* DDNetworkTool.m */; };
+		172FCCAD1F289561008C0AAF /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 172FCCAC1F289561008C0AAF /* topic_news.json */; };
 		173425341D4604BB00EE035D /* JFCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425331D4604BB00EE035D /* JFCycleView.m */; };
 		173425371D4608E100EE035D /* JFMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 173425361D4608E100EE035D /* JFMainViewController.m */; };
 		1746D6AD1EED48D900865B4F /* JFMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1746D6AC1EED48D900865B4F /* JFMasonryViewController.m */; };
@@ -65,6 +91,7 @@
 		17A545191E68075500995CF2 /* UIImage+SPScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A545161E68075500995CF2 /* UIImage+SPScale.m */; };
 		17A5451A1E68075500995CF2 /* UIImage+Url.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A545181E68075500995CF2 /* UIImage+Url.m */; };
 		17A5454E1E69677D00995CF2 /* JFReactiveCocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5454D1E69677D00995CF2 /* JFReactiveCocoaViewController.m */; };
+		17AE1E9F1F14892100F55F4A /* JFMMBrowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE1E9E1F14892100F55F4A /* JFMMBrowViewController.m */; };
 		17B6CDC01ECD7F16004844EA /* JFCascadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B6CDBF1ECD7F16004844EA /* JFCascadeViewController.m */; };
 		17B6CDC31ECD80DB004844EA /* JFCustomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B6CDC21ECD80DB004844EA /* JFCustomCollectionViewLayout.m */; };
 		17B6CDC61ECD8457004844EA /* JFCustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B6CDC51ECD8457004844EA /* JFCustomCollectionViewCell.m */; };
@@ -164,6 +191,55 @@
 		172677481F03DAB800CECF01 /* JFPresentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFPresentViewController.m; sourceTree = "<group>"; };
 		1726774A1F03DC7400CECF01 /* JFEmptyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFEmptyViewController.h; sourceTree = "<group>"; };
 		1726774B1F03DC7400CECF01 /* JFEmptyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFEmptyViewController.m; sourceTree = "<group>"; };
+		172FCC5A1F2886C5008C0AAF /* JFNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFNewsViewController.h; sourceTree = "<group>"; };
+		172FCC5B1F2886C5008C0AAF /* JFNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFNewsViewController.m; sourceTree = "<group>"; };
+		172FCC5F1F288F3C008C0AAF /* DDChannelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDChannelModel.h; sourceTree = "<group>"; };
+		172FCC601F288F3C008C0AAF /* DDChannelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDChannelModel.m; sourceTree = "<group>"; };
+		172FCC621F288F50008C0AAF /* DDChannelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDChannelCell.h; sourceTree = "<group>"; };
+		172FCC631F288F50008C0AAF /* DDChannelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDChannelCell.m; sourceTree = "<group>"; };
+		172FCC641F288F50008C0AAF /* DDChannelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDChannelLabel.h; sourceTree = "<group>"; };
+		172FCC651F288F50008C0AAF /* DDChannelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDChannelLabel.m; sourceTree = "<group>"; };
+		172FCC691F288FAE008C0AAF /* DDSortCell_first.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSortCell_first.h; sourceTree = "<group>"; };
+		172FCC6A1F288FAE008C0AAF /* DDSortCell_first.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDSortCell_first.m; sourceTree = "<group>"; };
+		172FCC6B1F288FAE008C0AAF /* DDSortCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSortCell.h; sourceTree = "<group>"; };
+		172FCC6C1F288FAE008C0AAF /* DDSortCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDSortCell.m; sourceTree = "<group>"; };
+		172FCC6D1F288FAE008C0AAF /* DDSortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSortView.h; sourceTree = "<group>"; };
+		172FCC6E1F288FAE008C0AAF /* DDSortView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDSortView.m; sourceTree = "<group>"; };
+		172FCC721F288FDD008C0AAF /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		172FCC731F288FDD008C0AAF /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		172FCC751F288FFD008C0AAF /* LXReorderableCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXReorderableCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		172FCC761F288FFD008C0AAF /* LXReorderableCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXReorderableCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		172FCC791F28908F008C0AAF /* DDNewsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNewsTVC.h; sourceTree = "<group>"; };
+		172FCC7A1F28908F008C0AAF /* DDNewsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNewsTVC.m; sourceTree = "<group>"; };
+		172FCC7B1F28908F008C0AAF /* DDNewsTVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DDNewsTVC.storyboard; sourceTree = "<group>"; };
+		172FCC7E1F2890AF008C0AAF /* DDNewsCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNewsCache.h; sourceTree = "<group>"; };
+		172FCC7F1F2890AF008C0AAF /* DDNewsCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNewsCache.m; sourceTree = "<group>"; };
+		172FCC801F2890AF008C0AAF /* DDNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNewsCell.h; sourceTree = "<group>"; };
+		172FCC811F2890AF008C0AAF /* DDNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNewsCell.m; sourceTree = "<group>"; };
+		172FCC821F2890AF008C0AAF /* DDNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNewsModel.h; sourceTree = "<group>"; };
+		172FCC831F2890AF008C0AAF /* DDNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNewsModel.m; sourceTree = "<group>"; };
+		172FCC881F289107008C0AAF /* DDPhotoDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDPhotoDetailController.h; sourceTree = "<group>"; };
+		172FCC891F289107008C0AAF /* DDPhotoDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDPhotoDetailController.m; sourceTree = "<group>"; };
+		172FCC8D1F289155008C0AAF /* DDBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDBottomView.h; sourceTree = "<group>"; };
+		172FCC8E1F289155008C0AAF /* DDBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDBottomView.m; sourceTree = "<group>"; };
+		172FCC8F1F289155008C0AAF /* DDBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DDBottomView.xib; sourceTree = "<group>"; };
+		172FCC901F289155008C0AAF /* DDPhotoDescView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDPhotoDescView.h; sourceTree = "<group>"; };
+		172FCC911F289155008C0AAF /* DDPhotoDescView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDPhotoDescView.m; sourceTree = "<group>"; };
+		172FCC921F289155008C0AAF /* DDPhotoScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDPhotoScrollView.h; sourceTree = "<group>"; };
+		172FCC931F289155008C0AAF /* DDPhotoScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDPhotoScrollView.m; sourceTree = "<group>"; };
+		172FCC981F289162008C0AAF /* JT3DScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JT3DScrollView.h; sourceTree = "<group>"; };
+		172FCC991F289162008C0AAF /* JT3DScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JT3DScrollView.m; sourceTree = "<group>"; };
+		172FCC9B1F289171008C0AAF /* DDPhotoDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDPhotoDetailModel.h; sourceTree = "<group>"; };
+		172FCC9C1F289171008C0AAF /* DDPhotoDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDPhotoDetailModel.m; sourceTree = "<group>"; };
+		172FCC9D1F289171008C0AAF /* DDPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDPhotoModel.h; sourceTree = "<group>"; };
+		172FCC9E1F289171008C0AAF /* DDPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDPhotoModel.m; sourceTree = "<group>"; };
+		172FCCA11F289198008C0AAF /* DDNewsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNewsDetailController.h; sourceTree = "<group>"; };
+		172FCCA21F289198008C0AAF /* DDNewsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNewsDetailController.m; sourceTree = "<group>"; };
+		172FCCA51F28923E008C0AAF /* UINavigationController+JZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+JZExtension.h"; sourceTree = "<group>"; };
+		172FCCA61F28923E008C0AAF /* UINavigationController+JZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JZExtension.m"; sourceTree = "<group>"; };
+		172FCCA91F2892D9008C0AAF /* DDNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNetworkTool.h; sourceTree = "<group>"; };
+		172FCCAA1F2892D9008C0AAF /* DDNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNetworkTool.m; sourceTree = "<group>"; };
+		172FCCAC1F289561008C0AAF /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
 		173425321D4604BB00EE035D /* JFCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCycleView.h; sourceTree = "<group>"; };
 		173425331D4604BB00EE035D /* JFCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCycleView.m; sourceTree = "<group>"; };
 		173425351D4608E100EE035D /* JFMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMainViewController.h; sourceTree = "<group>"; };
@@ -259,6 +335,8 @@
 		17A5451D1E680D4500995CF2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		17A5454C1E69677D00995CF2 /* JFReactiveCocoaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFReactiveCocoaViewController.h; sourceTree = "<group>"; };
 		17A5454D1E69677D00995CF2 /* JFReactiveCocoaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFReactiveCocoaViewController.m; sourceTree = "<group>"; };
+		17AE1E9D1F14892100F55F4A /* JFMMBrowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFMMBrowViewController.h; sourceTree = "<group>"; };
+		17AE1E9E1F14892100F55F4A /* JFMMBrowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFMMBrowViewController.m; sourceTree = "<group>"; };
 		17B6CDBE1ECD7F16004844EA /* JFCascadeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCascadeViewController.h; sourceTree = "<group>"; };
 		17B6CDBF1ECD7F16004844EA /* JFCascadeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFCascadeViewController.m; sourceTree = "<group>"; };
 		17B6CDC11ECD80DB004844EA /* JFCustomCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFCustomCollectionViewLayout.h; sourceTree = "<group>"; };
@@ -472,6 +550,131 @@
 			path = PresentViewController;
 			sourceTree = "<group>";
 		};
+		172FCC591F2886BB008C0AAF /* News */ = {
+			isa = PBXGroup;
+			children = (
+				172FCCA81F2892D1008C0AAF /* Network */,
+				172FCC5A1F2886C5008C0AAF /* JFNewsViewController.h */,
+				172FCC5B1F2886C5008C0AAF /* JFNewsViewController.m */,
+				172FCC5E1F288F11008C0AAF /* View */,
+				172FCC5D1F288F08008C0AAF /* Model */,
+				172FCC871F2890DA008C0AAF /* NextDetail */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		172FCC5D1F288F08008C0AAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				172FCC5F1F288F3C008C0AAF /* DDChannelModel.h */,
+				172FCC601F288F3C008C0AAF /* DDChannelModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		172FCC5E1F288F11008C0AAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				172FCC781F28907E008C0AAF /* TVView */,
+				172FCC681F288F9B008C0AAF /* SortView */,
+				172FCC621F288F50008C0AAF /* DDChannelCell.h */,
+				172FCC631F288F50008C0AAF /* DDChannelCell.m */,
+				172FCC641F288F50008C0AAF /* DDChannelLabel.h */,
+				172FCC651F288F50008C0AAF /* DDChannelLabel.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		172FCC681F288F9B008C0AAF /* SortView */ = {
+			isa = PBXGroup;
+			children = (
+				172FCC751F288FFD008C0AAF /* LXReorderableCollectionViewFlowLayout.h */,
+				172FCC761F288FFD008C0AAF /* LXReorderableCollectionViewFlowLayout.m */,
+				172FCC691F288FAE008C0AAF /* DDSortCell_first.h */,
+				172FCC6A1F288FAE008C0AAF /* DDSortCell_first.m */,
+				172FCC6B1F288FAE008C0AAF /* DDSortCell.h */,
+				172FCC6C1F288FAE008C0AAF /* DDSortCell.m */,
+				172FCC6D1F288FAE008C0AAF /* DDSortView.h */,
+				172FCC6E1F288FAE008C0AAF /* DDSortView.m */,
+			);
+			path = SortView;
+			sourceTree = "<group>";
+		};
+		172FCC781F28907E008C0AAF /* TVView */ = {
+			isa = PBXGroup;
+			children = (
+				172FCC7E1F2890AF008C0AAF /* DDNewsCache.h */,
+				172FCC7F1F2890AF008C0AAF /* DDNewsCache.m */,
+				172FCC801F2890AF008C0AAF /* DDNewsCell.h */,
+				172FCC811F2890AF008C0AAF /* DDNewsCell.m */,
+				172FCC821F2890AF008C0AAF /* DDNewsModel.h */,
+				172FCC831F2890AF008C0AAF /* DDNewsModel.m */,
+				172FCC791F28908F008C0AAF /* DDNewsTVC.h */,
+				172FCC7A1F28908F008C0AAF /* DDNewsTVC.m */,
+				172FCC7B1F28908F008C0AAF /* DDNewsTVC.storyboard */,
+			);
+			path = TVView;
+			sourceTree = "<group>";
+		};
+		172FCC871F2890DA008C0AAF /* NextDetail */ = {
+			isa = PBXGroup;
+			children = (
+				172FCC8C1F28912C008C0AAF /* Model */,
+				172FCC8B1F289121008C0AAF /* View */,
+				172FCC881F289107008C0AAF /* DDPhotoDetailController.h */,
+				172FCC891F289107008C0AAF /* DDPhotoDetailController.m */,
+				172FCCA11F289198008C0AAF /* DDNewsDetailController.h */,
+				172FCCA21F289198008C0AAF /* DDNewsDetailController.m */,
+			);
+			path = NextDetail;
+			sourceTree = "<group>";
+		};
+		172FCC8B1F289121008C0AAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				172FCC981F289162008C0AAF /* JT3DScrollView.h */,
+				172FCC991F289162008C0AAF /* JT3DScrollView.m */,
+				172FCC8D1F289155008C0AAF /* DDBottomView.h */,
+				172FCC8E1F289155008C0AAF /* DDBottomView.m */,
+				172FCC8F1F289155008C0AAF /* DDBottomView.xib */,
+				172FCC901F289155008C0AAF /* DDPhotoDescView.h */,
+				172FCC911F289155008C0AAF /* DDPhotoDescView.m */,
+				172FCC921F289155008C0AAF /* DDPhotoScrollView.h */,
+				172FCC931F289155008C0AAF /* DDPhotoScrollView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		172FCC8C1F28912C008C0AAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				172FCC9B1F289171008C0AAF /* DDPhotoDetailModel.h */,
+				172FCC9C1F289171008C0AAF /* DDPhotoDetailModel.m */,
+				172FCC9D1F289171008C0AAF /* DDPhotoModel.h */,
+				172FCC9E1F289171008C0AAF /* DDPhotoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		172FCCA41F289236008C0AAF /* UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				172FCCA51F28923E008C0AAF /* UINavigationController+JZExtension.h */,
+				172FCCA61F28923E008C0AAF /* UINavigationController+JZExtension.m */,
+			);
+			path = UINavigationController;
+			sourceTree = "<group>";
+		};
+		172FCCA81F2892D1008C0AAF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				172FCCAC1F289561008C0AAF /* topic_news.json */,
+				172FCCA91F2892D9008C0AAF /* DDNetworkTool.h */,
+				172FCCAA1F2892D9008C0AAF /* DDNetworkTool.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		1737FF1D1D436BD600F8DAA9 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
@@ -518,13 +721,13 @@
 		1737FF221D436BEF00F8DAA9 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				172FCC591F2886BB008C0AAF /* News */,
 				1767376A1EA477F100CC0226 /* ABCDE */,
 				17DFD9CF1E6E53E0003FE611 /* BaseSystemSetting */,
 				1737FF231D436BEF00F8DAA9 /* FourthView */,
 				1737FF241D436BEF00F8DAA9 /* MainPage */,
 				1737FF251D436BEF00F8DAA9 /* MineView */,
 				1737FF261D436BEF00F8DAA9 /* SecondView */,
-				1737FF281D436BEF00F8DAA9 /* ThirdView */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -550,6 +753,7 @@
 		1737FF251D436BEF00F8DAA9 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				17AE1E9B1F14890A00F55F4A /* MMBrow */,
 				17903D931EE6570300CFC729 /* ConvertPoint */,
 				172677451F03DA9F00CECF01 /* PresentViewController */,
 				1746D6A91EED48C400865B4F /* Masonry */,
@@ -585,13 +789,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		1737FF281D436BEF00F8DAA9 /* ThirdView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ThirdView;
 			sourceTree = "<group>";
 		};
 		1746D6A91EED48C400865B4F /* Masonry */ = {
@@ -725,6 +922,7 @@
 		17A544D11E67FDC200995CF2 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				172FCCA41F289236008C0AAF /* UINavigationController */,
 				17B6CDC91ECD9A2A004844EA /* NSObject */,
 				17A5450B1E68071E00995CF2 /* TextField */,
 				17A544F81E6806B100995CF2 /* UIButton */,
@@ -790,6 +988,8 @@
 		17A544DC1E67FE7200995CF2 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				172FCC721F288FDD008C0AAF /* UIView+Extension.h */,
+				172FCC731F288FDD008C0AAF /* UIView+Extension.m */,
 				17A544DD1E67FEFE00995CF2 /* UIView+AEBHandyAutoLayout.h */,
 				17A544DE1E67FEFE00995CF2 /* UIView+AEBHandyAutoLayout.m */,
 				17A544DF1E67FEFE00995CF2 /* UIView+BlockGesture.h */,
@@ -864,6 +1064,15 @@
 				17A5454D1E69677D00995CF2 /* JFReactiveCocoaViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		17AE1E9B1F14890A00F55F4A /* MMBrow */ = {
+			isa = PBXGroup;
+			children = (
+				17AE1E9D1F14892100F55F4A /* JFMMBrowViewController.h */,
+				17AE1E9E1F14892100F55F4A /* JFMMBrowViewController.m */,
+			);
+			path = MMBrow;
 			sourceTree = "<group>";
 		};
 		17B6CDBC1ECD7EF9004844EA /* Cascade */ = {
@@ -1281,13 +1490,16 @@
 				174E72561EB1CF89003B4BD0 /* server_test.cer in Resources */,
 				17B6CDC81ECD941D004844EA /* cascade.plist in Resources */,
 				17E42A581EAE00260079ED99 /* Info.plist in Resources */,
+				172FCCAD1F289561008C0AAF /* topic_news.json in Resources */,
 				170F31601CA44A44002A9A63 /* LaunchScreen.storyboard in Resources */,
 				174E72571EB1CF89003B4BD0 /* server.cer in Resources */,
 				17BFD7911E94D33C00A417AB /* rsa_private_key.pem in Resources */,
 				17B6CDD51ECDA0B6004844EA /* 1.plist in Resources */,
 				170F315D1CA44A44002A9A63 /* Assets.xcassets in Resources */,
 				170F315B1CA44A44002A9A63 /* Main.storyboard in Resources */,
+				172FCC7D1F28908F008C0AAF /* DDNewsTVC.storyboard in Resources */,
 				176736511E9CB0F100CC0226 /* main.js in Resources */,
+				172FCC951F289155008C0AAF /* DDBottomView.xib in Resources */,
 				17DFDA111E77F34C003FE611 /* qq.jpg in Resources */,
 				17BFD7921E94D33C00A417AB /* rsa_public_key.pem in Resources */,
 			);
@@ -1337,7 +1549,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		7BBAFE8D00CB37533412C18E /* [CP] Embed Pods Frameworks */ = {
@@ -1366,7 +1578,10 @@
 				17DFDA0E1E77F16E003FE611 /* UIView+JFCorner.m in Sources */,
 				17A544E41E67FEFE00995CF2 /* UIView+BlockGesture.m in Sources */,
 				174E72371EAF40F3003B4BD0 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				172FCC711F288FAE008C0AAF /* DDSortView.m in Sources */,
+				172FCC6F1F288FAE008C0AAF /* DDSortCell_first.m in Sources */,
 				17B6CDC01ECD7F16004844EA /* JFCascadeViewController.m in Sources */,
+				17AE1E9F1F14892100F55F4A /* JFMMBrowViewController.m in Sources */,
 				176737691EA4778B00CC0226 /* SPTabBarView.m in Sources */,
 				170F31581CA44A44002A9A63 /* ViewController.m in Sources */,
 				17E42A561EAE00260079ED99 /* CCTeeController.m in Sources */,
@@ -1374,18 +1589,24 @@
 				17A5450E1E68072600995CF2 /* SPTextField.m in Sources */,
 				17C4136B1DB782F000188556 /* TADotView.m in Sources */,
 				17B6CDC31ECD80DB004844EA /* JFCustomCollectionViewLayout.m in Sources */,
+				172FCC661F288F50008C0AAF /* DDChannelCell.m in Sources */,
 				17A544F61E68065A00995CF2 /* UIColor+HEX.m in Sources */,
 				178361691E7FC33200CF5BDF /* JFCABaseAnimationViewController.m in Sources */,
 				176737671EA4778B00CC0226 /* SPTabBar.m in Sources */,
+				172FCC671F288F50008C0AAF /* DDChannelLabel.m in Sources */,
 				17C413691DB782F000188556 /* TAAbstractDotView.m in Sources */,
+				172FCC841F2890AF008C0AAF /* DDNewsCache.m in Sources */,
 				1746D6AD1EED48D900865B4F /* JFMasonryViewController.m in Sources */,
 				176737771EA4784D00CC0226 /* CViewController.m in Sources */,
+				172FCC7C1F28908F008C0AAF /* DDNewsTVC.m in Sources */,
 				17D01A491EC7121D009897D4 /* JFFollowWeiboCollectionReusableView.m in Sources */,
 				17D019AB1EC2C30A009897D4 /* JFBaseViewController.m in Sources */,
 				17903D971EE6572E00CFC729 /* JFConvertPointViewController.m in Sources */,
 				17E42A551EAE00260079ED99 /* CCSimpleFileOutputRedirectionController.m in Sources */,
+				172FCC941F289155008C0AAF /* DDBottomView.m in Sources */,
 				17A544DB1E67FE6600995CF2 /* UIColor+Extension.m in Sources */,
 				178361651E7F84C000CF5BDF /* JFExchangeBoundButton.m in Sources */,
+				172FCCAB1F2892D9008C0AAF /* DDNetworkTool.m in Sources */,
 				17E42A511EAE00260079ED99 /* CCLogReviewViewController.m in Sources */,
 				17DFDA171E77FABA003FE611 /* JFCornerView.m in Sources */,
 				17E42A4D1EAE00260079ED99 /* CCLocationMake.m in Sources */,
@@ -1395,17 +1616,23 @@
 				17A544FD1E6806BA00995CF2 /* UIButton+Common.m in Sources */,
 				17E42A4F1EAE00260079ED99 /* CCLogController+Utility.m in Sources */,
 				17A545191E68075500995CF2 /* UIImage+SPScale.m in Sources */,
+				172FCCA71F28923E008C0AAF /* UINavigationController+JZExtension.m in Sources */,
 				17A545011E6806C300995CF2 /* NSDate+Time.m in Sources */,
 				17DFD9E71E710633003FE611 /* JFArchiveSon.m in Sources */,
 				176737761EA4784D00CC0226 /* BViewController.m in Sources */,
 				17D019AE1EC2C775009897D4 /* JFStockTableViewCell.m in Sources */,
 				17B6CDCF1ECD9AA2004844EA /* JFCascadeProduct.m in Sources */,
 				17E42A531EAE00260079ED99 /* CCLogSystem.m in Sources */,
+				172FCCA31F289198008C0AAF /* DDNewsDetailController.m in Sources */,
 				17A545141E68074400995CF2 /* UIColor+SPHex.m in Sources */,
+				172FCC851F2890AF008C0AAF /* DDNewsCell.m in Sources */,
+				172FCC961F289155008C0AAF /* DDPhotoDescView.m in Sources */,
 				17E42A571EAE00260079ED99 /* NSObject+CCReverseComparison.m in Sources */,
 				17A545111E68073A00995CF2 /* UIButton+SPBadge.m in Sources */,
 				17A544F01E6805DB00995CF2 /* UIImageView+Barcode.m in Sources */,
+				172FCC611F288F3C008C0AAF /* DDChannelModel.m in Sources */,
 				17DFD9DD1E70F1A3003FE611 /* JFFontViewController.m in Sources */,
+				172FCC771F288FFD008C0AAF /* LXReorderableCollectionViewFlowLayout.m in Sources */,
 				17E42A4E1EAE00260079ED99 /* CCLog.m in Sources */,
 				172677491F03DAB800CECF01 /* JFPresentViewController.m in Sources */,
 				1767364C1E9CB05700CC0226 /* JFTableViewController.m in Sources */,
@@ -1414,6 +1641,7 @@
 				17B6CE191ED29371004844EA /* JFFollowAppleStoreViewController.m in Sources */,
 				17A5451A1E68075500995CF2 /* UIImage+Url.m in Sources */,
 				1781713F1ED44371009D4098 /* JFTuhaoTableViewCell.m in Sources */,
+				172FCC5C1F2886C5008C0AAF /* JFNewsViewController.m in Sources */,
 				17A544E31E67FEFE00995CF2 /* UIView+AEBHandyAutoLayout.m in Sources */,
 				1767375F1EA476F500CC0226 /* JFNativeTabBarViewController.m in Sources */,
 				1746D6B01EED49E900865B4F /* JFMasonryLayout.m in Sources */,
@@ -1427,6 +1655,7 @@
 				176737791EA4784D00CC0226 /* EViewController.m in Sources */,
 				17A5454E1E69677D00995CF2 /* JFReactiveCocoaViewController.m in Sources */,
 				1746D6C11EED5BB300865B4F /* JFMasonryModel.m in Sources */,
+				172FCC701F288FAE008C0AAF /* DDSortCell.m in Sources */,
 				173425371D4608E100EE035D /* JFMainViewController.m in Sources */,
 				17C4136D1DB782F000188556 /* SDCollectionViewCell.m in Sources */,
 				1767364F1E9CB0C600CC0226 /* JFTableViewCell.m in Sources */,
@@ -1438,20 +1667,27 @@
 				17DFD9EA1E7106EF003FE611 /* JFArchiveFather.m in Sources */,
 				17E42A501EAE00260079ED99 /* CCLogController.m in Sources */,
 				170F31551CA44A44002A9A63 /* AppDelegate.m in Sources */,
+				172FCC971F289155008C0AAF /* DDPhotoScrollView.m in Sources */,
 				176737751EA4784D00CC0226 /* AViewController.m in Sources */,
 				170F31521CA44A44002A9A63 /* main.m in Sources */,
+				172FCC8A1F289107008C0AAF /* DDPhotoDetailController.m in Sources */,
 				17C4136A1DB782F000188556 /* TAAnimatedDotView.m in Sources */,
 				17D019A51EC2C290009897D4 /* JFFollowWeiboViewController.m in Sources */,
 				1746D6B31EED4AEC00865B4F /* JFMasonryCollectionViewCell.m in Sources */,
 				17DFD9CE1E6E5313003FE611 /* JFRounderCornerViewController.m in Sources */,
+				172FCC861F2890AF008C0AAF /* DDNewsModel.m in Sources */,
+				172FCC741F288FDD008C0AAF /* UIView+Extension.m in Sources */,
 				176737681EA4778B00CC0226 /* SPTabBarItemView.m in Sources */,
 				17A544FE1E6806BA00995CF2 /* UIButton+countDown.m in Sources */,
+				172FCCA01F289171008C0AAF /* DDPhotoModel.m in Sources */,
 				17E42A541EAE00260079ED99 /* CCLogViewController.m in Sources */,
 				1781713C1ED43F24009D4098 /* JFFollowTuhaoViewController.m in Sources */,
+				172FCC9A1F289162008C0AAF /* JT3DScrollView.m in Sources */,
 				17A545041E6806E900995CF2 /* UILabel+SPUtils.m in Sources */,
 				17B6CDC61ECD8457004844EA /* JFCustomCollectionViewCell.m in Sources */,
 				17DFD9D51E6E5B0B003FE611 /* JFTabBarViewController.m in Sources */,
 				1783616E1E7FC87000CF5BDF /* JFCAKeyframeAnimationViewController.m in Sources */,
+				172FCC9F1F289171008C0AAF /* DDPhotoDetailModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

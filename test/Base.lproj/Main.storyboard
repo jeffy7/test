@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gU4-FB-Xtt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gU4-FB-Xtt">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,6 +28,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="waG-zx-Kyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4482" y="-1353"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="i8t-9p-xUM">
+            <objects>
+                <viewController id="eRW-0u-zD9" customClass="JFNewsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dTd-kc-jjO"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Yl-xk-6Sl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KQu-1J-h8k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dka-PN-r4P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zTR-na-ytp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3666" y="-1353"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="brc-PA-IXA">
+            <objects>
+                <navigationController id="Hhv-eV-JWm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="2vQ-7U-nWl"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nKB-us-Rg7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="eRW-0u-zD9" kind="relationship" relationship="rootViewController" id="LpK-mM-Jfb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jzu-WV-Gad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3666" y="-2110"/>
         </scene>
         <!--Item-->
         <scene sceneID="Nq1-uz-Soz">
@@ -148,6 +184,7 @@
                         <segue destination="rJn-VP-q44" kind="relationship" relationship="viewControllers" id="BAt-JX-7t1"/>
                         <segue destination="FAr-5L-V8j" kind="relationship" relationship="viewControllers" id="XTP-ff-fQt"/>
                         <segue destination="dBe-Hg-0oV" kind="relationship" relationship="viewControllers" id="CJd-V7-j9G"/>
+                        <segue destination="Hhv-eV-JWm" kind="relationship" relationship="viewControllers" id="Ird-Hr-AZo"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OMm-zM-z5R" userLabel="First Responder" sceneMemberID="firstResponder"/>
