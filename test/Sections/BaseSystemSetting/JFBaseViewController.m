@@ -14,13 +14,21 @@
 
 @implementation JFBaseViewController
 
+- (instancetype)init {
+    if (self = [super init]) {
+        
+    }
+    
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-//    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
-//        self.edgesForExtendedLayout = UIRectEdgeNone;
-//    }
-
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     // Do any additional setup after loading the view.
 }

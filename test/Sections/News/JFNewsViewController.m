@@ -54,7 +54,7 @@ static NSString * const reuseID  = @"DDChannelCell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"malageji";
+    self.title = @"麻辣个鸡";
 
 
 	[self.view addSubview:self.smallScrollView];
@@ -166,7 +166,7 @@ static NSString * const reuseID  = @"DDChannelCell";
 - (UIScrollView *)smallScrollView
 {
 	if (_smallScrollView == nil) {
-		_smallScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 64, ScrW, 44)];
+		_smallScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, ScrW, 44)];
 		_smallScrollView.backgroundColor = [UIColor whiteColor];
 		_smallScrollView.showsHorizontalScrollIndicator = NO;
 		// 设置频道
@@ -190,10 +190,12 @@ static NSString * const reuseID  = @"DDChannelCell";
 {
 	if (_bigCollectionView == nil) {
 		// 高度 = 屏幕高度 - 导航栏高度64 - 频道视图高度44
-		CGFloat h = ScrH - 64 - self.smallScrollView.height ;
+		CGFloat h = ScrH - 64 - self.smallScrollView.height ;//49 tabBar 的高度按需取舍
 		CGRect frame = CGRectMake(0, self.smallScrollView.maxY, ScrW, h);
 		UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
 		_bigCollectionView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:flowLayout];
+        _bigCollectionView.layer.borderWidth = 0.50f;
+        _bigCollectionView.layer.borderColor = [UIColor blueColor].CGColor;
 		_bigCollectionView.backgroundColor = [UIColor whiteColor];
 		_bigCollectionView.delegate = self;
 		_bigCollectionView.dataSource = self;
@@ -213,8 +215,10 @@ static NSString * const reuseID  = @"DDChannelCell";
 - (UIButton *)sortButton
 {
 	if (_sortButton == nil) {
-		_sortButton = [[UIButton alloc] initWithFrame:CGRectMake(ScrW-44, 64, 44, 44)];
-		[_sortButton setImage:[UIImage imageNamed:@"ks_home_plus"] forState:UIControlStateNormal];
+		_sortButton = [[UIButton alloc] initWithFrame:CGRectMake(ScrW-44, 0, 44, 44)];
+        _sortButton.layer.borderWidth = 0.50f;
+        _sortButton.layer.borderColor = [UIColor redColor].CGColor;
+		[_sortButton setImage:[UIImage imageNamed:@"sp_coupons_pull_arrow"] forState:UIControlStateNormal];
 		_sortButton.backgroundColor = [UIColor whiteColor];
 		_sortButton.layer.shadowColor = [UIColor whiteColor].CGColor;
 		_sortButton.layer.shadowOpacity = 1;

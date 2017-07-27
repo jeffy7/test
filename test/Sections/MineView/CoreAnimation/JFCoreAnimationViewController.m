@@ -28,7 +28,7 @@
     for (unsigned int i = 0; i < titles.count; i++) {
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.frame = CGRectMake(10 , 70 + (60)*i , FULL_SCREEN_WIDTH - 20, 50);
+        button.frame = CGRectMake(10 , 10 + (60)*i , FULL_SCREEN_WIDTH - 20, 50);
         button.backgroundColor = [UIColor redColor];
         button.titleLabel.font = [UIFont systemFontOfSize:12.0f];
         button.tag = i;
