@@ -65,6 +65,7 @@
 		176737771EA4784D00CC0226 /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176737701EA4784D00CC0226 /* CViewController.m */; };
 		176737781EA4784D00CC0226 /* DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176737721EA4784D00CC0226 /* DViewController.m */; };
 		176737791EA4784D00CC0226 /* EViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176737741EA4784D00CC0226 /* EViewController.m */; };
+		176A31041F2F33F0005567BA /* JFSocketIOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176A31031F2F33F0005567BA /* JFSocketIOViewController.m */; };
 		1781713C1ED43F24009D4098 /* JFFollowTuhaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1781713B1ED43F24009D4098 /* JFFollowTuhaoViewController.m */; };
 		1781713F1ED44371009D4098 /* JFTuhaoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1781713E1ED44371009D4098 /* JFTuhaoTableViewCell.m */; };
 		178361651E7F84C000CF5BDF /* JFExchangeBoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 178361641E7F84C000CF5BDF /* JFExchangeBoundButton.m */; };
@@ -280,6 +281,8 @@
 		176737721EA4784D00CC0226 /* DViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DViewController.m; sourceTree = "<group>"; };
 		176737731EA4784D00CC0226 /* EViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EViewController.h; sourceTree = "<group>"; };
 		176737741EA4784D00CC0226 /* EViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EViewController.m; sourceTree = "<group>"; };
+		176A31021F2F33F0005567BA /* JFSocketIOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFSocketIOViewController.h; sourceTree = "<group>"; };
+		176A31031F2F33F0005567BA /* JFSocketIOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFSocketIOViewController.m; sourceTree = "<group>"; };
 		1781713A1ED43F24009D4098 /* JFFollowTuhaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFFollowTuhaoViewController.h; sourceTree = "<group>"; };
 		1781713B1ED43F24009D4098 /* JFFollowTuhaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFFollowTuhaoViewController.m; sourceTree = "<group>"; };
 		1781713D1ED44371009D4098 /* JFTuhaoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFTuhaoTableViewCell.h; sourceTree = "<group>"; };
@@ -753,6 +756,7 @@
 		1737FF251D436BEF00F8DAA9 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				176A31001F2F33DF005567BA /* SocketIO */,
 				17AE1E9B1F14890A00F55F4A /* MMBrow */,
 				17903D931EE6570300CFC729 /* ConvertPoint */,
 				172677451F03DA9F00CECF01 /* PresentViewController */,
@@ -860,6 +864,15 @@
 				176737741EA4784D00CC0226 /* EViewController.m */,
 			);
 			path = ABCDE;
+			sourceTree = "<group>";
+		};
+		176A31001F2F33DF005567BA /* SocketIO */ = {
+			isa = PBXGroup;
+			children = (
+				176A31021F2F33F0005567BA /* JFSocketIOViewController.h */,
+				176A31031F2F33F0005567BA /* JFSocketIOViewController.m */,
+			);
+			path = SocketIO;
 			sourceTree = "<group>";
 		};
 		178171381ED43F0F009D4098 /* FollowTuhao */ = {
@@ -1648,6 +1661,7 @@
 				17E42A521EAE00260079ED99 /* CCLogStringImp.m in Sources */,
 				17DFDA141E77F3D1003FE611 /* UIImage+JFCorner.m in Sources */,
 				17A544EC1E6805B000995CF2 /* UITableView+CellLine.m in Sources */,
+				176A31041F2F33F0005567BA /* JFSocketIOViewController.m in Sources */,
 				17C4136F1DB782F000188556 /* UIView+SDExtension.m in Sources */,
 				17C4136C1DB782F000188556 /* TAPageControl.m in Sources */,
 				173425341D4604BB00EE035D /* JFCycleView.m in Sources */,
