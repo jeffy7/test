@@ -8,6 +8,8 @@
 
 #import "JFBaseViewController.h"
 
+@import SocketIO;
+
 @interface JFSocketIOViewController : JFBaseViewController
 
 @end

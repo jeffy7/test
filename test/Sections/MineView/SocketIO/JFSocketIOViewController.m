@@ -7,7 +7,7 @@
 //
 
 #import "JFSocketIOViewController.h"
-
+static NSString * const serverURL = @"http://ws.bimao.com";
 @interface JFSocketIOViewController ()
 
 @end
@@ -16,7 +16,39 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
+    NSURL* url = [[NSURL alloc] initWithString:serverURL];
+    SocketIOClient* socket = [[SocketIOClient alloc] initWithSocketURL:url config:@{@"log": @YES, @"compress": @YES}];
+    
+    [socket on:@"connect" callback:^(NSArray* data, SocketAckEmitter* ack) {
+        NSLog(@"++++++++++++socket connected");
+    }];
+    
+    [socket on:@"currentAmount" callback:^(NSArray* data, SocketAckEmitter* ack) {
+        double cur = [[data objectAtIndex:0] floatValue];
+        
+        [[socket emitWithAck:@"canUpdate" with:@[@(cur)]] timingOutAfter:0 callback:^(NSArray* data) {
+//            [socket emit:@"update" withItems:@[@{@"amount": @(cur + 2.50)}]];
+        }];
+        
+        [ack with:@[@"Got your currentAmount, ", @"dude"]];
+    }];
+    
+    
+    [socket on:@"exchange:rate" callback:^(NSArray * _Nonnull data, SocketAckEmitter * _Nonnull ack) {
+        
+        
+//        if ([data[0] isKindOfClass:[NSDictionary class]]) {
+//            self.exchangeRate = [data[0][@"data"]  mutableCopy] ;
+//        }
+        
+        NSLog(@"xxxxxxxxxxxxr(SocketIOClientStatusConnected = 3) socket status:%@",data);
+        NSLog(@"rrrrrrrrrractNum:%@",ack);
+        //        NSLog(@"连接成功连接成功连接成功连接成功连接成功连接成功连接成功连接成功连接成功连接成功");
+    }];
+    [socket connect];
+    
 }
 
 - (void)didReceiveMemoryWarning {
