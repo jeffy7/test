@@ -69,6 +69,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Socket.IO-Client-Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>StarscreamSocketIO.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TYAttributedLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -82,77 +92,87 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>02B82D22A070599F00EC2C038A00AB30</key>
+		<key>251BAD17812F7EBF6532EACF66F941C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>04CF549EBEEE7BC87AEAE35397184D94</key>
+		<key>284DADF3C227860F77333611BF4D6902</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>11324CE5AEEB0E322FEF3427CF747F76</key>
+		<key>32675FF8D5CDD51D8D153C635AC335CB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>175B076ED45EB1A3E40F58BA14036467</key>
+		<key>3765820B6DF486394C3BD45691A8D4E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>52EBCF345EAA4AE894A4488DB6773A12</key>
+		<key>5AA17C95E926B760FD08E0B487DAEFA2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7DF3D9C28A55A6167D82D8D160967DA3</key>
+		<key>6B1714E816AE794962516E2ECBB40A5A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8642CC820CE8C5B88C113D7F47AF4BC3</key>
+		<key>6B3E3969F54059073622D5A824156B41</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>97389CAED7660D9B03215C12749C24CB</key>
+		<key>7AFFE054536310D3F9D143033CBB5284</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9C0D74B2B486BDFC018817358C94D55B</key>
+		<key>826EFF975442065A54A0B2D3103EE6A4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9DC8D9E02903E93BD0B2FEC9D846EA20</key>
+		<key>8DA74961B15E20390EFE7648290F78B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<key>9C9525B8F198F2B45A4C8C189393B9E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A316B54C67E947D23CECD230FA5BFAEF</key>
+		<key>B3CF3AF1C75B27F25A15B639FC8A8493</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CCB7CB485E21C0801790635C83376BA2</key>
+		<key>CF671F7E57B92905F1CC91D036D6B4A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E00CA434796C962AB64C1CC3B444C1D0</key>
+		<key>D52144DE9D7255DE912490FF5A806573</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E852D3E3A9440E49EB97605FA44B0DD7</key>
+		<key>E11924631AC0B1D850D0744D91E90F89</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E14A62900910444707A5504D25EC98DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE78DA4A19513E48A1306D1E304F9059</key>
 		<dict>
 			<key>primary</key>
 			<true/>

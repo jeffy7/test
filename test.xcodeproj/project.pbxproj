@@ -141,7 +141,7 @@
 		17E6FA391E8D136600CEA421 /* JSPatchPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E6FA381E8D136600CEA421 /* JSPatchPlatform.framework */; };
 		17E6FA3B1E8D137100CEA421 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E6FA3A1E8D137100CEA421 /* JavaScriptCore.framework */; };
 		17E6FA3D1E8D137A00CEA421 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E6FA3C1E8D137A00CEA421 /* libz.tbd */; };
-		65680077FC38BACE1E97E662 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E732AEDE8E04EF846BCD4795 /* libPods-test.a */; };
+		432978B48C63613124D08B83 /* Pods_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DFC0A3E07AECF3A6503815 /* Pods_test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -431,7 +431,7 @@
 		17E6FA3C1E8D137A00CEA421 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		59D77987FC605555EB81FB43 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		8370AE36D28B23832B881E54 /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
-		E732AEDE8E04EF846BCD4795 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3DFC0A3E07AECF3A6503815 /* Pods_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -441,8 +441,8 @@
 			files = (
 				17E6FA3D1E8D137A00CEA421 /* libz.tbd in Frameworks */,
 				17E6FA3B1E8D137100CEA421 /* JavaScriptCore.framework in Frameworks */,
-				65680077FC38BACE1E97E662 /* libPods-test.a in Frameworks */,
 				17E6FA391E8D136600CEA421 /* JSPatchPlatform.framework in Frameworks */,
+				432978B48C63613124D08B83 /* Pods_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1343,7 +1343,7 @@
 			children = (
 				17E6FA3C1E8D137A00CEA421 /* libz.tbd */,
 				17E6FA3A1E8D137100CEA421 /* JavaScriptCore.framework */,
-				E732AEDE8E04EF846BCD4795 /* libPods-test.a */,
+				C3DFC0A3E07AECF3A6503815 /* Pods_test.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

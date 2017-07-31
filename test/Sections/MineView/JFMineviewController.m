@@ -51,6 +51,7 @@
     [self addTitle:@"Masonry" class:@"JFMasonryViewController"];
     [self addTitle:@"Present" class:@"JFPresentViewController"];
     [self addTitle:@"MM表情" class:@"JFMMBrowViewController"];
+    [self addTitle:@"SocketIO" class:@"JFMMBrowViewController"];
 
     self.view.backgroundColor = [UIColor yellowColor];
     [self.tableView reloadData];

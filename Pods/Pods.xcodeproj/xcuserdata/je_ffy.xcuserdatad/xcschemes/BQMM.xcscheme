@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E852D3E3A9440E49EB97605FA44B0DD7'
+               BlueprintIdentifier = '3765820B6DF486394C3BD45691A8D4E9'
                BlueprintName = 'BQMM'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libBQMM.a'>
+               BuildableName = 'BQMM.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

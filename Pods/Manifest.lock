@@ -47,6 +47,9 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - Socket.IO-Client-Swift (11.0.0):
+    - StarscreamSocketIO (~> 8.0.1)
+  - StarscreamSocketIO (8.0.1)
   - TYAttributedLabel (2.6.2)
   - YYModel (1.0.4)
 
@@ -63,6 +66,7 @@ DEPENDENCIES:
   - ReactiveCocoa (= 2.3.1)
   - SafeKit (~> 1.4.1)
   - SDWebImage (~> 3.8.1)
+  - Socket.IO-Client-Swift (~> 11.0.0)
   - TYAttributedLabel (~> 2.6.1)
   - YYModel (~> 1.0.4)
 
@@ -79,9 +83,11 @@ SPEC CHECKSUMS:
   ReactiveCocoa: 3fe9b233ca6db810e86681b5749488564c1179a1
   SafeKit: 7d20e4b2680498cda979913bedee5f993f60de96
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  Socket.IO-Client-Swift: 9cafa4459be23886c231942baeebb0df94f3989e
+  StarscreamSocketIO: 821a1a2597cc4735919fd5d7683a85c14b81bb8c
   TYAttributedLabel: 1c1f1e7604043ba584e005d4fd3aee8a1a7a2020
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: c844e94deffa25efc53db96e5a238d9b677fdd39
+PODFILE CHECKSUM: c79863733851e4b294c633f9f6d712e5c2af2874
 
 COCOAPODS: 1.2.1
