@@ -168,7 +168,7 @@
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/je_ffy/Desktop/test/test/Sections/MineView/PresentViewController/JFPresentViewController.m"
-                  timestampString = "566386893.928908"
+                  timestampString = "566389268.147136"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "38"
@@ -183,7 +183,7 @@
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/je_ffy/Desktop/test/test/Sections/MineView/PresentViewController/JFPresentViewController.m"
-                  timestampString = "566386893.930639"
+                  timestampString = "566389268.148991"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "40"
@@ -216,7 +216,7 @@
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/je_ffy/Desktop/test/test/Sections/News/View/TVView/DDNewsModel.m"
-                  timestampString = "566386893.93519"
+                  timestampString = "566389268.15368"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -231,7 +231,7 @@
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/je_ffy/Desktop/test/test/Sections/News/View/TVView/DDNewsModel.m"
-                  timestampString = "566386893.9367909"
+                  timestampString = "566389268.155466"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "20"
@@ -246,7 +246,7 @@
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/je_ffy/Desktop/test/test/Sections/News/View/TVView/DDNewsModel.m"
-                  timestampString = "566386893.938396"
+                  timestampString = "566389268.157207"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -254,38 +254,6 @@
                   offsetFromSymbolStart = "20">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "test/Sections/News/JFNewsViewController.m"
-            timestampString = "566387223.3136801"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
-            landmarkName = "-smallScrollView"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "test/Sections/News/JFNewsViewController.m"
-            timestampString = "566387223.314293"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
-            landmarkName = "-channelList"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -333,6 +301,22 @@
             startingLineNumber = "31"
             endingLineNumber = "31"
             landmarkName = "+channels"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test/Sections/News/View/TVView/DDNewsTVC.m"
+            timestampString = "566389470.166538"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

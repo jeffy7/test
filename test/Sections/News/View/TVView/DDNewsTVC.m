@@ -34,6 +34,9 @@
 	self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
 		[weakSelf loadMoreData];
 	}];
+    
+    self.tableView.mj_footer.layer.borderWidth = 0.50f;
+    self.tableView.mj_footer.layer.borderColor = [UIColor blueColor].CGColor;
 	
 	// 去除刷新前的横线
 	UIView*view = [UIView new];

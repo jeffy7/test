@@ -146,8 +146,8 @@ static NSString * const reuseID  = @"DDChannelCell";
 	}
 	// 下划线滚动并着色
 	[UIView animateWithDuration:0.5 animations:^{
-		_underline.width = titleLable.textWidth;
-		_underline.centerX = titleLable.centerX;
+        self->_underline.width = titleLable.textWidth;
+        self->_underline.centerX = titleLable.centerX;
 		titleLable.textColor = AppColor;
 	}];
 }
@@ -190,7 +190,7 @@ static NSString * const reuseID  = @"DDChannelCell";
 {
 	if (_bigCollectionView == nil) {
 		// 高度 = 屏幕高度 - 导航栏高度64 - 频道视图高度44
-		CGFloat h = ScrH - 64 - self.smallScrollView.height ;//49 tabBar 的高度按需取舍
+		CGFloat h = ScrH - ( NaviBarHeight) - self.smallScrollView.height - TabBarHeight ;//49 tabBar 的高度按需取舍
 		CGRect frame = CGRectMake(0, self.smallScrollView.maxY, ScrW, h);
 		UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
 		_bigCollectionView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:flowLayout];
@@ -244,7 +244,7 @@ static NSString * const reuseID  = @"DDChannelCell";
 			[UIView animateWithDuration:0.5 animations:^{
 				weakSelf.sortView.y = -ScrH;
 //				weakSelf.tabBarController.tabBar.y -= 49;
-				weakSelf.tabBarController.tabBar.y = ScrH - 49; // 这么写防止用户多次点击label和排序按钮，造成tabbar错乱
+				weakSelf.tabBarController.tabBar.y = ScrH - TabBarHeight; // 这么写防止用户多次点击label和排序按钮，造成tabbar错乱
 			} completion:^(BOOL finished) {
 				[weakSelf.sortView removeFromSuperview];
 			}];
@@ -329,8 +329,8 @@ static NSString * const reuseID  = @"DDChannelCell";
 	[self.view addSubview:self.sortView];
 	_sortView.y = -ScrH;
 	[UIView animateWithDuration:0.5 animations:^{
-		self.tabBarController.tabBar.y += 49;
-		_sortView.y = _smallScrollView.y;
+		self.tabBarController.tabBar.y += TabBarHeight +34;
+        self.sortView.y = self.smallScrollView.y;
 	}];
 }
 
