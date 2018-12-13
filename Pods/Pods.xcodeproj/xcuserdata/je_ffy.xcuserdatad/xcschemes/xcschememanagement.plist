@@ -74,7 +74,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>StarscreamSocketIO.xcscheme</key>
+		<key>Starscream.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -91,92 +91,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>251BAD17812F7EBF6532EACF66F941C3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>284DADF3C227860F77333611BF4D6902</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>32675FF8D5CDD51D8D153C635AC335CB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3765820B6DF486394C3BD45691A8D4E9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5AA17C95E926B760FD08E0B487DAEFA2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6B1714E816AE794962516E2ECBB40A5A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6B3E3969F54059073622D5A824156B41</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7AFFE054536310D3F9D143033CBB5284</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>826EFF975442065A54A0B2D3103EE6A4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8DA74961B15E20390EFE7648290F78B0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9C9525B8F198F2B45A4C8C189393B9E9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B3CF3AF1C75B27F25A15B639FC8A8493</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CF671F7E57B92905F1CC91D036D6B4A7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D52144DE9D7255DE912490FF5A806573</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E11924631AC0B1D850D0744D91E90F89</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E14A62900910444707A5504D25EC98DC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EE78DA4A19513E48A1306D1E304F9059</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

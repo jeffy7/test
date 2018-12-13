@@ -13,11 +13,12 @@
 #import "BQMM.h"
 #import "MMEmoji.h"
 #import "MMEmotionCentre.h"
-#import "MMTextParser.h"
+#import "MMGif.h"
+#import "MMImageView.h"
 #import "MMTheme.h"
-#import "SMTextAttachment.h"
 #import "UITextView+BQMM.h"
-#import "MMTextParser+ExtData.h"
+#import "MMTextAttachment.h"
+#import "MMTextParser.h"
 #import "MMTextView.h"
 
 FOUNDATION_EXPORT double BQMMVersionNumber;

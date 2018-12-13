@@ -18,7 +18,8 @@ target "test" do
     pod 'ReactiveCocoa', '2.3.1'
     pod 'MJRefresh', '~> 3.1.12'
     pod 'MJExtension', '~> 3.0.13'
-    pod 'BQMM', '1.2.1'
-    pod 'Socket.IO-Client-Swift', '~> 11.0.0'
+    pod 'BQMM', '~> 2.1.0'
+    pod 'Socket.IO-Client-Swift', '~> 13.3.0'
+
 
 end 

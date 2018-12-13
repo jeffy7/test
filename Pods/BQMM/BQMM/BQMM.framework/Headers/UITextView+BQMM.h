@@ -11,17 +11,19 @@
 @interface UITextView (BQMM)
 
 /**
- *  表情消息
+ *  emoji message
  */
-@property(nonatomic, assign) NSString *mmText;
+@property(nonatomic, assign, readonly, nonnull) NSString *characterMMText;
+
+@property(nonatomic, assign, readonly, nonnull) NSArray *textImgArray;
 
 /**
- *  获取特定范围内的表情消息
+ *  get a range of emoji message
  *
- *  @param range attributedText的range
+ *  @param range     the range of selected attributedString
  *
- *  @return 表情消息
+ *  @return          a range of emoji message
  */
-- (NSString *)mmTextWithRange:(NSRange)range;
+- (nullable NSString *)mmTextWithRange:(NSRange)range;
 
 @end

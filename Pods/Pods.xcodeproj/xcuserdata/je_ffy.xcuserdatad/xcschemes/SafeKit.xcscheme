@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '32675FF8D5CDD51D8D153C635AC335CB'
-               BlueprintName = 'SafeKit'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SafeKit.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9357557BE8C29F20150FBB503286F00E"
+               BlueprintName = "SafeKit"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "SafeKit.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

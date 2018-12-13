@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9C9525B8F198F2B45A4C8C189393B9E9'
-               BlueprintName = 'TYAttributedLabel'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'TYAttributedLabel.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "442B9BC785AF32B1164E5E0D53161D01"
+               BlueprintName = "TYAttributedLabel"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "TYAttributedLabel.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

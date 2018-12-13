@@ -9,43 +9,79 @@
 #import <UIKit/UIKit.h>
 #import "MMTheme.h"
 #import "MMEmoji.h"
+#import "MMGif.h"
+/**
+ sdk region
+ */
+typedef enum
+{
+    MMRegionChina   = 0,
+    MMRegionOther   = 1,
+} MMRegion;
 
 /**
- 定义表情的类型，大表情或者小表情
+ sdk language
+ */
+typedef enum
+{
+    MMLanguageChinese,
+    MMLanguageEnglish,
+} MMLanguage;
+
+/**
+ the type of emoji that to be fetched
  */
 typedef enum
 {
     MMFetchTypeSmall    = 1 << 0,
-    MMFetchTypeBig      = 1 << 1
+    MMFetchTypeBig      = 1 << 1,
+    MMFetchTypeAll      = 1 << 2
 } MMFetchType;
 
+/**
+ SDK mode
+ */
+typedef enum
+{
+    MMSDKModeIM         = 1 << 0,
+    MMSDKModeComment    = 1 << 1,
+} MMSDKMode;
+
 @protocol MMEmotionCentreDelegate <NSObject>
+
+@required
+/**
+ *  the delegate method handles the tap of gif
+ */
+- (void)didClickGifTab;
 
 @optional
 
 /**
- *  点击键盘中大表情的代理
+ *  the delegate method handles the selection of big emoji in the keyboard
  *
- *  @param emoji 代表大表情的数据模型
+ *  @param emoji      big emoji model
  */
-- (void)didSelectEmoji:(MMEmoji *)emoji;
+- (void)didSelectEmoji:(nonnull MMEmoji *)emoji;
+
 
 /**
- *  点击联想表情的代理
+ *  the delegate method handles the selection of prompts
  *
- *  @param emoji 代表联想表情的数据模型
+ *  @param emoji      prompts model
  */
-- (void)didSelectTipEmoji:(MMEmoji *)emoji;
+- (void)didSelectTipEmoji:(nonnull MMEmoji *)emoji;
 
 /**
- *  点击表情小表情键盘上发送按钮的代理
+ *  the delegate method handles the click of `send` button in the small emoji keyboard
  *
- *  @param input 输入框， 如UITextView, UITextField...
+ *  @param input   the input control e.g. UITextView, UITextField...
  */
-- (void)didSendWithInput:(UIResponder<UITextInput> *)input;
+- (void)didSendWithInput:(nonnull UIResponder<UITextInput> *)input;
 
 /**
- *  点击输入框切换表情按钮状态
+ *  the delegate method called when user click the input control, at that point the keyboard has been
+    switched to default, you can set the status of the control that controls the status of keyboard if necessary
  */
 - (void)tapOverlay;
 
@@ -54,104 +90,160 @@ typedef enum
 @interface MMEmotionCentre : NSObject
 
 /**
- *  表情中心的代理， 表情mm SDK数据的主要输出口
+ *  Weather to use http or not
+ *  Default is NO (use https)
+ *  Can only be set once on startup
  */
-@property (nonatomic, weak) id<MMEmotionCentreDelegate> delegate;
+@property (nonatomic) BOOL useHttp;
 
 /**
- *  是否支持图文混排, 默认为YES
+ *  SDK region  default:MMRegionChina
+ */
+@property (nonatomic) MMRegion sdkRegion;
+
+/**
+ *  SDK language  default:MMLanguageChinese
+ */
+@property (nonatomic) MMLanguage sdkLanguage;
+
+/**
+ *  the delegate is the main data source of SDK
+ */
+@property (nonatomic, weak, nullable) id<MMEmotionCentreDelegate> delegate;
+
+/**
+ *  SDK mode   default:MMSDKModeIM
+ */
+@property (nonatomic) MMSDKMode sdkMode;
+
+/**
+ *  the switch for setting the support of Photo-text default YES
  */
 @property (nonatomic) BOOL supportedMixedTextImage;
 
 /**
- * 计数表情包
- */
-@property (nonatomic) NSInteger count;
-
-/**
- *  表情中心的单例方法
+ *  Emotion Center Singleton
  *
- *  @return 表情中心的单例
+ *  @return Emotion Center Singleton
  */
-+ (instancetype)defaultCentre;
++ (nonnull instancetype)defaultCentre;
 
 /**
- *  获得当前SDK的版本
+ *  get the current version of SDK
  *
- *  @return 目前SDK的版本
+ *  @return the current version of SDK
  */
-- (NSString *)version;
+- (nonnull NSString *)version;
 
 /**
- *  表情mm SDK初始化
- *  获取appId和secret的入口： http://form.mikecrm.com/f.php?t=HlmhIZ
- *  @param appId  表情mm分配给你的app的唯一标识符
- *  @param secret 表情mm分配给你的app的密匙
- */
-- (void)setAppId:(NSString *)appId secret:(NSString *)secret;
-
-/**
- *  开发者可以用setUserId方法设置App UserId，以便在后台统计时跟踪追溯单个用户的表情使用情况
+ *  initialize SDK with the third party key & id that assigned to your app
  *
- *  @param userId 用户的唯一标识符
+ *  @param appkey     third party appKey
+ *  @param platformId third party platform id
  */
-- (void)setUserId:(NSString *)userId;
-
+- (void)setAppkey:(nonnull NSString *)appkey
+       platformId:(nonnull NSString *)platformId;
 
 /**
- *  更新表情mm SDK的皮肤
+ *  initialize SDK
+ *  Apply for appId and secret： http://open.biaoqingmm.com/open/register/index.html
+ *  @param appId  the unique app id that assigned to your app
+ *  @param secret the unique app secret that assigned to your app
+ */
+- (void)setAppId:(nonnull NSString *)appId
+          secret:(nonnull NSString *)secret;
+
+/**
+ *  set userId to track the status of unique user
  *
- *  @param theme SDK开发的Theme的对象， 提供了可更改的界面属性, 参考MMTheme.h
+ *  @param userId  unique id for user
  */
-- (void)setTheme:(MMTheme *)theme;
+- (void)setUserId:(nullable NSString *)userId;
+
+/**
+ *  set the skin of SDK
+ *
+ *  @param theme  the MMTheme Object for SDK, please check out MMTheme.h for detail
+ */
+- (void)setTheme:(nonnull MMTheme *)theme;
+
+/**
+ *  set the default emoji group
+ *
+ *  @param emojiArray the unicode emoji array
+ */
+- (void)setDefaultEmojiArray:(nonnull NSArray<NSString *> *)emojiArray;
 
 
 /**
- *  切换到普通键盘
+ *  switch to default keyboard
  */
 - (void)switchToDefaultKeyboard;
 
 /**
- *  添加表情键盘
+ *  switch to emoji keyboard 
  *
- *  @param input 输入框，添加表情键盘的目标
+ *  @param input the input control
  */
-- (void)attachEmotionKeyboardToInput:(UIResponder<UITextInput> *)input;
+- (void)attachEmotionKeyboardToInput:(nonnull UIResponder<UITextInput> *)input;
 
 /**
- *  添加表情联想， 当在输入框中输入字符是，SDK将寻找与之相匹配的表情， 然后显示出来
- *
- *  @param attchedView 显示的表情将在这个试图的上面
- *  @param input       输入框
+ *  trigger the function of `prompts` (as user typing SDK try to find the emojis that matching the content that user inputs)
+ 
+ *  @param attchedView a view that the prompts show right above
+ *  @param input       input control
  */
-- (void)shouldShowShotcutPopoverAboveView:(UIView *)attchedView
-                                withInput:(UIResponder<UITextInput> *)input;
+- (void)shouldShowShotcutPopoverAboveView:(nonnull UIView *)attchedView
+                                withInput:(nonnull UIResponder<UITextInput> *)input
+                                __attribute__((deprecated("no longer support")));
 
 
 /**
- *  表情的详细的界面视图
- * 
- *  @param emojiCode 表情的唯一标识
- *
- *  @return 表情的细节试图
+ dismiss `prompts`
  */
-- (UIViewController *)controllerForEmotionCode:(NSString *)emojiCode;
+- (void)dismissShotcutPopover;
 
 /**
- *  通过表情的唯一标识获得，MMEmoji对象
+ * Enabled means Keyboard will show Unicode Emoji Tap; Default is Enabled
+ *  @param enable       enable
+ */
+- (void)setUnicodeEmojiTabEnabled: (BOOL)enable;
+
+/**
+ *  fetch emojis according to emoji type and emoji code
  *
- *  @param fetchType         表情的类型： 小表情或大表情
- *  @param emojiCodes        表情标识的集合
- *  @param completionHandler 完成的回调，包含MMEmoji对象的集合或者error对象
+ *  @param fetchType         emoji type
+ *  @param emojiCodes        a collection of emoji code
+ *  @param completionHandler complition handler  emojis: a collection of MMEmoji or error object
  */
 - (void)fetchEmojisByType:(MMFetchType)fetchType
-                    codes:(NSArray *)emojiCodes
-        completionHandler:(void (^)(NSArray *emojis, NSError *error))completionHandler;
-
+                    codes:(nonnull NSArray *)emojiCodes
+        completionHandler:(void (^ __nullable )(NSArray * __nullable emojis))completionHandler;
 
 /**
- *  清除缓存
+ *  Display shop view controller
+ */
+- (void)presentShopViewController;
+/**
+ *  clear session
  */
 - (void)clearSession;
+
+/**
+ *  clear cache
+ */
+- (void)clearCache;
+
+
+//trending gif data
+- (void)trendingGifsAt:(int)page
+          withPageSize:(int)pageSize
+     completionHandler:(void (^ __nonnull)(NSArray<MMGif *> * __nullable gifs, NSError * __nullable error))completionHandler;
+
+//search gif data
+- (void)searchGifsWithKey:(NSString * _Nullable)key
+                       At:(int)page
+             withPageSize:(int)pageSize
+        completionHandler:(void (^ __nonnull)(NSString * __nonnull searchKey, NSArray<MMGif *> * __nullable gifs, NSError * __nullable error))completionHandler;
 
 @end

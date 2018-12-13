@@ -7,7 +7,7 @@
 //
 
 #import "JFMMBrowViewController.h"
-#import <BQMM/BQMM.h>
+#import "BQMM.h"
 @interface JFMMBrowViewController ()<MMEmotionCentreDelegate>
 
 @property (nonatomic, strong) UITextField *textField;
