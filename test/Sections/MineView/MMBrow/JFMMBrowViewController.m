@@ -7,7 +7,8 @@
 //
 
 #import "JFMMBrowViewController.h"
-#import "BQMM.h"
+#import <BQMM/BQMM.h>
+
 @interface JFMMBrowViewController ()<MMEmotionCentreDelegate>
 
 @property (nonatomic, strong) UITextField *textField;
@@ -72,6 +73,10 @@
 
 - (void)didSendWithInput:(UIResponder<UITextInput> *)input {
 //    [self sendText:input.mmText];
+}
+
+- (void)didClickGifTab {
+    
 }
 
 

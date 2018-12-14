@@ -168,7 +168,7 @@
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/je_ffy/Desktop/test/test/Sections/MineView/PresentViewController/JFPresentViewController.m"
-                  timestampString = "566389268.147136"
+                  timestampString = "566470121.3402359"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "38"
@@ -183,7 +183,7 @@
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/je_ffy/Desktop/test/test/Sections/MineView/PresentViewController/JFPresentViewController.m"
-                  timestampString = "566389268.148991"
+                  timestampString = "566470121.3419729"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "40"
@@ -216,7 +216,7 @@
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/je_ffy/Desktop/test/test/Sections/News/View/TVView/DDNewsModel.m"
-                  timestampString = "566389268.15368"
+                  timestampString = "566470122.968049"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -231,7 +231,7 @@
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/je_ffy/Desktop/test/test/Sections/News/View/TVView/DDNewsModel.m"
-                  timestampString = "566389268.155466"
+                  timestampString = "566470122.96992"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "20"
@@ -246,7 +246,7 @@
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/je_ffy/Desktop/test/test/Sections/News/View/TVView/DDNewsModel.m"
-                  timestampString = "566389268.157207"
+                  timestampString = "566470122.971707"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -311,12 +311,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "test/Sections/News/View/TVView/DDNewsTVC.m"
-            timestampString = "566389470.166538"
+            timestampString = "566471388.469825"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
             endingLineNumber = "35"
             landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test/Sections/MineView/UIScrollViewAnimation/JFScrollViewAnimationViewController.m"
+            timestampString = "566471388.4701329"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "-scrollViewDidScroll:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

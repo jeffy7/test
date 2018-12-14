@@ -20,6 +20,7 @@
 #import "JFMasonryViewController.h"
 #import "JFPresentViewController.h"
 #import "JFMMBrowViewController.h"
+#import "JFScrollViewAnimationViewController.h"
 
 @interface JFMineviewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray *titles;
@@ -52,6 +53,7 @@
     [self addTitle:@"Present" class:@"JFPresentViewController"];
     [self addTitle:@"MM表情" class:@"JFMMBrowViewController"];
     [self addTitle:@"SocketIO" class:@"JFSocketIOViewController"];
+    [self addTitle:@"ScrollViewAnimation" class:@"JFScrollViewAnimationViewController"];
 
     self.view.backgroundColor = [UIColor yellowColor];
     [self.tableView reloadData];
@@ -72,6 +74,7 @@
     }
     
     return _tableView;
+    
 }
 
 #pragma mark -

@@ -119,8 +119,8 @@
     
     [demoContainerView addSubview:cycleScrollView4];
     
-    NSArray *fonts =  [UIFont familyNames];
-    NSLog(@"fonts = %@",fonts);
+//    NSArray *fonts =  [UIFont familyNames];
+//    NSLog(@"fonts = %@",fonts);
 
 }
 

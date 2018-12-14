@@ -18,6 +18,13 @@
 		170F31761CA44A44002A9A63 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 170F31751CA44A44002A9A63 /* testUITests.m */; };
 		171B9B9E21C25983000CDBAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 171B9B9D21C25983000CDBAD /* UIKit.framework */; };
 		171B9BA021C25993000CDBAD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 171B9B9F21C25993000CDBAD /* CFNetwork.framework */; };
+		171B9BB621C34D6A000CDBAD /* JFScrollViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 171B9BB521C34D6A000CDBAD /* JFScrollViewAnimationViewController.m */; };
+		171B9BBB21C34F84000CDBAD /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 171B9BB721C34F83000CDBAD /* 0.png */; };
+		171B9BBC21C34F84000CDBAD /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 171B9BB821C34F83000CDBAD /* 2.png */; };
+		171B9BBD21C34F84000CDBAD /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 171B9BB921C34F83000CDBAD /* 1.png */; };
+		171B9BBE21C34F84000CDBAD /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 171B9BBA21C34F84000CDBAD /* 3.png */; };
+		171B9BC421C351E2000CDBAD /* JFScrollAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 171B9BC321C351E2000CDBAD /* JFScrollAnimationView.m */; };
+		171B9BC921C3C3AF000CDBAD /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 171B9BC821C3C3AF000CDBAD /* example.png */; };
 		172677491F03DAB800CECF01 /* JFPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172677481F03DAB800CECF01 /* JFPresentViewController.m */; };
 		1726774C1F03DC7400CECF01 /* JFEmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1726774B1F03DC7400CECF01 /* JFEmptyViewController.m */; };
 		172FCC5C1F2886C5008C0AAF /* JFNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172FCC5B1F2886C5008C0AAF /* JFNewsViewController.m */; };
@@ -191,6 +198,15 @@
 		170F31771CA44A44002A9A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		171B9B9D21C25983000CDBAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		171B9B9F21C25993000CDBAD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		171B9BB421C34D6A000CDBAD /* JFScrollViewAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFScrollViewAnimationViewController.h; sourceTree = "<group>"; };
+		171B9BB521C34D6A000CDBAD /* JFScrollViewAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFScrollViewAnimationViewController.m; sourceTree = "<group>"; };
+		171B9BB721C34F83000CDBAD /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		171B9BB821C34F83000CDBAD /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		171B9BB921C34F83000CDBAD /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		171B9BBA21C34F84000CDBAD /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		171B9BC221C351E2000CDBAD /* JFScrollAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFScrollAnimationView.h; sourceTree = "<group>"; };
+		171B9BC321C351E2000CDBAD /* JFScrollAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFScrollAnimationView.m; sourceTree = "<group>"; };
+		171B9BC821C3C3AF000CDBAD /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
 		172677471F03DAB800CECF01 /* JFPresentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFPresentViewController.h; sourceTree = "<group>"; };
 		172677481F03DAB800CECF01 /* JFPresentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFPresentViewController.m; sourceTree = "<group>"; };
 		1726774A1F03DC7400CECF01 /* JFEmptyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFEmptyViewController.h; sourceTree = "<group>"; };
@@ -547,6 +563,22 @@
 			path = testUITests;
 			sourceTree = "<group>";
 		};
+		171B9BB221C34D48000CDBAD /* UIScrollViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				171B9BC821C3C3AF000CDBAD /* example.png */,
+				171B9BB721C34F83000CDBAD /* 0.png */,
+				171B9BB921C34F83000CDBAD /* 1.png */,
+				171B9BB821C34F83000CDBAD /* 2.png */,
+				171B9BBA21C34F84000CDBAD /* 3.png */,
+				171B9BB421C34D6A000CDBAD /* JFScrollViewAnimationViewController.h */,
+				171B9BB521C34D6A000CDBAD /* JFScrollViewAnimationViewController.m */,
+				171B9BC221C351E2000CDBAD /* JFScrollAnimationView.h */,
+				171B9BC321C351E2000CDBAD /* JFScrollAnimationView.m */,
+			);
+			path = UIScrollViewAnimation;
+			sourceTree = "<group>";
+		};
 		172677451F03DA9F00CECF01 /* PresentViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -761,6 +793,7 @@
 		1737FF251D436BEF00F8DAA9 /* MineView */ = {
 			isa = PBXGroup;
 			children = (
+				171B9BB221C34D48000CDBAD /* UIScrollViewAnimation */,
 				176A31001F2F33DF005567BA /* SocketIO */,
 				17AE1E9B1F14890A00F55F4A /* MMBrow */,
 				17903D931EE6570300CFC729 /* ConvertPoint */,
@@ -1507,14 +1540,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				174E72561EB1CF89003B4BD0 /* server_test.cer in Resources */,
+				171B9BC921C3C3AF000CDBAD /* example.png in Resources */,
+				171B9BBD21C34F84000CDBAD /* 1.png in Resources */,
 				17B6CDC81ECD941D004844EA /* cascade.plist in Resources */,
+				171B9BBE21C34F84000CDBAD /* 3.png in Resources */,
 				172FCCAD1F289561008C0AAF /* topic_news.json in Resources */,
 				170F31601CA44A44002A9A63 /* LaunchScreen.storyboard in Resources */,
 				174E72571EB1CF89003B4BD0 /* server.cer in Resources */,
 				17BFD7911E94D33C00A417AB /* rsa_private_key.pem in Resources */,
+				171B9BBB21C34F84000CDBAD /* 0.png in Resources */,
 				17B6CDD51ECDA0B6004844EA /* 1.plist in Resources */,
 				170F315D1CA44A44002A9A63 /* Assets.xcassets in Resources */,
 				170F315B1CA44A44002A9A63 /* Main.storyboard in Resources */,
+				171B9BBC21C34F84000CDBAD /* 2.png in Resources */,
 				172FCC7D1F28908F008C0AAF /* DDNewsTVC.storyboard in Resources */,
 				176736511E9CB0F100CC0226 /* main.js in Resources */,
 				172FCC951F289155008C0AAF /* DDBottomView.xib in Resources */,
@@ -1658,6 +1696,7 @@
 				172FCCA71F28923E008C0AAF /* UINavigationController+JZExtension.m in Sources */,
 				17A545011E6806C300995CF2 /* NSDate+Time.m in Sources */,
 				17DFD9E71E710633003FE611 /* JFArchiveSon.m in Sources */,
+				171B9BB621C34D6A000CDBAD /* JFScrollViewAnimationViewController.m in Sources */,
 				176737761EA4784D00CC0226 /* BViewController.m in Sources */,
 				17D019AE1EC2C775009897D4 /* JFStockTableViewCell.m in Sources */,
 				17B6CDCF1ECD9AA2004844EA /* JFCascadeProduct.m in Sources */,
@@ -1672,6 +1711,7 @@
 				172FCC611F288F3C008C0AAF /* DDChannelModel.m in Sources */,
 				17DFD9DD1E70F1A3003FE611 /* JFFontViewController.m in Sources */,
 				172FCC771F288FFD008C0AAF /* LXReorderableCollectionViewFlowLayout.m in Sources */,
+				171B9BC421C351E2000CDBAD /* JFScrollAnimationView.m in Sources */,
 				17E42A4E1EAE00260079ED99 /* CCLog.m in Sources */,
 				172677491F03DAB800CECF01 /* JFPresentViewController.m in Sources */,
 				1767364C1E9CB05700CC0226 /* JFTableViewController.m in Sources */,
