@@ -46,6 +46,8 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat x = scrollView.contentOffset.x;
     NSLog(@"%lf",x);
+    
+    
 
     NSInteger leftIndex = x/ScreenWidth;
 //    NSLog(@"%ld",leftIndex);
